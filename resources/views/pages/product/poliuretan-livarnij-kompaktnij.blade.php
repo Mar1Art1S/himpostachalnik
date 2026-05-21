@@ -26,7 +26,7 @@ name('prod_pu_livarnij');
 дозволяє створювати якісні імітації деревини та інші деталі з високою точністю. Ідеальний для дизайнерських проектів та
 виробництва інтер’єрних виробів.'))
 
-@section('og_image', Vite::asset('resources/img/mat_2/01.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_2/01.png'))
 
 @section('content')
     <x-category-header>

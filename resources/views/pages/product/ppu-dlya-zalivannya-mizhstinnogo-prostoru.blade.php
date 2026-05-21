@@ -24,7 +24,7 @@ name('prod_ppu_prostoru');
 звукоізоляцію, а також зміцнення будівельних конструкцій. Ефективне рішення для утеплення стін, підвищення енергоефективності
 та довговічності будівель. ППУ також заповнює порожнини, створюючи надійний захист від вологи та повітряних потоків.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/007.jpeg'))
+@section('og_image', Vite::asset('resources/img/6_PPU_grup/007.png'))
 
 @section('content')
     <x-category-header>

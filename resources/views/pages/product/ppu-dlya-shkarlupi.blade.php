@@ -24,7 +24,7 @@ name('prod_ppu_shkarlupi');
 теплопостачання. Забезпечує надійний захист від тепловтрат, знижує витрати на енергозбереження та продовжує термін служби трубопроводів.
 Ідеально підходить для промислових і комунальних мереж.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/002.jpeg'))
+@section('og_image', Vite::asset('resources/img/6_PPU_grup/002.png'))
 
 @section('content')
     <x-category-header>

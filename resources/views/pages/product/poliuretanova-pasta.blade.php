@@ -23,7 +23,7 @@ name('prod_pu_pasta');
 Завдяки своїй високій еластичності, міцності та стійкості до впливу вологи, поліуретанова паста використовується в будівництві,
 автомобільній промисловості та для ремонту промислового обладнання.'))
 
-@section('og_image', Vite::asset('resources/img/mat_2/04.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_2/04.png'))
 
 @section('content')
     <x-category-header>

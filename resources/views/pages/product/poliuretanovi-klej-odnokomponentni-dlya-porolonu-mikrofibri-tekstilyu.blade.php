@@ -24,7 +24,7 @@ name('prod_klej_tekstilyu');
 Забезпечують міцне з`єднання, що відзначається високою еластичністю, стійкістю до зношування та довговічністю. Ідеальні для застосування
 у виробництві меблів, матраців, оббивки та інших виробів, де потрібне надійне склеювання м`яких матеріалів.'))
 
-@section('og_image', Vite::asset('resources/img/mat_4/04.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_4/04.png'))
 
 @section('content')
     <x-category-header>

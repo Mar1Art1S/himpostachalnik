@@ -20,7 +20,7 @@ name('prod_lak_antis');
 @section('og_title', __('Антисептики для тканин, шпагатів та органічних матеріалів – захист від мікроорганізмів'))
 @section('og_description', __('Антисептики для тканин, антисептики для шпагатів, антисептики для органічних матеріалів'))
 
-@section('og_image', Vite::asset('resources/img/mat_5/03.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_5/03.png'))
 
 @section('content')
     <x-category-header>

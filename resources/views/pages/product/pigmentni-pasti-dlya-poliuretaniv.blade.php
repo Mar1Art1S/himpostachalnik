@@ -33,7 +33,7 @@ name('prod_pu_pigment');
 з поліуретановими системами, гарантують рівномірний розподіл кольору та зберігають свої властивості в умовах
 експлуатації.'))
 
-@section('og_image', Vite::asset('resources/img/mat_2/05.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_2/05.png'))
 
 @section('content')
 <x-category-header>

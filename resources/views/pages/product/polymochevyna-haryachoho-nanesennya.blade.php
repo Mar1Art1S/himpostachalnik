@@ -18,7 +18,7 @@ name('poli_moch_haryacho');
 @section('og_title', __(''))
 @section('og_description', __(''))
 
-@section('og_image', Vite::asset('resources/img/mat_4/01.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_4/01.png'))
 
 @section('content')
     <x-category-header>

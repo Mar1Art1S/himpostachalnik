@@ -24,7 +24,7 @@ name('prod_ppu_trub');
 від корозії. Ідеальне рішення для трубопроводів теплопостачання, що знижує тепловтрати та підвищує енергоефективність системи.
 Висока якість та довговічність для промислових і комунальних мереж.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/003.jpeg'))
+@section('og_image', Vite::asset('resources/img/6_PPU_grup/003.png'))
 
 @section('content')
     <x-category-header>

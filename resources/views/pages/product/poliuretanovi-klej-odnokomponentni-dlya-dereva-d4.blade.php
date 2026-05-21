@@ -24,7 +24,7 @@ name('prod_klej_dereva_d4');
 з`єднання для внутрішніх і зовнішніх робіт. Ідеальні для застосування у виробництві меблів, вікон, дверей та інших дерев`яних
 конструкцій, що піддаються впливу вологи. Клей відзначається високою адгезією, стійкістю до екстремальних умов та довговічністю.'))
 
-@section('og_image', Vite::asset('resources/img/mat_4/02.jpg'))
+@section('og_image', Vite::asset('resources/img/mat_4/02.png'))
 
 @section('content')
     <x-category-header>
