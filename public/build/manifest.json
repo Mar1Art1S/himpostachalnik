@@ -1,0 +1,571 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-C71vbZkE.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/Roboto-Black.woff": {
+    "file": "assets/Roboto-Black-BN4z5G_d.woff",
+    "src": "resources/fonts/Roboto-Black.woff"
+  },
+  "resources/fonts/Roboto-Black.woff2": {
+    "file": "assets/Roboto-Black-C7ifcRNz.woff2",
+    "src": "resources/fonts/Roboto-Black.woff2"
+  },
+  "resources/fonts/Roboto-Bold.woff": {
+    "file": "assets/Roboto-Bold-BWsZ_UZn.woff",
+    "src": "resources/fonts/Roboto-Bold.woff"
+  },
+  "resources/fonts/Roboto-Bold.woff2": {
+    "file": "assets/Roboto-Bold-CJkDHnC6.woff2",
+    "src": "resources/fonts/Roboto-Bold.woff2"
+  },
+  "resources/fonts/Roboto-Light.woff": {
+    "file": "assets/Roboto-Light-Bb3z21ku.woff",
+    "src": "resources/fonts/Roboto-Light.woff"
+  },
+  "resources/fonts/Roboto-Light.woff2": {
+    "file": "assets/Roboto-Light-TF4vpIDa.woff2",
+    "src": "resources/fonts/Roboto-Light.woff2"
+  },
+  "resources/fonts/Roboto-Medium.woff": {
+    "file": "assets/Roboto-Medium-BrUkKwNQ.woff",
+    "src": "resources/fonts/Roboto-Medium.woff"
+  },
+  "resources/fonts/Roboto-Medium.woff2": {
+    "file": "assets/Roboto-Medium-C8M2S6GA.woff2",
+    "src": "resources/fonts/Roboto-Medium.woff2"
+  },
+  "resources/fonts/Roboto-Regular.woff": {
+    "file": "assets/Roboto-Regular-DVgHiZPI.woff",
+    "src": "resources/fonts/Roboto-Regular.woff"
+  },
+  "resources/fonts/Roboto-Regular.woff2": {
+    "file": "assets/Roboto-Regular-B_JC94pD.woff2",
+    "src": "resources/fonts/Roboto-Regular.woff2"
+  },
+  "resources/fonts/Roboto-Thin.woff": {
+    "file": "assets/Roboto-Thin-B-o54mGk.woff",
+    "src": "resources/fonts/Roboto-Thin.woff"
+  },
+  "resources/fonts/Roboto-Thin.woff2": {
+    "file": "assets/Roboto-Thin-Dqn8npg-.woff2",
+    "src": "resources/fonts/Roboto-Thin.woff2"
+  },
+  "resources/img/1_1_PPY/007.jpg": {
+    "file": "assets/007-TAniEBHK.jpg",
+    "src": "resources/img/1_1_PPY/007.jpg"
+  },
+  "resources/img/1_1_PPY/008.jpg": {
+    "file": "assets/008-NK0aLJ-p.jpg",
+    "src": "resources/img/1_1_PPY/008.jpg"
+  },
+  "resources/img/1_1_PPY/ppy_1.jpeg": {
+    "file": "assets/ppy_1-CnwFHzb7.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_1.jpeg"
+  },
+  "resources/img/1_1_PPY/ppy_2.jpeg": {
+    "file": "assets/ppy_2-CXCz-XED.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_2.jpeg"
+  },
+  "resources/img/1_1_PPY/ppy_3.jpeg": {
+    "file": "assets/ppy_3-Ce4lYO5W.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_3.jpeg"
+  },
+  "resources/img/1_1_PPY/ppy_4.jpeg": {
+    "file": "assets/ppy_4-PfesufJH.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_4.jpeg"
+  },
+  "resources/img/1_1_PPY/ppy_5.jpeg": {
+    "file": "assets/ppy_5-XVNpA2ak.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_5.jpeg"
+  },
+  "resources/img/1_1_PPY/ppy_6.jpeg": {
+    "file": "assets/ppy_6-CDZnSGn5.jpeg",
+    "src": "resources/img/1_1_PPY/ppy_6.jpeg"
+  },
+  "resources/img/1_social__icon/call.svg": {
+    "file": "assets/call-BS-6CB0D.svg",
+    "src": "resources/img/1_social__icon/call.svg"
+  },
+  "resources/img/1_social__icon/cart.svg": {
+    "file": "assets/cart-BIkBQ4za.svg",
+    "src": "resources/img/1_social__icon/cart.svg"
+  },
+  "resources/img/1_social__icon/close.svg": {
+    "file": "assets/close-YlvBo7Nb.svg",
+    "src": "resources/img/1_social__icon/close.svg"
+  },
+  "resources/img/1_social__icon/facebook.svg": {
+    "file": "assets/facebook-CojfGD3z.svg",
+    "src": "resources/img/1_social__icon/facebook.svg"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-analytic-10083711.png": {
+    "file": "assets/free-icon-analytic-10083711-UZCpuGXB.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-analytic-10083711.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-phone-call-3222644.png": {
+    "file": "assets/free-icon-phone-call-3222644-DjdUy0s2.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-phone-call-3222644.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-phone-call-3960745.png": {
+    "file": "assets/free-icon-phone-call-3960745-DHN35TOd.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-phone-call-3960745.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-phone-call-8767755.png": {
+    "file": "assets/free-icon-phone-call-8767755-CADfSBRb.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-phone-call-8767755.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-remove-cart-7756009.png": {
+    "file": "assets/free-icon-remove-cart-7756009-DfRSlfHm.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-remove-cart-7756009.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-search-3683956.png": {
+    "file": "assets/free-icon-search-3683956-Ck4R6sk_.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-search-3683956.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-search-engine-optimization-8823264.png": {
+    "file": "assets/free-icon-search-engine-optimization-8823264-C4O1riK9.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-search-engine-optimization-8823264.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-searching-3832879.png": {
+    "file": "assets/free-icon-searching-3832879-BmYOCp5g.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-searching-3832879.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-user-profile-4803050.png": {
+    "file": "assets/free-icon-user-profile-4803050-3yGXFYOQ.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-user-profile-4803050.png"
+  },
+  "resources/img/1_social__icon/icon-header/free-icon-user-profile-5675010.png": {
+    "file": "assets/free-icon-user-profile-5675010-DJtYqomv.png",
+    "src": "resources/img/1_social__icon/icon-header/free-icon-user-profile-5675010.png"
+  },
+  "resources/img/1_social__icon/instagram.svg": {
+    "file": "assets/instagram-DrmIVvAj.svg",
+    "src": "resources/img/1_social__icon/instagram.svg"
+  },
+  "resources/img/1_social__icon/profile.svg": {
+    "file": "assets/profile-BG1ivMen.svg",
+    "src": "resources/img/1_social__icon/profile.svg"
+  },
+  "resources/img/1_social__icon/telegram.svg": {
+    "file": "assets/telegram-h7ukoa6S.svg",
+    "src": "resources/img/1_social__icon/telegram.svg"
+  },
+  "resources/img/1_social__icon/tiktok.svg": {
+    "file": "assets/tiktok-CtFF7WjJ.svg",
+    "src": "resources/img/1_social__icon/tiktok.svg"
+  },
+  "resources/img/1_social__icon/twitterx.svg": {
+    "file": "assets/twitterx-H903_x-h.svg",
+    "src": "resources/img/1_social__icon/twitterx.svg"
+  },
+  "resources/img/1_social__icon/viber.svg": {
+    "file": "assets/viber-Ck-RIfKC.svg",
+    "src": "resources/img/1_social__icon/viber.svg"
+  },
+  "resources/img/1_social__icon/youtube.svg": {
+    "file": "assets/youtube-CwcUAbNX.svg",
+    "src": "resources/img/1_social__icon/youtube.svg"
+  },
+  "resources/img/1_social__icon/заказ.svg": {
+    "file": "assets/заказ-42FO-zK0.svg",
+    "src": "resources/img/1_social__icon/заказ.svg"
+  },
+  "resources/img/2_logo/Logo.png": {
+    "file": "assets/Logo-DOHMsSYj.png",
+    "src": "resources/img/2_logo/Logo.png"
+  },
+  "resources/img/2_logo/Logo_litle.png": {
+    "file": "assets/Logo_litle-BT70u1hR.png",
+    "src": "resources/img/2_logo/Logo_litle.png"
+  },
+  "resources/img/2_logo/Logo_new.png": {
+    "file": "assets/Logo_new-B4PaR8vo.png",
+    "src": "resources/img/2_logo/Logo_new.png"
+  },
+  "resources/img/2_pigment_pasta/1_Зеленая_ХимКолор-53new.jpg": {
+    "file": "assets/1_Зеленая_ХимКолор-53new-e2Spc1At.jpg",
+    "src": "resources/img/2_pigment_pasta/1_Зеленая_ХимКолор-53new.jpg"
+  },
+  "resources/img/2_pigment_pasta/2_Синяя_ХимКолор-50new.jpg": {
+    "file": "assets/2_Синяя_ХимКолор-50new-DvRWdjn-.jpg",
+    "src": "resources/img/2_pigment_pasta/2_Синяя_ХимКолор-50new.jpg"
+  },
+  "resources/img/2_pigment_pasta/3_Бордо_ХимКолор-30new.jpg": {
+    "file": "assets/3_Бордо_ХимКолор-30new-CEhJCkSj.jpg",
+    "src": "resources/img/2_pigment_pasta/3_Бордо_ХимКолор-30new.jpg"
+  },
+  "resources/img/2_pigment_pasta/4_Чорна_ХимКолор-30new.jpg": {
+    "file": "assets/4_Чорна_ХимКолор-30new-DGcYt-zh.jpg",
+    "src": "resources/img/2_pigment_pasta/4_Чорна_ХимКолор-30new.jpg"
+  },
+  "resources/img/2_pigment_pasta/5_Чорна_ХимКолор-35new.jpg": {
+    "file": "assets/5_Чорна_ХимКолор-35new-BbTz32q_.jpg",
+    "src": "resources/img/2_pigment_pasta/5_Чорна_ХимКолор-35new.jpg"
+  },
+  "resources/img/2_pigment_pasta/6_Оранжевая_ХимКолор-43new.jpg": {
+    "file": "assets/6_Оранжевая_ХимКолор-43new-Gzx5XSll.jpg",
+    "src": "resources/img/2_pigment_pasta/6_Оранжевая_ХимКолор-43new.jpg"
+  },
+  "resources/img/2_pigment_pasta/7_Желтая_ХимКолор-53new.jpg": {
+    "file": "assets/7_Желтая_ХимКолор-53new-ml_jDdXN.jpg",
+    "src": "resources/img/2_pigment_pasta/7_Желтая_ХимКолор-53new.jpg"
+  },
+  "resources/img/2_pigment_pasta/8_Красная_ХимКолор-53new.jpg": {
+    "file": "assets/8_Красная_ХимКолор-53new-CL8YSFFy.jpg",
+    "src": "resources/img/2_pigment_pasta/8_Красная_ХимКолор-53new.jpg"
+  },
+  "resources/img/2_pigment_pasta/9_Белая_ХимКолор-60new.jpg": {
+    "file": "assets/9_Белая_ХимКолор-60new-CFf3JH3J.jpg",
+    "src": "resources/img/2_pigment_pasta/9_Белая_ХимКолор-60new.jpg"
+  },
+  "resources/img/3_main/BG-fone.jpg": {
+    "file": "assets/BG-fone-BgXGsvu3.jpg",
+    "src": "resources/img/3_main/BG-fone.jpg"
+  },
+  "resources/img/3_main/BG-fone1.jpg": {
+    "file": "assets/BG-fone1-CVuu1RCG.jpg",
+    "src": "resources/img/3_main/BG-fone1.jpg"
+  },
+  "resources/img/3_main/BG.jpg": {
+    "file": "assets/BG-GT2MGVMC.jpg",
+    "src": "resources/img/3_main/BG.jpg"
+  },
+  "resources/img/3_main/BGr.jpg": {
+    "file": "assets/BGr-MAEzrxy1.jpg",
+    "src": "resources/img/3_main/BGr.jpg"
+  },
+  "resources/img/3_main/bd-info.png": {
+    "file": "assets/bd-info-Di6B8uUd.png",
+    "src": "resources/img/3_main/bd-info.png"
+  },
+  "resources/img/3_main/bg-2.jpg": {
+    "file": "assets/bg-2-Vi2Kg-CY.jpg",
+    "src": "resources/img/3_main/bg-2.jpg"
+  },
+  "resources/img/3_main/bg-mob.jpg": {
+    "file": "assets/bg-mob-jZjLaSkA.jpg",
+    "src": "resources/img/3_main/bg-mob.jpg"
+  },
+  "resources/img/3_main/bg_main.jpg": {
+    "file": "assets/bg_main-l8e5L_0X.jpg",
+    "src": "resources/img/3_main/bg_main.jpg"
+  },
+  "resources/img/4_icon/1.svg": {
+    "file": "assets/1-BPkahUEc.svg",
+    "src": "resources/img/4_icon/1.svg"
+  },
+  "resources/img/4_icon/2.svg": {
+    "file": "assets/2-Bowv8p9O.svg",
+    "src": "resources/img/4_icon/2.svg"
+  },
+  "resources/img/4_icon/3.svg": {
+    "file": "assets/3-fJJGhPer.svg",
+    "src": "resources/img/4_icon/3.svg"
+  },
+  "resources/img/4_icon/4.svg": {
+    "file": "assets/4-C68pbFmg.svg",
+    "src": "resources/img/4_icon/4.svg"
+  },
+  "resources/img/4_icon/5.svg": {
+    "file": "assets/5-BWZHv3z2.svg",
+    "src": "resources/img/4_icon/5.svg"
+  },
+  "resources/img/4_icon/6.svg": {
+    "file": "assets/6-CnrBKnLZ.svg",
+    "src": "resources/img/4_icon/6.svg"
+  },
+  "resources/img/6_PPU_grup/001.png": {
+    "file": "assets/001-BO04zrCE.png",
+    "src": "resources/img/6_PPU_grup/001.png"
+  },
+  "resources/img/6_PPU_grup/002.png": {
+    "file": "assets/002-avdaB2b_.png",
+    "src": "resources/img/6_PPU_grup/002.png"
+  },
+  "resources/img/6_PPU_grup/003.png": {
+    "file": "assets/003-eB8XE_z2.png",
+    "src": "resources/img/6_PPU_grup/003.png"
+  },
+  "resources/img/6_PPU_grup/004.png": {
+    "file": "assets/004-tN3V3IQF.png",
+    "src": "resources/img/6_PPU_grup/004.png"
+  },
+  "resources/img/6_PPU_grup/005.png": {
+    "file": "assets/005-BMCZBups.png",
+    "src": "resources/img/6_PPU_grup/005.png"
+  },
+  "resources/img/6_PPU_grup/006.png": {
+    "file": "assets/006-CQadSfL4.png",
+    "src": "resources/img/6_PPU_grup/006.png"
+  },
+  "resources/img/6_PPU_grup/007.png": {
+    "file": "assets/007-Du67DHAf.png",
+    "src": "resources/img/6_PPU_grup/007.png"
+  },
+  "resources/img/6_PPU_grup/008.png": {
+    "file": "assets/008-dfRXI7va.png",
+    "src": "resources/img/6_PPU_grup/008.png"
+  },
+  "resources/img/block/Завод__002.png": {
+    "file": "assets/Завод__002-CDFvH__Y.png",
+    "src": "resources/img/block/Завод__002.png"
+  },
+  "resources/img/block/Завод__003.png": {
+    "file": "assets/Завод__003-IkfGKwM1.png",
+    "src": "resources/img/block/Завод__003.png"
+  },
+  "resources/img/block/Завод__004_Інженери.png": {
+    "file": "assets/Завод__004_Інженери-DoeGobEr.png",
+    "src": "resources/img/block/Завод__004_Інженери.png"
+  },
+  "resources/img/block/Завод__004_Інженери_нове.png": {
+    "file": "assets/Завод__004_Інженери_нове-a3o5cA5F.png",
+    "src": "resources/img/block/Завод__004_Інженери_нове.png"
+  },
+  "resources/img/block/ТехПолімерМакркет.png": {
+    "file": "assets/ТехПолімерМакркет-hdPxngUL.png",
+    "src": "resources/img/block/ТехПолімерМакркет.png"
+  },
+  "resources/img/block/Хімекселен__002.png": {
+    "file": "assets/Хімекселен__002-B07DZZP-.png",
+    "src": "resources/img/block/Хімекселен__002.png"
+  },
+  "resources/img/categories/001.png": {
+    "file": "assets/001-C5hcoePi.png",
+    "src": "resources/img/categories/001.png"
+  },
+  "resources/img/categories/002.png": {
+    "file": "assets/002-DEx71GwP.png",
+    "src": "resources/img/categories/002.png"
+  },
+  "resources/img/categories/003.png": {
+    "file": "assets/003-D0PmfqXx.png",
+    "src": "resources/img/categories/003.png"
+  },
+  "resources/img/categories/004.png": {
+    "file": "assets/004-3RdFIr1V.png",
+    "src": "resources/img/categories/004.png"
+  },
+  "resources/img/categories/007.png": {
+    "file": "assets/007-ChuAWoGO.png",
+    "src": "resources/img/categories/007.png"
+  },
+  "resources/img/categories/008.png": {
+    "file": "assets/008-C189bulO.png",
+    "src": "resources/img/categories/008.png"
+  },
+  "resources/img/categories/009.png": {
+    "file": "assets/009-DZ3a58DC.png",
+    "src": "resources/img/categories/009.png"
+  },
+  "resources/img/categories/012.png": {
+    "file": "assets/012-RlgSVXTI.png",
+    "src": "resources/img/categories/012.png"
+  },
+  "resources/img/categories/icon-card/icon-card_001.svg": {
+    "file": "assets/icon-card_001-DSKEC4x6.svg",
+    "src": "resources/img/categories/icon-card/icon-card_001.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_002.svg": {
+    "file": "assets/icon-card_002-YWObtjPG.svg",
+    "src": "resources/img/categories/icon-card/icon-card_002.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_003.svg": {
+    "file": "assets/icon-card_003-CkaLYmyK.svg",
+    "src": "resources/img/categories/icon-card/icon-card_003.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_004.svg": {
+    "file": "assets/icon-card_004-ChrISThZ.svg",
+    "src": "resources/img/categories/icon-card/icon-card_004.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_005.svg": {
+    "file": "assets/icon-card_005-DrvlmfYY.svg",
+    "src": "resources/img/categories/icon-card/icon-card_005.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_006.svg": {
+    "file": "assets/icon-card_006-DLjsG1WV.svg",
+    "src": "resources/img/categories/icon-card/icon-card_006.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_007.svg": {
+    "file": "assets/icon-card_007-DK9SKpWA.svg",
+    "src": "resources/img/categories/icon-card/icon-card_007.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_008.svg": {
+    "file": "assets/icon-card_008-BxHkYNmL.svg",
+    "src": "resources/img/categories/icon-card/icon-card_008.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_009.svg": {
+    "file": "assets/icon-card_009-pdVDrOpc.svg",
+    "src": "resources/img/categories/icon-card/icon-card_009.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_010.svg": {
+    "file": "assets/icon-card_010-BdLHTPPq.svg",
+    "src": "resources/img/categories/icon-card/icon-card_010.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_011.svg": {
+    "file": "assets/icon-card_011-1-RGG-fk.svg",
+    "src": "resources/img/categories/icon-card/icon-card_011.svg"
+  },
+  "resources/img/categories/icon-card/icon-card_012.svg": {
+    "file": "assets/icon-card_012-2MZ4MZvd.svg",
+    "src": "resources/img/categories/icon-card/icon-card_012.svg"
+  },
+  "resources/img/cover.jpg": {
+    "file": "assets/cover-D16g4Ccz.jpg",
+    "src": "resources/img/cover.jpg"
+  },
+  "resources/img/footer.jpg": {
+    "file": "assets/footer-DVVKYCl7.jpg",
+    "src": "resources/img/footer.jpg"
+  },
+  "resources/img/g.svg": {
+    "file": "assets/g-B03MsxDZ.svg",
+    "src": "resources/img/g.svg"
+  },
+  "resources/img/mat_2/01.png": {
+    "file": "assets/01-DHqktrtN.png",
+    "src": "resources/img/mat_2/01.png"
+  },
+  "resources/img/mat_2/02.png": {
+    "file": "assets/02-nw6hKD-L.png",
+    "src": "resources/img/mat_2/02.png"
+  },
+  "resources/img/mat_2/03.png": {
+    "file": "assets/03-D4mu7Jay.png",
+    "src": "resources/img/mat_2/03.png"
+  },
+  "resources/img/mat_2/04.png": {
+    "file": "assets/04-DoaUS6sx.png",
+    "src": "resources/img/mat_2/04.png"
+  },
+  "resources/img/mat_2/05.png": {
+    "file": "assets/05-Bclo1lUQ.png",
+    "src": "resources/img/mat_2/05.png"
+  },
+  "resources/img/mat_3/01.jpg": {
+    "file": "assets/01-DQP8-_3V.jpg",
+    "src": "resources/img/mat_3/01.jpg"
+  },
+  "resources/img/mat_3/2.jpg": {
+    "file": "assets/2-BXGOOqcw.jpg",
+    "src": "resources/img/mat_3/2.jpg"
+  },
+  "resources/img/mat_3/3.jpg": {
+    "file": "assets/3-B54fQcg6.jpg",
+    "src": "resources/img/mat_3/3.jpg"
+  },
+  "resources/img/mat_4/01.png": {
+    "file": "assets/01-Cw6F4c_7.png",
+    "src": "resources/img/mat_4/01.png"
+  },
+  "resources/img/mat_4/02.png": {
+    "file": "assets/02-B1Jtmrgv.png",
+    "src": "resources/img/mat_4/02.png"
+  },
+  "resources/img/mat_4/03.png": {
+    "file": "assets/03-DBTlxG4R.png",
+    "src": "resources/img/mat_4/03.png"
+  },
+  "resources/img/mat_4/04.png": {
+    "file": "assets/04-DnYhqqM9.png",
+    "src": "resources/img/mat_4/04.png"
+  },
+  "resources/img/mat_4/05.png": {
+    "file": "assets/05-CDJkVf2j.png",
+    "src": "resources/img/mat_4/05.png"
+  },
+  "resources/img/mat_4/06.png": {
+    "file": "assets/06-DvS5cIJD.png",
+    "src": "resources/img/mat_4/06.png"
+  },
+  "resources/img/mat_4/07.png": {
+    "file": "assets/07-B46Eqe-Q.png",
+    "src": "resources/img/mat_4/07.png"
+  },
+  "resources/img/mat_4/08.png": {
+    "file": "assets/08-CCiGB7Yj.png",
+    "src": "resources/img/mat_4/08.png"
+  },
+  "resources/img/mat_5/01.png": {
+    "file": "assets/01-2Fz9A2zf.png",
+    "src": "resources/img/mat_5/01.png"
+  },
+  "resources/img/mat_5/02.png": {
+    "file": "assets/02-B_t1KdZN.png",
+    "src": "resources/img/mat_5/02.png"
+  },
+  "resources/img/mat_5/03.png": {
+    "file": "assets/03-yWQ_Z-8u.png",
+    "src": "resources/img/mat_5/03.png"
+  },
+  "resources/img/mat_5/04.png": {
+    "file": "assets/04-ptZjfdaO.png",
+    "src": "resources/img/mat_5/04.png"
+  },
+  "resources/img/mat_5/05.png": {
+    "file": "assets/05-BDyDHapD.png",
+    "src": "resources/img/mat_5/05.png"
+  },
+  "resources/img/mat_6/1.jpg": {
+    "file": "assets/1-CYXddZjV.jpg",
+    "src": "resources/img/mat_6/1.jpg"
+  },
+  "resources/img/mat_6/2.jpg": {
+    "file": "assets/2-B9wZOWM8.jpg",
+    "src": "resources/img/mat_6/2.jpg"
+  },
+  "resources/img/mat_6/3.jpg": {
+    "file": "assets/2-B9wZOWM8.jpg",
+    "src": "resources/img/mat_6/2.jpg"
+  },
+  "resources/img/mat_6/4.jpg": {
+    "file": "assets/4-CVRLPDIL.jpg",
+    "src": "resources/img/mat_6/4.jpg"
+  },
+  "resources/img/mat_6/5.jpg": {
+    "file": "assets/5-BZ6vEVHl.jpg",
+    "src": "resources/img/mat_6/5.jpg"
+  },
+  "resources/img/mat_6/6.jpg": {
+    "file": "assets/6-jSIj4Tm5.jpg",
+    "src": "resources/img/mat_6/6.jpg"
+  },
+  "resources/img/mat_6/7.jpg": {
+    "file": "assets/7-CwGepCf-.jpg",
+    "src": "resources/img/mat_6/7.jpg"
+  },
+  "resources/img/mat_6/8.jpg": {
+    "file": "assets/8-DANQDoCD.jpg",
+    "src": "resources/img/mat_6/8.jpg"
+  },
+  "resources/img/mat_6/9.jpg": {
+    "file": "assets/9-CU1KXPfF.jpg",
+    "src": "resources/img/mat_6/9.jpg"
+  },
+  "resources/img/mat_7/Гідроізоляція.jpeg": {
+    "file": "assets/Гідроізоляція-DhzrYXT-.jpeg",
+    "src": "resources/img/mat_7/Гідроізоляція.jpeg"
+  },
+  "resources/img/mat_7/Полимочевина_гарячого_нанесення.png": {
+    "file": "assets/Полимочевина_гарячого_нанесення-Bcn7ZIJf.png",
+    "src": "resources/img/mat_7/Полимочевина_гарячого_нанесення.png"
+  },
+  "resources/img/mat_7/Полімочивина_холодного_нанесення.png": {
+    "file": "assets/Полімочивина_холодного_нанесення-_FKzfapi.png",
+    "src": "resources/img/mat_7/Полімочивина_холодного_нанесення.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/calc.js": {
+    "file": "assets/calc-0sY4WOjH.js",
+    "name": "calc",
+    "src": "resources/js/calc.js",
+    "isEntry": true
+  }
+}

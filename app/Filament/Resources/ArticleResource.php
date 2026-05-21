@@ -1,0 +1,156 @@
+<?php
+
+namespace App\Filament\Resources;
+
+use App\Filament\Resources\ArticleResource\Pages;
+use App\Filament\Resources\ArticleResource\RelationManagers;
+use App\Models\Article;
+use App\Models\ArticleCategory;
+use Carbon\Carbon;
+use Filament\Forms;
+use Filament\Schemas\Schema;
+use Filament\Forms\Set;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Filament\Actions;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\RichEditor;
+use RalphJSmit\Filament\SEO\SEO;
+
+class ArticleResource extends Resource
+{
+  protected static string|null $model = Article::class;
+
+  protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
+  protected static string|null $navigationLabel = 'Стаття';
+  protected static string|null $modelLabel = 'Стаття';
+  protected static string|null $pluralModelLabel = 'Стаття';
+  protected static string|\UnitEnum|null $navigationGroup = 'Контент';
+
+  public static function form(Schema $schema): Schema
+  {
+    return $schema
+      ->schema([
+
+
+        Forms\Components\TextInput::make('title')->label('Назва')
+          ->required()
+          ->maxLength(255)
+          ->live(onBlur: true)
+          ->afterStateUpdated(function (Set $set, $state) {
+            $set('slug', Str::slug($state));
+          })
+          ->helperText(function (?string $state): string {
+            return (string) Str::of(strlen($state))
+              ->append(' / ')
+              ->append(255 . ' ')
+              ->append(Str::of(__('Назва'))->lower());
+          }),
+
+        Forms\Components\TextInput::make('slug')->label('Код')
+          ->required(),
+        Forms\Components\FileUpload::make('preview_image')->label('Детальне зображення')
+          ->image()
+          ->disk('public')
+          ->preserveFilenames()
+          ->directory('articles'),
+
+        Forms\Components\FileUpload::make('detail_image')->label('Детальне зображення')
+          ->image()
+          ->disk('public')
+          ->preserveFilenames()
+          ->directory('articles'),
+
+        Forms\Components\Textarea::make('preview_text')->label('Анонс')
+          ->required()
+          ->columnSpanFull()
+          ->helperText(function (?string $state): string {
+            return (string) Str::of(strlen($state))
+              ->append(' / ')
+              ->append(500 . ' ')
+              ->append(Str::of(__('SEO Опис блог'))->lower());
+          }),
+        RichEditor::make('detail_text')->label('Стаття')
+          ->required()
+          ->columnSpanFull(),
+        Forms\Components\TagsInput::make('tags')->label('Тег')
+          ->columnSpanFull(),
+        Forms\Components\Select::make('category_id')->label('Категорія')
+          ->options(static::categoryOptions())
+          ->required(),
+        Forms\Components\DateTimePicker::make('published_at')->label('Дата публікації')
+          ->default(Carbon::now())
+          ->required(),
+        Forms\Components\Toggle::make('active')->label('Активне')
+          ->default(true)
+          ->required(),
+        SEO::make()
+          ->columnSpanFull(),
+      ]);
+  }
+
+  public static function table(Table $table): Table
+  {
+    return $table
+      ->columns([
+
+        Tables\Columns\TextColumn::make('title')->label('Назва')
+          ->searchable(),
+        Tables\Columns\TextColumn::make('slug')->label('Код')
+          ->searchable(),
+        Tables\Columns\TextColumn::make('category.title')->label('Категорія')
+          ->numeric()
+          ->sortable(),
+        Tables\Columns\ImageColumn::make('preview_image')->label(''),
+        Tables\Columns\TextColumn::make('published_at')->label('Дата публікації')
+          ->dateTime()
+          ->sortable(),
+        Tables\Columns\IconColumn::make('active')->label('Активність')
+          ->boolean(),
+        Tables\Columns\TextColumn::make('created_at')
+          ->dateTime()
+          ->sortable()
+          ->toggleable(isToggledHiddenByDefault: true),
+        Tables\Columns\TextColumn::make('updated_at')
+          ->dateTime()
+          ->sortable()
+          ->toggleable(isToggledHiddenByDefault: true),
+      ])
+      ->filters([
+        //
+      ])
+      ->actions([
+        Actions\EditAction::make(),
+      ])
+      ->bulkActions([
+        Actions\BulkActionGroup::make([
+          Actions\DeleteBulkAction::make(),
+        ]),
+      ]);
+  }
+
+  public static function getRelations(): array
+  {
+    return [
+      //
+    ];
+  }
+
+  public static function getPages(): array
+  {
+    return [
+      'index' => Pages\ListArticles::route('/'),
+      'create' => Pages\CreateArticle::route('/create'),
+      'edit' => Pages\EditArticle::route('/{record}/edit'),
+    ];
+  }
+
+  public static function categoryOptions() {
+    return ArticleCategory::pluck('title', 'id');
+  }
+}

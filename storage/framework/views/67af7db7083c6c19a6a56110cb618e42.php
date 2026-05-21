@@ -1,0 +1,3 @@
+<svg x-bind:class="mobileCatalogOpen ? 'rotate-180' : ''" class="h-5 w-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m6 9 6 6 6-6"/>
+</svg><?php /**PATH E:\Herd\himpost\storage\framework\views/717ed58e200d49c9a2211814c3c85964.blade.php ENDPATH**/ ?>

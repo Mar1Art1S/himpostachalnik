@@ -1,0 +1,1363 @@
+<?php $__env->startSection('title', __('Хімічна сировина')); ?>
+<?php $__env->startSection('meta_description',
+    __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових
+    матеріалів, клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній
+    промисловості, забезпечуючи стійкість, ізоляцію та довговічність матеріалів')); ?>
+<?php $__env->startSection('meta_keywords',
+    __('хімічна сировина, поліуретан, пінополіуретан, лакофарбові матеріали, клейові матеріали,
+    гідроізоляція, поліуретанові матеріали, пінополіуретанові продукты, лакофарбові покриття, клеї та герметики, матеріали
+    для гідроізоляції')); ?>
+<?php $__env->startSection('og_title', __('Хімічна сировина')); ?>
+<?php $__env->startSection('og_description',
+    __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових матеріалів,
+    клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній промисловості,
+    забезпечуючи стійкість, ізоляцію та довговічність матеріалів')); ?>
+<?php $__env->startSection('og_image', Vite::asset('resources/img/3_main/BGr.jpg')); ?>
+<?php $__env->startSection('content'); ?>
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'max-w-full my-0 overflow-hidden ']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'max-w-full my-0 overflow-hidden ']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+        <div class="w-full overflow-hidden bg-[#eef2fb]">
+            <!-- MAIN GRID -->
+            <div class="grid grid-cols-2 tg:grid-cols-1 items-stretch">
+                <!-- LEFT SIDE -->
+                <div class="flex items-center px-24 lf:px-16 tg:px-10 md:px-8 sm:px-6 py-16 tg:py-10">
+                    <div class="w-full max-w-3xl">
+                        <!-- TITLE -->
+                        <h1
+                            class="text-[78px] lf:text-[64px] tg:text-[56px] sm:text-[42px] leading-[0.95]
+                    font-black uppercase tracking-[-2px] text-[#0b2f7a]">
+
+                            <?php echo e(__('mes.chemical_raw_materials')); ?>
+
+                        </h1>
+
+                        <!-- SUBTITLE -->
+                        <div class="mt-5 text-2xl tg:text-xl sm:text-lg font-bold uppercase text-[#353535]">
+                            <?php echo e(__('mes.production_and_supply')); ?>
+
+                        </div>
+
+                        <!-- FEATURES -->
+                        <div class="grid grid-cols-4 tg:grid-cols-2 sm:grid-cols-1 gap-6 mt-14">
+
+                            <!-- CARD -->
+                            <div
+                                class="group rounded-[30px] bg-white p-6 text-center
+                        shadow-sm transition-all duration-300
+                        hover:-translate-y-1 hover:shadow-2xl">
+
+                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2453df]">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-flask-conical'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-8 h-8 text-white']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
+                                    Висока якість
+                                </h3>
+
+                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
+                                    Сертифікована продукція
+                                    від перевірених виробників
+                                </p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="group rounded-[30px] bg-white p-6 text-center
+                        shadow-sm transition-all duration-300
+                        hover:-translate-y-1 hover:shadow-2xl">
+
+                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f0b51d]">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-shield-check'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-8 h-8 text-white']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
+                                    Надійність
+                                </h3>
+
+                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
+                                    Стабільні поставки
+                                    та виконання зобов'язань
+                                </p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="group rounded-[30px] bg-white p-6 text-center
+                        shadow-sm transition-all duration-300
+                        hover:-translate-y-1 hover:shadow-2xl">
+
+                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2453df]">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-truck'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-8 h-8 text-white']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
+                                    Швидка доставка
+                                </h3>
+
+                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
+                                    Оперативна доставка
+                                    по всій Україні
+                                </p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="group rounded-[30px] bg-white p-6 text-center
+                        shadow-sm transition-all duration-300
+                        hover:-translate-y-1 hover:shadow-2xl">
+
+                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f0b51d]">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-headset'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-8 h-8 text-white']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
+                                    Професійна підтримка
+                                </h3>
+
+                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
+                                    Консультації та допомога
+                                    на кожному етапі
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="mt-14">
+
+                            <button
+                                class="group inline-flex items-center gap-4
+                        rounded-2xl border-2 border-[#2453df]
+                        px-8 py-4 font-bold uppercase tracking-wide
+                        text-[#2453df]
+                        transition-all duration-300
+                        hover:bg-[#2453df] hover:text-white">
+
+                                <span>
+                                    Дізнатись більше
+                                </span>
+
+                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-arrow-right'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-5 h-5 transition-transform duration-300 group-hover:translate-x-1']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="flex flex-col h-full bg-[#0a3186] overflow-hidden">
+
+                    <!-- TOP PART: IMAGE -->
+                    <div class="relative flex-1 min-h-[400px] tg:min-h-[300px] sm:min-h-[250px]">
+                        <img src="<?php echo e(Vite::asset('resources/img/3_main/bd-info.png')); ?>" alt="Chemical"
+                            class="absolute inset-0 w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-[#082c7a]/15"></div>
+                    </div>
+
+                    <!-- BOTTOM PART: FULL WIDTH STATS -->
+                    <div class="bg-[#0a3186] border-t border-white/10">
+
+                        <div class="max-w-[1600px] mx-auto p-12 tg:p-10 md:p-8 sm:p-6">
+
+                            <div class="flex flex-row tg:flex-col gap-16 tg:gap-8 w-full justify-between">
+
+                                <!-- LEFT DATA GROUP -->
+                                <div class="flex-1 w-full">
+                                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
+                                        <!-- ITEM -->
+                                        <div class="flex gap-4 sm:gap-5 items-center">
+                                            <div
+                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-briefcase-business'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                            </div>
+                                            <div>
+                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">25+
+                                                </div>
+                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">років
+                                                    досвіду</div>
+                                            </div>
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="flex gap-4 sm:gap-5 items-center">
+                                            <div
+                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-package-search'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                            </div>
+                                            <div>
+                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">
+                                                    1000+</div>
+                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">
+                                                    позицій у каталозі</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DIVIDER -->
+                                <div class="hidden tg:block h-px w-full bg-white/10 my-2"></div>
+                                <div class="tg:hidden w-px bg-white/10 self-stretch"></div>
+
+                                <!-- RIGHT DATA GROUP -->
+                                <div class="flex-1 w-full">
+                                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
+                                        <!-- ITEM -->
+                                        <div class="flex gap-4 sm:gap-5 items-center">
+                                            <div
+                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-handshake'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                            </div>
+                                            <div>
+                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">
+                                                    1000+</div>
+                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">
+                                                    задоволених клієнтів</div>
+                                            </div>
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="flex gap-4 sm:gap-5 items-center">
+                                            <div
+                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-badge-check'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                            </div>
+                                            <div>
+                                                <div class="text-2xl sm:text-3xl font-black leading-tight text-[#f0b51d]">
+                                                    Сертифікована
+                                                </div>
+                                                <div class="mt-1 text-base sm:text-lg text-white font-medium">продукція
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+
+
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'px-10 sf:px-5']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'px-10 sf:px-5']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+
+        <?php if (isset($component)) { $__componentOriginal04476a1deabb246773fcfeabd74b4e33 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal04476a1deabb246773fcfeabd74b4e33 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.decor.card','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('decor.card'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ' '.e(__('mes.category_title_ppy')).'','description' => ''.e(__('mes.category_description_ppy')).'','image' => ''.e(Vite::asset('resources/img/categories/001.png')).'','link' => ''.e(route('ppy_serovine')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ' '.e(__('mes.category_title_ppy')).'','description' => ''.e(__('mes.category_description_ppy')).'','image' => ''.e(Vite::asset('resources/img/categories/001.png')).'','link' => ''.e(route('ppy_serovine')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py')).'','description' => ''.e(__('mes.category_description_py')).'','image' => ''.e(Vite::asset('resources/img/categories/002.png')).'','link' => ''.e(route('py_serovine')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py')).'','description' => ''.e(__('mes.category_description_py')).'','image' => ''.e(Vite::asset('resources/img/categories/002.png')).'','link' => ''.e(route('py_serovine')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py_stone_carpet')).'','description' => ''.e(__('mes.category_description_py_stone_carpet')).' ','image' => ''.e(Vite::asset('resources/img/categories/003.png')).'','link' => ''.e(route('py_kilima')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py_stone_carpet')).'','description' => ''.e(__('mes.category_description_py_stone_carpet')).' ','image' => ''.e(Vite::asset('resources/img/categories/003.png')).'','link' => ''.e(route('py_kilima')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py_glue')).'','description' => ''.e(__('mes.category_description_py_glue')).'','image' => ''.e(Vite::asset('resources/img/categories/004.png')).'','link' => ''.e(route('py_klei')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py_glue')).'','description' => ''.e(__('mes.category_description_py_glue')).'','image' => ''.e(Vite::asset('resources/img/categories/004.png')).'','link' => ''.e(route('py_klei')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py_paint')).'','description' => ''.e(__('mes.category_description_py_paint')).'','image' => ''.e(Vite::asset('resources/img/categories/007.png')).'','link' => ''.e(route('py_lak_prom')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py_paint')).'','description' => ''.e(__('mes.category_description_py_paint')).'','image' => ''.e(Vite::asset('resources/img/categories/007.png')).'','link' => ''.e(route('py_lak_prom')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py_foundry')).'','description' => ''.e(__('mes.category_description_py_foundry')).'','image' => ''.e(Vite::asset('resources/img/categories/012.png')).'','link' => ''.e(route('py_pol')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py_foundry')).'','description' => ''.e(__('mes.category_description_py_foundry')).'','image' => ''.e(Vite::asset('resources/img/categories/012.png')).'','link' => ''.e(route('py_pol')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_py_wet_stone_effect')).'','description' => ''.e(__('mes.category_description_py_wet_stone_effect')).'','image' => ''.e(Vite::asset('resources/img/categories/008.png')).'','link' => ''.e(route('py_emk')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_py_wet_stone_effect')).'','description' => ''.e(__('mes.category_description_py_wet_stone_effect')).'','image' => ''.e(Vite::asset('resources/img/categories/008.png')).'','link' => ''.e(route('py_emk')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+            <?php if (isset($component)) { $__componentOriginal3e2122a43095086c515a77f546a1f934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3e2122a43095086c515a77f546a1f934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.category','data' => ['title' => ''.e(__('mes.category_title_materials_waterproofing')).'','description' => ''.e(__('mes.category_description_materials_waterproofing')).'','image' => ''.e(Vite::asset('resources/img/categories/009.png')).'','link' => ''.e(route('py_gidro')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('category'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => ''.e(__('mes.category_title_materials_waterproofing')).'','description' => ''.e(__('mes.category_description_materials_waterproofing')).'','image' => ''.e(Vite::asset('resources/img/categories/009.png')).'','link' => ''.e(route('py_gidro')).'']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $attributes = $__attributesOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__attributesOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3e2122a43095086c515a77f546a1f934)): ?>
+<?php $component = $__componentOriginal3e2122a43095086c515a77f546a1f934; ?>
+<?php unset($__componentOriginal3e2122a43095086c515a77f546a1f934); ?>
+<?php endif; ?>
+         <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal04476a1deabb246773fcfeabd74b4e33)): ?>
+<?php $attributes = $__attributesOriginal04476a1deabb246773fcfeabd74b4e33; ?>
+<?php unset($__attributesOriginal04476a1deabb246773fcfeabd74b4e33); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal04476a1deabb246773fcfeabd74b4e33)): ?>
+<?php $component = $__componentOriginal04476a1deabb246773fcfeabd74b4e33; ?>
+<?php unset($__componentOriginal04476a1deabb246773fcfeabd74b4e33); ?>
+<?php endif; ?>
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+        <section class="bg-[#1E3A9A] rounded-[32px] overflow-hidden">
+            <div class="grid grid-cols-2 md:grid-cols-1 min-h-[520px] md:min-h-0">
+
+                <!-- Image Block -->
+                <div class="relative h-full md:h-[300px] sm:h-[220px]">
+                    <img src="<?php echo e(Vite::asset('resources/img/block/Завод__002.png')); ?>" alt="Про компанію"
+                        class="absolute inset-0 w-full h-full object-cover">
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-[#1E3A9A]/40"></div>
+
+                    <!-- Floating Card -->
+                    <div class="absolute left-6 top-6 xs:left-4 xs:top-4">
+                        <div class="flex items-center gap-4 bg-[#FFC800] px-8 py-5 xs:px-5 xs:py-3.5 rounded-[24px] xs:rounded-2xl shadow-2xl">
+                            <div class="flex items-center justify-center w-14 h-14 xs:w-10 xs:h-10 rounded-xl xs:rounded-lg bg-[#1E3A9A] text-[#FFC800]">
+                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-factory'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-7 h-7 xs:w-5 xs:h-5']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-[#1E3A9A]/80 uppercase tracking-wide">
+                                    Про компанію
+                                </p>
+                                <h3 class="text-2xl xs:text-lg font-bold text-[#111827]">
+                                    Надійний виробник
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Block -->
+                <div class="relative flex items-center bg-[#1E3A9A] px-16 tg:px-10 md:px-8 sm:px-6 py-12 md:py-10">
+
+                    <!-- Decorative Circle -->
+                    <div class="absolute top-0 right-0 w-72 h-72 bg-[#FFC800]/10 rounded-full blur-3xl"></div>
+
+                    <div class="relative z-10">
+
+                        <!-- Label -->
+                        <div class="inline-flex items-center gap-3 bg-[#FFC800] px-6 py-3 rounded-2xl mb-8">
+
+                            <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-building-2'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-5 h-5 text-[#1E3A9A]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+
+                            <span class="text-[#1E3A9A] font-bold text-sm uppercase tracking-wider">
+                                Хімічне виробництво
+                            </span>
+
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-white leading-tight mb-4">
+                            Сучасні рішення
+                            <span class="text-[#FFC800]">
+                                для промисловості
+                            </span>
+                        </h2>
+
+                        <!-- Description -->
+                        <p class="text-lg leading-8 text-white  mb-6 max-w-xl">
+                            Ми спеціалізуємося на постачанні хімічної сировини, компонентів
+                            для поліуретанів та промислових матеріалів для підприємств по всій Україні.
+                            Забезпечуємо стабільну якість, швидку логістику та технічну підтримку.
+                        </p>
+
+                        <!-- Features -->
+                        <div class="grid grid-cols-2 sm:grid-cols-1 gap-5 mb-6">
+
+                            <div class="flex items-start gap-4">
+
+                                <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#FFC800] shrink-0">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-shield-check'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 text-[#1E3A9A]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-white font-bold text-lg mb-1">
+                                        Контроль якості
+                                    </h4>
+
+                                    <p class="text-blue-100 text-sm">
+                                        Перевірена сировина та сертифікована продукція.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="flex items-start gap-4">
+
+                                <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#FFC800] shrink-0">
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-truck'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-6 h-6 text-[#1E3A9A]']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-white font-bold text-lg mb-1">
+                                        Швидка доставка
+                                    </h4>
+
+                                    <p class="text-blue-100 text-sm">
+                                        Оперативне відвантаження по Україні.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+
+        <section class="py-20 bg-[#F4F7FB] overflow-hidden">
+            <div class="container mx-auto px-4">
+
+                <!-- Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+
+                    <span
+                        class="inline-flex items-center gap-2 bg-[#1E3A9A]/10 text-[#1E3A9A] font-bold px-5 py-2 rounded-full mb-5">
+
+                     <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-briefcase-business'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-5 h-5']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+
+    Наші напрямки
+
+</span>
+
+                    <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-[#1E3A9A] mb-5">
+                        Галузеві проекти
+                    </h2>
+
+                    <p class="text-gray-600 text-lg leading-8">
+                        Спеціалізовані retail та галузеві проекти компанії Хімпостачальник
+                        для окремих напрямків продукції та промислових рішень.
+                    </p>
+                </div>
+
+                <!-- Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-8">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
+
+                        <!-- Background Image -->
+                        <img src="<?php echo e(Vite::asset('resources/img/block/ТехПолімерМакркет.png')); ?>" alt="TechPolymers"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/20">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col justify-between h-full p-10 sm:p-6">
+
+                            <div>
+
+                                <!-- Logo -->
+                                <div
+                                    class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
+
+                                    <img src="<?php echo e(Vite::asset('resources/img/2_logo/Logo_new.png')); ?>" alt="Логотип"
+                                         class="object-contain w-full ">
+
+                                </div>
+
+                                <!-- Title -->
+                                <h3 class="text-3xl sm:text-2.5xl font-black text-white mb-2">
+                                    ТехПолімер Маркет
+                                </h3>
+
+                                <p class="text-[#FFC800] font-bold text-lg mb-6">
+                                    Технічні полімери та промислові матеріали
+                                </p>
+
+                                <!-- Description -->
+                                <p class="text-white/90 leading-8 max-w-md">
+                                    Спеціалізований retail та B2B-проект для технічних полімерів,
+                                    компаундів та промислових матеріалів для підприємств і виробництв.
+                                </p>
+                            </div>
+
+                            <!-- Bottom -->
+                            <div class="flex flex-wrap items-center gap-4 mt-10">
+
+                                <a href="#"
+                                   class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
+
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-arrow-up-right'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-5 h-5']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+
+                                    Перейти на сайт
+
+                                </a>
+
+                                <div class="flex items-center gap-2 text-white/90 font-medium">
+                                    <i data-lucide="globe" class="w-5 h-5 text-[#FFC800]"></i>
+                                    techpolymersmarket.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
+
+                        <!-- Background Image -->
+                        <img src="<?php echo e(Vite::asset('resources/img/block/Хімекселен__002.png')); ?>" alt="Хімекселен"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#1E1B16]/90 via-[#1E1B16]/60 to-[#1E1B16]/20">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col justify-between h-full p-10 sm:p-6">
+
+                            <div>
+
+                                <!-- Logo -->
+                                <div
+                                    class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
+
+                                    <img src="<?php echo e(Vite::asset('resources/img/2_logo/Logo_new.png')); ?>" alt="Логотип"
+                                         class="object-contain w-full ">
+
+                                </div>
+
+                                <!-- Title -->
+                                <h3 class="text-3xl sm:text-2.5xl font-black text-white mb-2">
+                                    Хімекселен
+                                </h3>
+
+                                <p class="text-[#FFC800] font-bold text-lg mb-6">
+                                    Товари для бджільництва
+                                </p>
+
+                                <!-- Description -->
+                                <p class="text-white/90 leading-8 max-w-md">
+                                    Спеціалізований retail-проект для пасічників та господарств.
+                                    Продукція для догляду за пасіками, обладнання та супутні товари.
+                                </p>
+                            </div>
+
+                            <!-- Bottom -->
+                            <div class="flex flex-wrap items-center gap-4 mt-10">
+
+                                <a href="#"
+                                   class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
+
+                                    <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-arrow-up-right'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-5 h-5']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+
+                                    Перейти на сайт
+
+                                </a>
+
+                                <div class="flex items-center gap-2 text-white/90 font-medium">
+                                    <i data-lucide="globe" class="w-5 h-5 text-[#FFC800]"></i>
+                                    bee.lg.ua
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+        <section class="overflow-hidden rounded-[36px] bg-[#FFD400]">
+
+            <!-- TOP -->
+            <div class="relative px-6 py-14 lg:px-16">
+                <div class="grid grid-cols-[1.3fr_0.9fr] md:grid-cols-1 gap-10 items-center">
+
+                    <!-- LEFT -->
+                    <div>
+
+                        <!-- Title Row -->
+                        <div class="flex sm:flex-col items-start gap-5 mb-8">
+
+                            <!-- Icon -->
+                            <div
+                                class="flex items-center justify-center w-20 h-20 sm:w-16 sm:h-16 rounded-[24px] sm:rounded-2xl bg-[#0B3B92] shadow-xl shrink-0">
+
+                                <?php if (isset($component)) { $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c = $attributes; } ?>
+<?php $component = BladeUI\Icons\Components\Svg::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('lucide-building-2'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\BladeUI\Icons\Components\Svg::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'w-10 h-10 sm:w-8 sm:h-8 text-white']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $attributes = $__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__attributesOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c)): ?>
+<?php $component = $__componentOriginal643fe1b47aec0b76658e1a0200b34b2c; ?>
+<?php unset($__componentOriginal643fe1b47aec0b76658e1a0200b34b2c); ?>
+<?php endif; ?>
+
+                            </div>
+
+                            <!-- Text -->
+                            <div>
+                                <h2 class="text-3xl tg:text-2.5xl sm:text-2xl font-black text-[#0B0F1A] leading-tight mb-4">
+                                    Наші проекти —
+                                    <span class="text-[#0B3B92]">
+                                        екосистема спеціалізованих рішень
+                                    </span>
+                                </h2>
+
+                                <p class="text-[#111827] text-lg leading-8 max-w-3xl">
+                                    Хімпостачальник об’єднує виробництво, оптові поставки
+                                    та спеціалізовані retail-напрямки для різних галузей
+                                    промисловості та професійних ринків.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+
+    <?php if (isset($component)) { $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section','data' => ['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['fullWidth' => true,'class' => 'px-10 md:px-6 sm:px-4']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+
+        <section class="py-20 bg-[#F3F5F9]">
+            <div class="container mx-auto px-4">
+
+                <!-- Header -->
+                <div class="flex items-center justify-between mb-12">
+
+                    <div>
+                        <span
+                            class="inline-flex items-center gap-2 bg-[#0B3B92]/10 text-[#0B3B92] px-5 py-2 rounded-full font-bold mb-4">
+                            <i data-lucide="briefcase-business" class="w-5 h-5"></i>
+                            Retail & B2B
+                        </span>
+
+                        <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-[#001B4D]">
+                            Наші новини
+                        </h2>
+                    </div>
+
+                    <a href="#"
+                        class="hidden md:inline-flex items-center gap-2 text-[#0B3B92] font-bold hover:gap-4 transition-all">
+                        Всі проекти
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+
+                <!-- Projects -->
+                <div class="grid grid-cols-3 tg:grid-cols-2 sf:grid-cols-1 gap-8">
+
+                    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = $latestArticles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $article): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
+                        <!-- CARD -->
+                        <article
+                            class="group bg-white rounded-[30px] overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 border border-black/5 flex flex-col h-full">
+
+                            <!-- TOP -->
+                            <div class="relative h-[280px] overflow-hidden">
+
+                                <!-- Blue Line -->
+                                <div class="absolute top-0 left-0 w-full h-3 bg-[#0B3B92] z-20"></div>
+
+                                <!-- Image -->
+                                <img src="<?php echo e(Storage::url($article->preview_image)); ?>" alt="<?php echo e($article->title); ?>"
+                                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+                                <!-- Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-[#001B4D]/95 via-[#001B4D]/50 to-transparent">
+                                </div>
+
+                                <!-- Label -->
+                                <div class="absolute top-5 left-5 z-20">
+                                    <span
+                                        class="inline-flex items-center gap-2 bg-[#FFD400] text-[#001B4D] px-4 py-2 rounded-xl text-sm font-black shadow-lg">
+                                        <i data-lucide="tag" class="w-4 h-4"></i>
+                                        <?php echo e($article->category->title); ?>
+
+                                    </span>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative z-10 flex flex-col justify-end h-full p-6">
+
+                                    <div
+                                        class="flex items-center justify-center w-16 h-16 rounded-2xl bg-white/90 backdrop-blur mb-5 shadow-xl">
+                                        <i data-lucide="newspaper" class="w-8 h-8 text-[#0B3B92]"></i>
+                                    </div>
+
+                                    <h3 class="text-2xl sm:text-xl font-black text-white mb-2 line-clamp-2 leading-tight">
+                                        <?php echo e($article->title); ?>
+
+                                    </h3>
+
+                                    <p class="text-[#FFD400] font-bold text-sm">
+                                        <?php echo e($article->category->title); ?>
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- BOTTOM -->
+                            <div class="p-7 flex flex-col flex-1 justify-between">
+
+                                <div>
+                                    <!-- Info -->
+                                    <div class="flex items-center gap-3 text-gray-500 text-sm mb-5">
+                                        <i data-lucide="calendar" class="w-4 h-4 text-[#0B3B92]"></i>
+                                        <?php echo e($article->formatted_published_at); ?>
+
+                                    </div>
+
+                                    <!-- Text -->
+                                    <p class="text-gray-600 leading-8 mb-8 line-clamp-3">
+                                        <?php echo e($article->preview_text); ?>
+
+                                    </p>
+                                </div>
+
+                                <!-- Footer -->
+                                <div class="flex items-center justify-between">
+
+                                    <a href="<?php echo e(route('article.show', [$article->category->slug, $article->slug])); ?>"
+                                        class="inline-flex items-center gap-2 text-[#0B3B92] font-black hover:gap-4 transition-all">
+                                        Детальніше
+                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </a>
+
+                                    <a href="<?php echo e(route('article.show', [$article->category->slug, $article->slug])); ?>"
+                                        class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#F3F5F9] group-hover:bg-[#FFD400] transition">
+                                        <i data-lucide="external-link" class="w-5 h-5 text-[#0B3B92]"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::endLoop(); ?><?php endif; ?><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::closeLoop(); ?><?php endif; ?>
+
+                </div>
+            </div>
+        </section>
+
+
+
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $attributes = $__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__attributesOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0)): ?>
+<?php $component = $__componentOriginal785c8021fd1a6e19eb80cad4b837cda0; ?>
+<?php unset($__componentOriginal785c8021fd1a6e19eb80cad4b837cda0); ?>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.base', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH E:\Herd\himpost\resources\views/main.blade.php ENDPATH**/ ?>

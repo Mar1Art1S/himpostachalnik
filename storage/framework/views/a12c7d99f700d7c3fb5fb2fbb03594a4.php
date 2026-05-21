@@ -1,0 +1,8 @@
+<svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 22V12"/>
+  <path d="M20.27 18.27 22 20"/>
+  <path d="M21 10.498V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l.98-.559"/>
+  <path d="M3.29 7 12 12l8.71-5"/>
+  <path d="m7.5 4.27 8.997 5.148"/>
+  <circle cx="18.5" cy="16.5" r="2.5"/>
+</svg><?php /**PATH E:\Herd\himpost\storage\framework\views/0e2deac7fb1c57a8191aad4e53b406b4.blade.php ENDPATH**/ ?>
