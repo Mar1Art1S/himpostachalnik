@@ -23,7 +23,7 @@ name('prod_lak_smoli');
 Покращені властивості для міцності, стійкості до зносу та чудового зовнішнього вигляду покриттів.
 Ідеальні для різних промислових застосувань.'))
 
-@section('og_image', Vite::asset('resources/img/mat_5/04.png'))
+@section('og_image', asset('img/mat_5/04.png'))
 
 @section('content')
     <x-category-header>

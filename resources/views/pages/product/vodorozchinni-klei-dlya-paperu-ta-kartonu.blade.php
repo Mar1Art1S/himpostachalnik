@@ -23,7 +23,7 @@ name('prod_klej_kartonu');
 екологічність та безпеку. Ідеально підходять для виробництва упаковки, етикеток, книг та інших паперових виробів. Відзначаються
 швидким висиханням, відсутністю запаху та зручністю у використанні.'))
 
-@section('og_image', Vite::asset('resources/img/mat_4/08.png'))
+@section('og_image', asset('img/mat_4/08.png'))
 
 @section('content')
     <x-category-header>

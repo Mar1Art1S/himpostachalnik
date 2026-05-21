@@ -15,7 +15,7 @@
             <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
 
                 <a href="{{ route('main') }}">
-                    <img src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="HIMPOST" class="w-[220px]">
+                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="HIMPOST" class="w-[220px]">
                 </a>
 
                 <p class="mt-7 text-[15px] leading-8 text-blue-100">

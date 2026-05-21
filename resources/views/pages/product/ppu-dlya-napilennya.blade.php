@@ -23,7 +23,7 @@ name('prod_ppu_napilennya');
 @section('og_description', __('Напилюваний пінополіуретан (ППУ) – сучасне рішення для якісної тепло- та гідроізоляції будівель.
 Забезпечує енергозбереження, довговічність та швидкий монтаж. Ідеально підходить для утеплення дахів, стін, підлог та підвалів.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/001.png'))
+@section('og_image', asset('img/6_PPU_grup/001.png'))
 
 @section('content')
     <x-category-header>

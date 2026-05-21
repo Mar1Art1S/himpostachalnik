@@ -21,7 +21,7 @@ name('prod_ppu_masivu');
 @section('og_description', __('ППУ ефективно використовується для заповнення порожнин, підняття та підсилення фундаментів,
 стабілізації шахт та тунелів.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/006.png'))
+@section('og_image', asset('img/6_PPU_grup/006.png'))
 
 @section('content')
     <x-category-header>

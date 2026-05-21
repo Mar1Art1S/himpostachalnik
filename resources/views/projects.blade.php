@@ -77,7 +77,7 @@
                             {{-- Image Side --}}
                             <div class="md:w-[42%] relative min-h-[300px] md:min-h-full bg-slate-50">
                                 <img
-                                    src="{{ Vite::asset('resources/img/block/ТехПолімерМакркет.png') }}"
+                                    src="{{ asset('img/block/ТехПолімерМакркет.png') }}"
                                     alt="TechPolymers Granules"
                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
@@ -128,7 +128,7 @@
                             {{-- Image Side --}}
                             <div class="md:w-[42%] relative min-h-[300px] md:min-h-full bg-amber-50">
                                 <img
-                                    src="{{ Vite::asset('resources/img/block/Хімекселен__002.png') }}"
+                                    src="{{ asset('img/block/Хімекселен__002.png') }}"
                                     alt="Beekeeping"
                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />

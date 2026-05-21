@@ -20,7 +20,7 @@ name('py_pol');
 @section('og_description', __('Високоякісні вироби з ливарного поліуретану для промислового використання.
 Забезпечте надійність та довговічність у виробництві зносостійких деталей, ущільнень, підкладок та інших елементів.
 Ідеально підходять для машинобудування, гірничодобувної та будівельної галузей.'))
-@section('og_image', Vite::asset('resources/img/categories/012.png'))
+@section('og_image', asset('img/categories/012.png'))
 
 @section('content')
     <x-category-header>

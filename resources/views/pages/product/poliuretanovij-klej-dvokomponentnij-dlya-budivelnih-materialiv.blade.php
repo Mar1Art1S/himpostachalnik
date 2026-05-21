@@ -24,7 +24,7 @@ name('prod_klej_budivelnih');
 включаючи бетон, метал, дерево та пластик. Відзначається високою адгезією, стійкістю до механічних навантажень та
 екстремальних умов, що робить його ідеальним для використання в будівництві, ремонті та інших складних проектах.'))
 
-@section('og_image', Vite::asset('resources/img/mat_4/05.png'))
+@section('og_image', asset('img/mat_4/05.png'))
 
 @section('content')
     <x-category-header>

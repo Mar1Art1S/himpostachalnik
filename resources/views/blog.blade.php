@@ -6,7 +6,7 @@
 
 @section('og_title', __('Хімічна сировина'))
 @section('og_description', __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових матеріалів, клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній промисловості, забезпечуючи стійкість, ізоляцію та довговічність матеріалів'))
-@section('og_image', Vite::asset('resources/img/3_main/BGr.jpg'))
+@section('og_image', asset('img/3_main/BGr.jpg'))
 @section('content')
 
 <x-section class="container mx-auto">

@@ -23,7 +23,7 @@ name('prod_lak_sikativi');
 Забезпечте швидке висихання, однорідність покриття та підвищену стабільність складу з нашими високоякісними добавками.
 Ідеальні для промислового застосування та виробництва фарб.'))
 
-@section('og_image', Vite::asset('resources/img/mat_5/01.png'))
+@section('og_image', asset('img/mat_5/01.png'))
 
 @section('content')
     <x-category-header>

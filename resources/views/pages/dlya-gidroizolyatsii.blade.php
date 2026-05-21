@@ -17,7 +17,7 @@ name('py_gidro');
 @section('og_title', __('Сировина для гідроізоляції'))
 @section('og_description', __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і
     споруд, мостів, резервуарів, очисних споруд, плавальних басейнів'))
-@section('og_image', Vite::asset('resources/img/mat_7/Полимочевина_гарячого_нанесення.png'))
+@section('og_image', asset('img/mat_7/Полимочевина_гарячого_нанесення.png'))
 
 @section('content')
     <x-category-header>
@@ -36,11 +36,11 @@ name('py_gidro');
         <x-decor.card>
             <x-category-v title=" {{ __('mes.category_v_title_py_hot_applied_polyurea') }}"
                 description="{{ __('mes.category_v_description_py_hot_applied_polyurea') }}"
-                image="{{ Vite::asset('resources/img/mat_7/Полимочевина_гарячого_нанесення.png') }}"
+                image="{{ asset('img/mat_7/Полимочевина_гарячого_нанесення.png') }}"
                 link="{{ route('poli_moch_haryacho') }}" />
             <x-category-v title="{{ __('mes.category_v_title_py_cold_applied_polyurea') }}"
                 description="{{ __('mes.category_v_description_py_cold_applied_polyurea') }}"
-                image="{{ Vite::asset('resources/img/mat_7/Полімочивина_холодного_нанесення.png') }}"
+                image="{{ asset('img/mat_7/Полімочивина_холодного_нанесення.png') }}"
                 link="{{ route('poli_moch_kholodno') }}" />
         </x-decor.card>
     </x-section>

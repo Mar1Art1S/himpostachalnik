@@ -24,7 +24,7 @@ name('prod_ppu_virobiv');
 міцних та довговічних елементів. Використовуйте ППУ для виготовлення архітектурних деталей, рекламних конструкцій, сценічних
 декорацій та інших негабаритних виробів.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/005.png'))
+@section('og_image', asset('img/6_PPU_grup/005.png'))
 
 @section('content')
     <x-category-header>

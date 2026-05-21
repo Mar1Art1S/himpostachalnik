@@ -147,7 +147,7 @@
             <div class="flex flex-col items-center gap-6 lg:flex-row order-1">
                 <a href="{{ route('main') }}"
                     class="shrink-0 inline-flex items-center justify-center p-2 xl:p-3 sf:w-32 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 shadow-md w-full max-w-[140px] md:max-w-[200px] xl:max-w-[280px]">
-                    <img src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="Логотип"
+                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
                         class="object-contain w-full h-[50px] md:h-[80px] xl:h-[130px] ">
                 </a>
                 <div class="hidden w-px bg-gray-200 lg:block h-20"></div>

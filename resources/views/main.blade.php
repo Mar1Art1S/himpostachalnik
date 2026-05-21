@@ -13,7 +13,7 @@
     __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових матеріалів,
     клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній промисловості,
     забезпечуючи стійкість, ізоляцію та довговічність матеріалів'))
-@section('og_image', Vite::asset('resources/img/3_main/BGr.jpg'))
+@section('og_image', asset('img/3_main/BGr.jpg'))
 @section('content')
     <x-section :fullWidth="true" class="max-w-full my-0 overflow-hidden ">
         <div class="w-full overflow-hidden bg-[#eef2fb]">
@@ -146,7 +146,7 @@
 
                     <!-- TOP PART: IMAGE -->
                     <div class="relative flex-1 min-h-[400px] tg:min-h-[300px] sm:min-h-[250px]">
-                        <img src="{{ Vite::asset('resources/img/3_main/bd-info.png') }}" alt="Chemical"
+                        <img src="{{ asset('img/3_main/bd-info.png') }}" alt="Chemical"
                             class="absolute inset-0 w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-[#082c7a]/15"></div>
                     </div>
@@ -242,27 +242,27 @@
 
         <x-decor.card>
             <x-category title=" {{ __('mes.category_title_ppy') }}" description="{{ __('mes.category_description_ppy') }}"
-                image="{{ Vite::asset('resources/img/categories/001.png') }}" link="{{ route('ppy_serovine') }}" />
+                image="{{ asset('img/categories/001.png') }}" link="{{ route('ppy_serovine') }}" />
             <x-category title="{{ __('mes.category_title_py') }}" description="{{ __('mes.category_description_py') }}"
-                image="{{ Vite::asset('resources/img/categories/002.png') }}" link="{{ route('py_serovine') }}" />
+                image="{{ asset('img/categories/002.png') }}" link="{{ route('py_serovine') }}" />
             <x-category title="{{ __('mes.category_title_py_stone_carpet') }}"
                 description="{{ __('mes.category_description_py_stone_carpet') }} "
-                image="{{ Vite::asset('resources/img/categories/003.png') }}" link="{{ route('py_kilima') }}" />
+                image="{{ asset('img/categories/003.png') }}" link="{{ route('py_kilima') }}" />
             <x-category title="{{ __('mes.category_title_py_glue') }}"
                 description="{{ __('mes.category_description_py_glue') }}"
-                image="{{ Vite::asset('resources/img/categories/004.png') }}" link="{{ route('py_klei') }}" />
+                image="{{ asset('img/categories/004.png') }}" link="{{ route('py_klei') }}" />
             <x-category title="{{ __('mes.category_title_py_paint') }}"
                 description="{{ __('mes.category_description_py_paint') }}"
-                image="{{ Vite::asset('resources/img/categories/007.png') }}" link="{{ route('py_lak_prom') }}" />
+                image="{{ asset('img/categories/007.png') }}" link="{{ route('py_lak_prom') }}" />
             <x-category title="{{ __('mes.category_title_py_foundry') }}"
                 description="{{ __('mes.category_description_py_foundry') }}"
-                image="{{ Vite::asset('resources/img/categories/012.png') }}" link="{{ route('py_pol') }}" />
+                image="{{ asset('img/categories/012.png') }}" link="{{ route('py_pol') }}" />
             <x-category title="{{ __('mes.category_title_py_wet_stone_effect') }}"
                 description="{{ __('mes.category_description_py_wet_stone_effect') }}"
-                image="{{ Vite::asset('resources/img/categories/008.png') }}" link="{{ route('py_emk') }}" />
+                image="{{ asset('img/categories/008.png') }}" link="{{ route('py_emk') }}" />
             <x-category title="{{ __('mes.category_title_materials_waterproofing') }}"
                 description="{{ __('mes.category_description_materials_waterproofing') }}"
-                image="{{ Vite::asset('resources/img/categories/009.png') }}" link="{{ route('py_gidro') }}" />
+                image="{{ asset('img/categories/009.png') }}" link="{{ route('py_gidro') }}" />
         </x-decor.card>
     </x-section>
 
@@ -272,7 +272,7 @@
 
                 <!-- Image Block -->
                 <div class="relative h-full md:h-[300px] sm:h-[220px]">
-                    <img src="{{ Vite::asset('resources/img/block/Завод__002.png') }}" alt="Про компанію"
+                    <img src="{{ asset('img/block/Завод__002.png') }}" alt="Про компанію"
                         class="absolute inset-0 w-full h-full object-cover">
 
                     <!-- Overlay -->
@@ -410,7 +410,7 @@
                         class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
 
                         <!-- Background Image -->
-                        <img src="{{ Vite::asset('resources/img/block/ТехПолімерМакркет.png') }}" alt="TechPolymers"
+                        <img src="{{ asset('img/block/ТехПолімерМакркет.png') }}" alt="TechPolymers"
                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
 
                         <!-- Overlay -->
@@ -426,7 +426,7 @@
                                 <div
                                     class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
 
-                                    <img src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="Логотип"
+                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
                                          class="object-contain w-full ">
 
                                 </div>
@@ -472,7 +472,7 @@
                         class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
 
                         <!-- Background Image -->
-                        <img src="{{ Vite::asset('resources/img/block/Хімекселен__002.png') }}" alt="Хімекселен"
+                        <img src="{{ asset('img/block/Хімекселен__002.png') }}" alt="Хімекселен"
                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
 
                         <!-- Overlay -->
@@ -488,7 +488,7 @@
                                 <div
                                     class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
 
-                                    <img src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="Логотип"
+                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
                                          class="object-contain w-full ">
 
                                 </div>

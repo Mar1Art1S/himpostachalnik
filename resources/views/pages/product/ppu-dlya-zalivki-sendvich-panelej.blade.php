@@ -24,7 +24,7 @@ name('prod_ppu_sendvich');
 забезпечує чудові теплоізоляційні властивості та високу енергоефективність. Надійне рішення для будівництва, зберігання
 та транспортування охолоджених продуктів.'))
 
-@section('og_image', Vite::asset('resources/img/6_PPU_grup/004.png'))
+@section('og_image', asset('img/6_PPU_grup/004.png'))
 
 @section('content')
     <x-category-header>

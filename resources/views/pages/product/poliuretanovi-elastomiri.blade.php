@@ -25,7 +25,7 @@ name('prod_pu_elastomiri');
 роликів та амортизаторів. Вони володіють відмінною стійкістю до хімічних впливів і зносу, що гарантує тривалий
 термін служби навіть у найсуворіших умовах.'))
 
-@section('og_image', Vite::asset('resources/img/mat_2/03.png'))
+@section('og_image', asset('img/mat_2/03.png'))
 
 @section('content')
     <x-category-header>

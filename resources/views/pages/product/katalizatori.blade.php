@@ -19,7 +19,7 @@ name('prod_lak_kataliz');
 @section('og_title', __('Каталізатори для поліуретанової піни – ефективні рішення для виробництва'))
 @section('og_description', __('Дізнайтеся, як каталізатори впливають на швидкість і якість полімеризації поліуретанової піни. Широкий вибір каталізаторів для різних застосувань у виробництві та будівництві.'))
 
-@section('og_image', Vite::asset('resources/img/mat_5/02.png'))
+@section('og_image', asset('img/mat_5/02.png'))
 
 @section('content')
     <x-category-header>

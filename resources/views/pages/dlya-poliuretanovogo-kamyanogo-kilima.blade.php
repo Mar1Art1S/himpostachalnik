@@ -20,7 +20,7 @@ name('py_kilima');
 @section('og_title', __('Сировина для поліуретанового кам`яного килима – основа міцності та довговічності покриття'))
 @section('og_description', __('Надійна сировина для створення поліуретанового кам`яного килима. Високоякісні полімери та
 наповнювачі для довговічних і стійких покриттів. Ідеальне рішення для внутрішніх і зовнішніх робіт.'))
-@section('og_image', Vite::asset('resources/img/categories/003.png'))
+@section('og_image', asset('img/categories/003.png'))
 @section('content')
     <x-category-header>
         <x-slot:title>

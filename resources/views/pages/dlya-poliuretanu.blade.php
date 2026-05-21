@@ -24,7 +24,7 @@ name('py_serovine');
     __('Широкий вибір сировини для виробництва поліуретану. Надійні компоненти для створення
     міцних,
     еластичних і довговічних поліуретанових виробів. Оптимальні рішення для будівництва, промисловості та інших галузей.'))
-@section('og_image', Vite::asset('resources/img/categories/002.png'))
+@section('og_image', asset('img/categories/002.png'))
 
 @section('content')
     <x-category-header>
@@ -43,21 +43,21 @@ name('py_serovine');
         <x-decor.card>
             <x-category-v title=" {{ __('mes.category_v_title_py_injection_molding') }}"
                 description="{{ __('mes.category_v_description_py_injection_molding') }}"
-                image="{{ Vite::asset('resources/img/mat_2/01.png') }}" link="{{ route('prod_pu_livarnij') }}"
+                image="{{ asset('img/mat_2/01.png') }}" link="{{ route('prod_pu_livarnij') }}"
                 video_one="{{ 'hhkZFJQwQmc?si=lnbvXBkrxqyZfzXi' }}" />
             <x-category-v title=" {{ __('mes.category_v_title_py_leveling_floors') }}"
                 description="{{ __('mes.category_v_description_py_leveling_floors') }}"
-                image="{{ Vite::asset('resources/img/mat_2/02.png') }}" link="{{ route('prod_pu_pidlogi') }}" />
+                image="{{ asset('img/mat_2/02.png') }}" link="{{ route('prod_pu_pidlogi') }}" />
             <x-category-v title=" {{ __('mes.category_v_title_py_elastomers') }}"
                 description="{{ __('mes.category_v_description_py_elastomers') }}"
-                image="{{ Vite::asset('resources/img/mat_2/03.png') }}" link="{{ route('prod_pu_elastomiri') }}"
+                image="{{ asset('img/mat_2/03.png') }}" link="{{ route('prod_pu_elastomiri') }}"
                 video_one="{{ 'Gtbn_KSweLY?si=Z9yzD9QhkwdJbezB' }}" />
             <x-category-v title=" {{ __('mes.category_v_title_py_paste') }}"
                 description="{{ __('mes.category_v_description_py_paste') }}"
-                image="{{ Vite::asset('resources/img/mat_2/04.png') }}" link="{{ route('prod_pu_pasta') }}" />
+                image="{{ asset('img/mat_2/04.png') }}" link="{{ route('prod_pu_pasta') }}" />
             <x-category-v title=" {{ __('mes.category_v_title_py_pigment_pastes') }}"
                 description="{{ __('mes.category_v_description_py_pigment_pastes') }}"
-                image="{{ Vite::asset('resources/img/mat_2/05.png') }}" link="{{ route('prod_pu_pigment') }}"
+                image="{{ asset('img/mat_2/05.png') }}" link="{{ route('prod_pu_pigment') }}"
                 video_one="{{ 'njCuAvQ_YNc?si=uEVedbemEHlwVsC0' }}" />
         </x-decor.card>
     </x-section>
