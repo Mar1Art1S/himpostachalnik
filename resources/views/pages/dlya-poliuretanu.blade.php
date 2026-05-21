@@ -24,7 +24,7 @@ name('py_serovine');
     __('Широкий вибір сировини для виробництва поліуретану. Надійні компоненти для створення
     міцних,
     еластичних і довговічних поліуретанових виробів. Оптимальні рішення для будівництва, промисловості та інших галузей.'))
-@section('og_image', Vite::asset('resources/img/categories/002.jpg'))
+@section('og_image', Vite::asset('resources/img/categories/002.png'))
 
 @section('content')
     <x-category-header>

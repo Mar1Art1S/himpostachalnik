@@ -21,7 +21,7 @@ name('py_lak_prom');
     __('Високоякісна сировина для лакофарбової промисловості: пігменти, смоли,
     розчинники та інші матеріали. Гарантоване покриття, стійкість та довговічність продукції для різних галузей.'))
 
-@section('og_image', Vite::asset('resources/img/categories/007.jpg'))
+@section('og_image', Vite::asset('resources/img/categories/007.png'))
 
 @section('content')
     <x-category-header>

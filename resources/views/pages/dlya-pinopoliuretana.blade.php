@@ -20,7 +20,7 @@ name('ppy_serovine');
 @section('og_description',
     __('Високоякісна сировина для виробництва пінополіуретану. Ізоляційні матеріали з відмінними
     характеристиками для будівництва, меблів та інших галузей. Надійність та ефективність в кожному продукті.'))
-@section('og_image', Vite::asset('resources/img/categories/001.jpg'))
+@section('og_image', Vite::asset('resources/img/categories/001.png'))
 
 @section('content')
     <x-category-header>

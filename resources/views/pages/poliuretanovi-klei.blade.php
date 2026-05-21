@@ -24,7 +24,7 @@ name('py_klei');
     __('Високоякісні поліуретанові клеї для міцного та довговічного з`єднання різних матеріалів.
     Ідеально підходять для будівництва, меблів, автоіндустрії та інших сфер. Стійкість до вологи, температури та механічних
     навантажень.'))
-@section('og_image', Vite::asset('resources/img/categories/004.jpg'))
+@section('og_image', Vite::asset('resources/img/categories/004.png'))
 
 @section('content')
     <x-category-header>

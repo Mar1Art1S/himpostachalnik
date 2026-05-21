@@ -17,7 +17,7 @@ name('py_gidro');
 @section('og_title', __('Сировина для гідроізоляції'))
 @section('og_description', __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і
     споруд, мостів, резервуарів, очисних споруд, плавальних басейнів'))
-@section('og_image', Vite::asset('resources/img/mat_7/Гідроізоляція.jpeg'))
+@section('og_image', Vite::asset('resources/img/mat_7/Полимочевина_гарячого_нанесення.png'))
 
 @section('content')
     <x-category-header>
