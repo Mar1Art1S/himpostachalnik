@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="hidden xl:block">
                                     <div class="text-xl font-bold text-gray-900">
-                                        +38 (050) 475-68-47
+                                        +38 (050) 340-35-47
                                     </div>
                                     <div class="font-medium text-blue-700">
                                         Замовити дзвінок

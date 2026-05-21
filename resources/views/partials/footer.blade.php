@@ -57,9 +57,9 @@
                             Приймальня директора
                         </div>
 
-                        <a href="tel:+380504756847"
+                        <a href="tel:+380503403547"
                             class="text-[24px] sm:text-xl xs:text-lg font-bold tracking-wide leading-none hover:text-yellow-400 transition-colors whitespace-nowrap">
-                            +38 (050) 475-68-47
+                            +38 (050) 340-35-47
                         </a>
                     </div>
 

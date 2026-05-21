@@ -32,7 +32,7 @@
 
                             <div>{{ __('contact.contact_phone') }}</div>
 
-                            <a href="tel:+380504756847"
+                            <a href="tel:+380503403547"
                                 class="block text-1.5xl text-gray-900 font-r500 hover:opacity-75 sm:text-xl xs:text-sm">
                                 {{ __('contact.contact_phone_number') }}
                             </a>
