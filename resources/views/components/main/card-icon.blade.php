@@ -7,7 +7,7 @@
                         hover:-translate-y-1 hover:shadow-2xl">
 
     <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f0b51d]">
-        {{ $slot }}
+        {{ $icon ?? $slot }}
     </div>
 
     <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
