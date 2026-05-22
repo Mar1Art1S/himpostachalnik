@@ -39,96 +39,54 @@
                         <div class="grid grid-cols-4 tg:grid-cols-2 sm:grid-cols-1 gap-6 mt-14">
 
                             <!-- CARD -->
-                            <div
-                                class="group rounded-[30px] bg-white p-6 text-center
-                        shadow-sm transition-all duration-300
-                        hover:-translate-y-1 hover:shadow-2xl">
 
-                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2453df]">
+                            <x-main.card-icon
+                                :title="__('Висока якість')"
+                                :text="__('Сертифікована продукція від перевірених виробників')">
+                                <x-slot:icon>
                                     <x-lucide-flask-conical class="w-8 h-8 text-white" />
-                                </div>
-
-                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
-                                    Висока якість
-                                </h3>
-
-                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
-                                    Сертифікована продукція
-                                    від перевірених виробників
-                                </p>
-                            </div>
+                                </x-slot:icon>
+                            </x-main.card-icon>
 
                             <!-- CARD -->
-                            <div
-                                class="group rounded-[30px] bg-white p-6 text-center
-                        shadow-sm transition-all duration-300
-                        hover:-translate-y-1 hover:shadow-2xl">
-
-                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f0b51d]">
+                            <x-main.card-icon
+                                :title="__('Надійність')"
+                                :text="__('Стабільні поставки
+                                    та виконання зобов\'язань')">
+                                <x-slot:icon>
                                     <x-lucide-shield-check class="w-8 h-8 text-white" />
-                                </div>
-
-                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
-                                    Надійність
-                                </h3>
-
-                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
-                                    Стабільні поставки
-                                    та виконання зобов'язань
-                                </p>
-                            </div>
-
+                                </x-slot:icon>
+                            </x-main.card-icon>
                             <!-- CARD -->
-                            <div
-                                class="group rounded-[30px] bg-white p-6 text-center
-                        shadow-sm transition-all duration-300
-                        hover:-translate-y-1 hover:shadow-2xl">
-
-                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2453df]">
+                            <x-main.card-icon
+                                :title="__('Швидка доставка')"
+                                :text="__('Оперативна доставка по всій Україні')">
+                                <x-slot:icon>
                                     <x-lucide-truck class="w-8 h-8 text-white" />
-                                </div>
-
-                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
-                                    Швидка доставка
-                                </h3>
-
-                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
-                                    Оперативна доставка
-                                    по всій Україні
-                                </p>
-                            </div>
+                                </x-slot:icon>
+                            </x-main.card-icon>
 
                             <!-- CARD -->
-                            <div
-                                class="group rounded-[30px] bg-white p-6 text-center
-                        shadow-sm transition-all duration-300
-                        hover:-translate-y-1 hover:shadow-2xl">
-
-                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f0b51d]">
+                            <x-main.card-icon
+                                :title="__('Професійна підтримка')"
+                                :text="__('Консультації та допомога на кожному етапі')">
+                                <x-slot:icon>
                                     <x-lucide-headset class="w-8 h-8 text-white" />
-                                </div>
-
-                                <h3 class="mt-5 text-[20px] font-bold text-[#0b2f7a]">
-                                    Професійна підтримка
-                                </h3>
-
-                                <p class="mt-3 text-[15px] leading-7 text-[#666]">
-                                    Консультації та допомога
-                                    на кожному етапі
-                                </p>
-                            </div>
+                                </x-slot:icon>
+                            </x-main.card-icon>
                         </div>
+
 
                         <!-- BUTTON -->
                         <div class="mt-14">
 
                             <button
                                 class="group inline-flex items-center gap-4
-                        rounded-2xl border-2 border-[#2453df]
-                        px-8 py-4 font-bold uppercase tracking-wide
-                        text-[#2453df]
-                        transition-all duration-300
-                        hover:bg-[#2453df] hover:text-white">
+                                    rounded-2xl border-2 border-[#2453df]
+                                    px-8 py-4 font-bold uppercase tracking-wide
+                                    text-[#2453df]
+                                    transition-all duration-300
+                                    hover:bg-[#2453df] hover:text-white">
 
                                 <span>
                                     Дізнатись більше
@@ -162,31 +120,23 @@
                                 <div class="flex-1 w-full">
                                     <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
                                         <!-- ITEM -->
-                                        <div class="flex gap-4 sm:gap-5 items-center">
-                                            <div
-                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                        <x-main.card-item
+                                            :title="__('25+')"
+                                            :text="__('років досвіду')">
+                                            <x-slot:icon>
                                                 <x-lucide-briefcase-business class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
-                                            </div>
-                                            <div>
-                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">25+
-                                                </div>
-                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">років
-                                                    досвіду</div>
-                                            </div>
-                                        </div>
+                                            </x-slot:icon>
+                                        </x-main.card-item>
+
                                         <!-- ITEM -->
-                                        <div class="flex gap-4 sm:gap-5 items-center">
-                                            <div
-                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                        <x-main.card-item
+                                            :title="__('100+')"
+                                            :text="__('позицій у каталозі')">
+                                            <x-slot:icon>
                                                 <x-lucide-package-search class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
-                                            </div>
-                                            <div>
-                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">
-                                                    1000+</div>
-                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">
-                                                    позицій у каталозі</div>
-                                            </div>
-                                        </div>
+                                            </x-slot:icon>
+                                        </x-main.card-item>
+
                                     </div>
                                 </div>
 
@@ -198,32 +148,23 @@
                                 <div class="flex-1 w-full">
                                     <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
                                         <!-- ITEM -->
-                                        <div class="flex gap-4 sm:gap-5 items-center">
-                                            <div
-                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                        <x-main.card-item
+                                            :title="__('1000+')"
+                                            :text="__('задоволених клієнтів')">
+                                            <x-slot:icon>
                                                 <x-lucide-handshake class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
-                                            </div>
-                                            <div>
-                                                <div class="text-3xl sm:text-4xl font-black text-[#f0b51d] leading-none">
-                                                    1000+</div>
-                                                <div class="mt-1 sm:mt-2 text-base sm:text-lg text-white font-medium">
-                                                    задоволених клієнтів</div>
-                                            </div>
-                                        </div>
+                                            </x-slot:icon>
+                                        </x-main.card-item>
+
                                         <!-- ITEM -->
-                                        <div class="flex gap-4 sm:gap-5 items-center">
-                                            <div
-                                                class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
+                                        <x-main.card-item
+                                            :title="__('Якісна')"
+                                            :text="__('продукція')">
+                                            <x-slot:icon>
                                                 <x-lucide-badge-check class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
-                                            </div>
-                                            <div>
-                                                <div class="text-2xl sm:text-3xl font-black leading-tight text-[#f0b51d]">
-                                                    Сертифікована
-                                                </div>
-                                                <div class="mt-1 text-base sm:text-lg text-white font-medium">продукція
-                                                </div>
-                                            </div>
-                                        </div>
+                                            </x-slot:icon>
+                                        </x-main.card-item>
+
                                     </div>
                                 </div>
 
@@ -286,10 +227,11 @@
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-[#1E3A9A]/80 uppercase tracking-wide">
-                                    Про компанію
+                                    {{ __('Про компанію') }}
+
                                 </p>
                                 <h3 class="text-2xl xs:text-lg font-bold text-[#111827]">
-                                    Надійний виробник
+                                    {{ __('Надійний виробник') }}
                                 </h3>
                             </div>
                         </div>
@@ -310,7 +252,8 @@
                             <x-lucide-building-2 class="w-5 h-5 text-[#1E3A9A]" />
 
                             <span class="text-[#1E3A9A] font-bold text-sm uppercase tracking-wider">
-                                Хімічне виробництво
+                                {{ __('Хімічне виробництво') }}
+
                             </span>
 
                         </div>
@@ -450,7 +393,7 @@
                             <!-- Bottom -->
                             <div class="flex flex-wrap items-center gap-4 mt-10">
 
-                                <a href="#"
+                                <a href="https://techpolymersmarket.com/"
                                    class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
 
                                     <x-lucide-arrow-up-right class="w-5 h-5" />
@@ -512,7 +455,7 @@
                             <!-- Bottom -->
                             <div class="flex flex-wrap items-center gap-4 mt-10">
 
-                                <a href="#"
+                                <a href="https://bee.lg.ua/"
                                    class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
 
                                     <x-lucide-arrow-up-right class="w-5 h-5" />

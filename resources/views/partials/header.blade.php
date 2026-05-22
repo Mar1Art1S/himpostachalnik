@@ -95,12 +95,12 @@
                 {{-- Social --}}
                 <div class="flex items-center gap-3">
 
-                    <a href="#"
+                    <a href="https://www.facebook.com/himpostcom/?locale=uk_UA"
                         class="flex items-center justify-center transition-all duration-300 rounded-full w-9 h-9 bg-white/10 hover:bg-yellow-400 hover:text-black">
                         <x-lucide-facebook class="w-4 h-4" />
                     </a>
 
-                    <a href="#"
+                    <a href="https://www.youtube.com/@%D0%A5%D1%96%D0%BC%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA"
                         class="flex items-center justify-center transition-all duration-300 rounded-full w-9 h-9 bg-white/10 hover:bg-yellow-400 hover:text-black">
                         <x-lucide-youtube class="w-4 h-4" />
                     </a>
