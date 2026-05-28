@@ -17,6 +17,7 @@
         "mallardduck/blade-lucide-icons": "*",
         "mews/purifier": "^3.4",
         "ralphjsmit/laravel-seo": "^1.8",
+        "spatie/laravel-sitemap": "^8.0",
         "spatie/laravel-translatable": "^6.9"
     },
     "require-dev": {
