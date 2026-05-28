@@ -6,7 +6,6 @@ use App\Models\Article;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
-
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
@@ -104,6 +103,12 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/projects', 'projects')->name('projects');
 
     Route::get('/shipping', 'shipping')->name('shipping');
+
+    Route::get('/faq', 'faq')->name('faq');
+
+    Route::get('/privacy', 'privacy')->name('privacy');
+
+    Route::get('/terms', 'terms')->name('terms');
 
     Route::get('/contact', 'contact')->name('contact');
 

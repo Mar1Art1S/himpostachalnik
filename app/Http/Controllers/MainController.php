@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CallbackRequestMail;
+use App\Mail\ContactMail;
 use App\Models\Article;
 use App\Models\ArticleCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\CallbackRequestMail;
-use App\Mail\ContactMail;
 
 class MainController extends Controller
 {
@@ -35,6 +35,26 @@ class MainController extends Controller
     public function projects()
     {
         return view('projects');
+    }
+
+    public function shipping()
+    {
+        return view('shipping');
+    }
+
+    public function faq()
+    {
+        return view('faq');
+    }
+
+    public function privacy()
+    {
+        return view('privacy');
+    }
+
+    public function terms()
+    {
+        return view('terms');
     }
 
     public function index()

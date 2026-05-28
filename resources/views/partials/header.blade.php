@@ -405,6 +405,54 @@
                         <a href="{{ route('projects') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('projects') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Наші проекти</a>
                         <a href="{{ route('contact') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('contact') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Контакти</a>
                         <a href="{{ route('article.index') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('article.index') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Новини</a>
+
+                        {{-- Support Dropdown --}}
+                        <div x-data="{ supportOpen: false }" class="relative">
+                            <button
+                                @click="supportOpen = !supportOpen"
+                                @click.outside="supportOpen = false"
+                                class="relative flex items-center gap-1.5 transition-colors duration-300 hover:text-yellow-400 {{ Route::is('shipping') || Route::is('faq') || Route::is('privacy') || Route::is('terms') ? 'text-yellow-400' : '' }}"
+                            >
+                                Підтримка
+                                <x-lucide-chevron-down
+                                    class="w-4 h-4 transition-transform duration-300"
+                                    x-bind:class="supportOpen ? 'rotate-180' : ''"
+                                />
+                                @if(Route::is('shipping') || Route::is('faq') || Route::is('privacy') || Route::is('terms'))
+                                    <span class="absolute left-0 -bottom-3 w-full h-1 bg-yellow-400 rounded-full"></span>
+                                @endif
+                            </button>
+
+                            <div
+                                x-show="supportOpen"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-2"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-2"
+                                class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50"
+                                style="display:none"
+                            >
+                                <a href="{{ route('shipping') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('shipping') ? 'bg-blue-50 text-blue-700' : '' }}">
+                                    <x-lucide-truck class="w-4 h-4 text-blue-600 shrink-0" />
+                                    Умови поставки
+                                </a>
+                                <a href="{{ route('faq') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('faq') ? 'bg-blue-50 text-blue-700' : '' }}">
+                                    <x-lucide-circle-help class="w-4 h-4 text-blue-600 shrink-0" />
+                                    FAQ
+                                </a>
+                                <a href="{{ route('privacy') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('privacy') ? 'bg-blue-50 text-blue-700' : '' }}">
+                                    <x-lucide-shield class="w-4 h-4 text-blue-600 shrink-0" />
+                                    Конфіденційність
+                                </a>
+                                <a href="{{ route('terms') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('terms') ? 'bg-blue-50 text-blue-700' : '' }}">
+                                    <x-lucide-file-text class="w-4 h-4 text-blue-600 shrink-0" />
+                                    Умови
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -544,11 +592,6 @@
                     Наші проекти
                 </a>
 
-                <a href="{{ route('shipping') }}"
-                    class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('shipping') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Доставка і оплата
-                </a>
-
                 <a href="{{ route('contact') }}"
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('contact') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
                     Контакти
@@ -558,6 +601,44 @@
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('article.index') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
                     Блог
                 </a>
+
+                {{-- Mobile Support Dropdown --}}
+                <div x-data="{ mobileSupportOpen: false }" class="rounded-2xl border border-slate-100 bg-slate-50 p-4 xs:p-1">
+                    <button @click="mobileSupportOpen = !mobileSupportOpen"
+                        class="flex w-full items-center justify-between gap-3 xs:gap-0.5 xs:text-sm text-left text-lg font-black text-blue-900">
+                        <span class="flex items-center gap-3 xs:gap-0.5">
+                            <span class="flex h-10 w-10 items-center justify-center rounded-xl xs:hidden bg-blue-700 text-white">
+                                <x-lucide-life-buoy class="h-5 w-5" />
+                            </span>
+                            Підтримка
+                        </span>
+                        <x-lucide-chevron-down class="h-5 w-5 transition-transform duration-300"
+                            x-bind:class="mobileSupportOpen ? 'rotate-180' : ''" />
+                    </button>
+
+                    <div x-show="mobileSupportOpen" x-transition class="mt-4 space-y-1">
+                        <a href="{{ route('shipping') }}"
+                            class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('shipping') ? 'bg-blue-50 text-blue-700' : '' }}">
+                            <x-lucide-truck class="w-4 h-4 text-blue-600 shrink-0" />
+                            Умови поставки
+                        </a>
+                        <a href="{{ route('faq') }}"
+                            class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('faq') ? 'bg-blue-50 text-blue-700' : '' }}">
+                            <x-lucide-circle-help class="w-4 h-4 text-blue-600 shrink-0" />
+                            FAQ
+                        </a>
+                        <a href="{{ route('privacy') }}"
+                            class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('privacy') ? 'bg-blue-50 text-blue-700' : '' }}">
+                            <x-lucide-shield class="w-4 h-4 text-blue-600 shrink-0" />
+                            Конфіденційність
+                        </a>
+                        <a href="{{ route('terms') }}"
+                            class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('terms') ? 'bg-blue-50 text-blue-700' : '' }}">
+                            <x-lucide-file-text class="w-4 h-4 text-blue-600 shrink-0" />
+                            Умови
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
