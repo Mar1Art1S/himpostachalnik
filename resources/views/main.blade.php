@@ -442,7 +442,7 @@
                                 </h3>
 
                                 <p class="text-[#FFC800] font-bold text-lg mb-6">
-                                    Товари для бджільництва
+                                    Вулики з Пінополіуретану
                                 </p>
 
                                 <!-- Description -->

@@ -107,7 +107,7 @@
                                     </div>
 
                                     <h3 class="text-3xl font-black text-[#0b2f7a] leading-tight mb-4">
-                                        Товари для<br>бджільництва
+                                        Вулики з Пінополіуретану
                                     </h3>
 
                                     <p class="text-slate-500 leading-relaxed mb-8">
