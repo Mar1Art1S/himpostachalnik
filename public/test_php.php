@@ -1,24 +1,27 @@
 <?php
 header('Content-Type: text/plain');
 
-echo "T_INLINE_HTML CONSTANT: " . T_INLINE_HTML . "\n";
-$tokens = token_get_all("Hello");
-echo "TOKEN 0 OF 'Hello': ID=" . $tokens[0][0] . ", NAME=" . token_name($tokens[0][0]) . "\n";
-echo "DOES TOKEN 0 MATCH T_INLINE_HTML? " . ($tokens[0][0] === T_INLINE_HTML ? 'YES' : 'NO') . "\n";
+echo "PHP_VERSION: " . PHP_VERSION . "\n";
+echo "PHP_SAPI: " . PHP_SAPI . "\n";
+echo "T_INLINE_HTML: " . T_INLINE_HTML . " (name: " . token_name(T_INLINE_HTML) . ")\n";
+echo "T_PRINT: " . (defined('T_PRINT') ? T_PRINT . ' (name: ' . token_name(T_PRINT) . ')' : 'undefined') . "\n";
 
-$tokensBlade = token_get_all("@props(['field'])");
-echo "TOKEN 0 OF Blade: ID=" . $tokensBlade[0][0] . ", NAME=" . token_name($tokensBlade[0][0]) . "\n";
-echo "DOES Blade MATCH T_INLINE_HTML? " . ($tokensBlade[0][0] === T_INLINE_HTML ? 'YES' : 'NO') . "\n";
+$tokens = token_get_all("@props(['field'])");
+echo "Token 0 ID: " . $tokens[0][0] . "\n";
+echo "Token 0 name: " . token_name($tokens[0][0]) . "\n";
+echo "Token 0 == T_INLINE_HTML? " . ($tokens[0][0] == T_INLINE_HTML ? 'YES' : 'NO') . "\n";
+echo "Token 0 === T_INLINE_HTML? " . ($tokens[0][0] === T_INLINE_HTML ? 'YES' : 'NO') . "\n";
 
 require __DIR__ . '/../vendor/autoload.php';
 $app = require __DIR__ . '/../bootstrap/app.php';
 $k = $app->make(Illuminate\Contracts\Console\Kernel::class);
 $k->bootstrap();
 
-$compiler = app('blade.compiler');
-$r = new ReflectionClass($compiler);
-$mParse = $r->getMethod('parseToken');
-$mParse->setAccessible(true);
+$bc = app('blade.compiler');
+$ref = new ReflectionProperty($bc, 'compilers');
+$ref->setAccessible(true);
+echo "BladeCompilers: " . json_encode($ref->getValue($bc)) . "\n";
 
-$res = $mParse->invoke($compiler, $tokensBlade[0]);
-echo "RESULT OF parseToken: " . $res . "\n";
+$testStr = "@props(['field'])";
+$step1 = $bc->compileString($testStr);
+echo "compileString output:\n" . $step1 . "\n";
