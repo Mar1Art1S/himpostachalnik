@@ -3,8 +3,13 @@ header('Content-Type: text/plain');
 
 $logFile = __DIR__ . '/../storage/logs/laravel.log';
 if (file_exists($logFile)) {
-    $lines = file($logFile);
-    echo implode('', array_slice($lines, -100));
+    $content = file_get_contents($logFile);
+    $pos = strrpos($content, 'local.ERROR');
+    if ($pos !== false) {
+        echo substr($content, $pos, 2500);
+    } else {
+        echo "No local.ERROR found.";
+    }
 } else {
     echo "No log file found.";
 }
