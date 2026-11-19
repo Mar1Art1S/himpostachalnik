@@ -9,19 +9,17 @@
     <div class="relative z-10">
 
         {{-- TOP SECTION --}}
-        <div class="grid grid-cols-1 border-b md:grid-cols-2 sf:grid-cols-1 xl:grid-cols-6 border-white/10">
+        <div class="grid grid-cols-5 border-b tg:grid-cols-2 sf:grid-cols-1 border-white/10">
 
             {{-- BRAND --}}
-            <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
+            <div class="px-8 rg:px-5 tg:px-8 sf:px-4 py-10 xs:py-6 border-r tg:border-b sf:border-r-0 border-white/10">
 
                 <a href="{{ route('main') }}">
                     <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="HIMPOST" class="w-[220px]">
                 </a>
 
                 <p class="mt-7 text-[15px] leading-8 text-blue-100">
-                    Виробник та постачальник інноваційних
-                    полімерних матеріалів та хімічної
-                    продукції для промисловості.
+                    {{ __('footer.foo_brand_desc') }}
                 </p>
 
                 <div class="flex flex-wrap gap-2 mt-7">
@@ -44,39 +42,39 @@
             </div>
 
             {{-- CONTACTS --}}
-            <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
+            <div class="px-8 rg:px-5 tg:px-8 sf:px-4 py-10 xs:py-6 border-r tg:border-r-0 tg:border-b border-white/10">
 
                 <h3 class="text-sm font-bold tracking-wide text-yellow-400 uppercase mb-7">
-                    Контакти
+                    {{ __('footer.foo_contacts_title') }}
                 </h3>
 
                 <div class="space-y-7">
 
                     <div>
                         <div class="mb-2 text-xs text-blue-200">
-                            Приймальня директора
+                            {{ __('footer.foo_reception') }}
                         </div>
 
                         <a href="tel:+380503403547"
-                            class="text-[24px] sm:text-xl xs:text-lg font-bold tracking-wide leading-none hover:text-yellow-400 transition-colors whitespace-nowrap">
+                            class="text-[22px] rg:text-[19px] tg:text-[22px] sm:text-[18px] xs:text-[16px] font-bold tracking-wide leading-none hover:text-yellow-400 transition-colors whitespace-nowrap">
                             +38 (050) 340-35-47
                         </a>
                     </div>
 
                     <div>
                         <div class="mb-2 text-xs text-blue-200">
-                            Технології та логістика
+                            {{ __('footer.foo_tech_logistics') }}
                         </div>
 
                         <a href="tel:+380503403547"
-                            class="text-[24px] sm:text-xl xs:text-lg font-bold tracking-wide leading-none hover:text-yellow-400 transition-colors whitespace-nowrap">
+                            class="text-[22px] rg:text-[19px] tg:text-[22px] sm:text-[18px] xs:text-[16px] font-bold tracking-wide leading-none hover:text-yellow-400 transition-colors whitespace-nowrap">
                             +38 (050) 340-35-47
                         </a>
                     </div>
 
                     <div>
                         <div class="mb-2 text-xs text-blue-200">
-                            Email
+                            {{ __('footer.foo_address') }}
                         </div>
 
                         <a href="mailto:director@himpost.com"
@@ -90,79 +88,52 @@
             </div>
 
             {{-- LEGAL --}}
-            <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
+            <div class="px-8 rg:px-5 tg:px-8 sf:px-4 py-10 xs:py-6 border-r tg:border-b sf:border-r-0 border-white/10">
 
                 <h3 class="text-sm font-bold tracking-wide text-yellow-400 uppercase mb-7">
-                    Юридична адреса
+                    {{ __('footer.foo_legal_title') }}
                 </h3>
 
                 <div class="text-[15px] leading-8 text-blue-100">
-                    82111, Україна,<br>
-                    Львівська область,<br>
-                    вул. Самбірська, 85,<br>
-                    м. Дрогобич
+                    {!! __('footer.foo_legal_address_html') !!}
                 </div>
 
             </div>
 
             {{-- FACT --}}
-            <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
+            <div class="px-8 rg:px-5 tg:px-8 sf:px-4 py-10 xs:py-6 border-r tg:border-r-0 tg:border-b border-white/10">
 
                 <h3 class="text-sm font-bold tracking-wide text-yellow-400 uppercase mb-7">
-                    Фактична адреса
+                    {{ __('footer.foo_actual_title') }}
                 </h3>
 
                 <div class="text-[15px] leading-8 text-blue-100">
-                    39603, Україна,<br>
-                    Полтавська обл.,<br>
-                    м. Кременчук,<br>
-                    вул. Профспілкова, 11
+                    {!! __('footer.foo_actual_address_html') !!}
                 </div>
-
-            </div>
-
-            {{-- KYIV --}}
-            <div class="px-8 xs:px-4 py-10 xs:py-6 border-b xl:border-b-0 xl:border-r border-white/10">
-
-                <h3 class="text-sm font-bold tracking-wide text-yellow-400 uppercase mb-7">
-                    м. Київ (Склад)
-                </h3>
-
-                <div class="text-[15px] leading-8 text-blue-100">
-                    Миколи Хвильового, 15,<br>
-                    Дарницький район
-                </div>
-
-                <a href="tel:+380503482310"
-                    class="inline-block mt-7 text-[24px] sm:text-xl xs:text-lg font-bold tracking-wide whitespace-nowrap hover:text-yellow-400 transition-colors">
-                    +38 (050) 348-23-10
-                </a>
 
             </div>
 
             {{-- PROJECTS --}}
-            <div class="px-6 xs:px-4 py-10 xs:py-6">
+            <div class="px-6 rg:px-4 tg:px-8 sf:px-4 py-10 xs:py-6 tg:col-span-2 sf:col-span-1">
 
                 <h3 class="text-sm font-bold tracking-wide text-yellow-400 uppercase mb-7">
-                    Окремі retail та галузеві напрямки компанії Хімпостачальник
+                    {{ __('footer.foo_retail_title') }}
                 </h3>
 
-                <div class="space-y-4">
+                <div class="grid grid-cols-1 gap-4 tg:grid-cols-2 sf:grid-cols-1">
 
                     {{-- BEE --}}
                     <a href="https://bee.lg.ua/" target="_blank"
                         class="group flex items-center gap-4 p-4 rounded-2xl border border-yellow-400/10 bg-white/[0.03] hover:border-yellow-400/40 hover:bg-white/[0.06] transition-all">
 
-
-
                         <div class="min-w-0">
 
                             <div class="text-[16px] font-bold text-white group-hover:text-yellow-300 transition-colors">
-                                Хімекселен
+                                {{ __('footer.foo_bee_title') }}
                             </div>
 
                             <div class="text-[12px] text-yellow-300 mt-1">
-                                товари для бджільництва
+                                {{ __('footer.foo_bee_desc') }}
                             </div>
 
                             <div class="mt-2 text-[13px] text-yellow-400 font-semibold truncate">
@@ -177,17 +148,15 @@
                     <a href="https://techpolymersmarket.com/" target="_blank"
                         class="group flex items-center gap-4 p-4 rounded-2xl border border-blue-400/10 bg-white/[0.03] hover:border-blue-400/40 hover:bg-white/[0.06] transition-all">
 
-
-
                         <div class="min-w-0">
 
                             <div
                                 class="text-[16px] font-bold text-white group-hover:text-blue-300 transition-colors leading-tight">
-                                TechPolymers
+                                {{ __('footer.foo_tech_title') }}
                             </div>
 
                             <div class="text-[12px] text-blue-300 mt-1">
-                                технічні полімери
+                                {{ __('footer.foo_tech_desc') }}
                             </div>
 
                             <div class="mt-2 text-[13px] text-blue-300 font-semibold truncate">
@@ -205,9 +174,9 @@
         </div>
 
         {{-- BENEFITS --}}
-        <div class="grid grid-cols-1 border-b md:grid-cols-2 sf:grid-cols-1 xl:grid-cols-4 border-white/10">
+        <div class="grid grid-cols-4 border-b tg:grid-cols-2 sf:grid-cols-1 border-white/10">
 
-            <div class="flex gap-4 xs:gap-3 px-8 xs:px-4 border-b py-7 xs:py-5 md:border-b-0 xl:border-r border-white/10">
+            <div class="flex gap-4 px-8 border-r xs:gap-3 rg:px-5 tg:px-8 sf:px-4 py-7 xs:py-5 tg:border-b sf:border-r-0 border-white/10">
 
                 <div class="text-3xl text-yellow-400 shrink-0">
                     ✓
@@ -215,18 +184,17 @@
 
                 <div>
                     <div class="text-[17px] font-semibold">
-                        Якість та надійність
+                        {{ __('footer.foo_benefit_quality_title') }}
                     </div>
 
                     <p class="mt-2 text-[13px] leading-7 text-blue-100">
-                        Гарантуємо стабільну якість
-                        та відповідність стандартам.
+                        {{ __('footer.foo_benefit_quality_desc') }}
                     </p>
                 </div>
 
             </div>
 
-            <div class="flex gap-4 xs:gap-3 px-8 xs:px-4 border-b py-7 xs:py-5 md:border-b-0 xl:border-r border-white/10">
+            <div class="flex gap-4 px-8 border-r xs:gap-3 rg:px-5 tg:px-8 sf:px-4 py-7 xs:py-5 tg:border-r-0 tg:border-b border-white/10">
 
                 <div class="text-3xl text-yellow-400 shrink-0">
                     ⚗
@@ -234,18 +202,17 @@
 
                 <div>
                     <div class="text-[17px] font-semibold">
-                        Інноваційні технології
+                        {{ __('footer.foo_benefit_tech_title') }}
                     </div>
 
                     <p class="mt-2 text-[13px] leading-7 text-blue-100">
-                        Сучасне виробництво
-                        та розвиток продукції.
+                        {{ __('footer.foo_benefit_tech_desc') }}
                     </p>
                 </div>
 
             </div>
 
-            <div class="flex gap-4 xs:gap-3 px-8 xs:px-4 border-b py-7 xs:py-5 md:border-b-0 xl:border-r border-white/10">
+            <div class="flex gap-4 px-8 border-r xs:gap-3 rg:px-5 tg:px-8 sf:px-4 py-7 xs:py-5 sf:border-r-0 sf:border-b border-white/10">
 
                 <div class="text-3xl text-yellow-400 shrink-0">
                     🚚
@@ -253,18 +220,17 @@
 
                 <div>
                     <div class="text-[17px] font-semibold">
-                        Оперативна логістика
+                        {{ __('footer.foo_benefit_logistics_title') }}
                     </div>
 
                     <p class="mt-2 text-[13px] leading-7 text-blue-100">
-                        Швидка доставка по Україні
-                        та країнах Європи.
+                        {{ __('footer.foo_benefit_logistics_desc') }}
                     </p>
                 </div>
 
             </div>
 
-            <div class="flex gap-4 xs:gap-3 px-8 xs:px-4 py-7 xs:py-5">
+            <div class="flex gap-4 px-8 xs:gap-3 rg:px-5 tg:px-8 sf:px-4 py-7 xs:py-5">
 
                 <div class="text-3xl text-yellow-400 shrink-0">
                     🤝
@@ -272,12 +238,11 @@
 
                 <div>
                     <div class="text-[17px] font-semibold">
-                        Партнерство та підтримка
+                        {{ __('footer.foo_benefit_partner_title') }}
                     </div>
 
                     <p class="mt-2 text-[13px] leading-7 text-blue-100">
-                        Індивідуальний підхід
-                        до кожного клієнта.
+                        {{ __('footer.foo_benefit_partner_desc') }}
                     </p>
                 </div>
 
@@ -286,10 +251,10 @@
         </div>
 
         {{-- BOTTOM --}}
-        <div class="flex flex-col items-center justify-between gap-6 px-8 xs:px-4 xl:flex-row py-7 xs:py-5">
+        <div class="flex flex-row items-center justify-between gap-6 px-8 sf:flex-col xs:px-4 py-7 xs:py-5">
 
             <div class="text-[14px] text-blue-200">
-                © {{ date('Y') }} Хімпостачальник. Усі права захищені.
+                {{ __('footer.foo_copyright', ['year' => date('Y')]) }}
             </div>
 
         </div>

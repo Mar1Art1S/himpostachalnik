@@ -68,7 +68,14 @@ class MainController extends Controller
 
     public function category($category)
     {
-        return view('article.category', compact('category'));
+        $categoryModel = ArticleCategory::where('slug', $category)->first();
+
+        $articles = Article::where('active', true)
+            ->when($categoryModel, fn ($query) => $query->where('category_id', $categoryModel->id))
+            ->latest('published_at')
+            ->paginate(12);
+
+        return view('article.index', compact('articles', 'category'));
     }
 
     public function show($category, $article)
@@ -80,7 +87,12 @@ class MainController extends Controller
 
     public function tag($tag)
     {
-        return view('article.tag', compact('tag'));
+        $articles = Article::where('active', true)
+            ->whereJsonContains('tags', $tag)
+            ->latest('published_at')
+            ->paginate(12);
+
+        return view('article.index', compact('articles', 'tag'));
     }
 
     public function callbackRequest(Request $request)

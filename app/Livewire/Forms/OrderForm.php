@@ -8,7 +8,6 @@ use Livewire\Form;
 
 class OrderForm extends Form
 {
-
     #[Validate('max:100')]
     #[Validate('required', message: 'Вкажіть Ваше ім`я')]
     #[Validate('min:5', message: 'Введіть ФІО повністю')]
@@ -26,16 +25,11 @@ class OrderForm extends Form
 
     public $product;
 
-
-    public function store(string | null $product)
+    public function store(?string $product)
     {
         $this->product = $product ?? __('other.other_question');
         $this->validate();
 
         Order::create($this->all());
     }
-
 }
-
-
-

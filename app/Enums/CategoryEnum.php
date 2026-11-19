@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Enums;
+
 use Filament\Support\Contracts\HasLabel;
 
 enum CategoryEnum: string implements HasLabel
@@ -49,38 +50,37 @@ enum CategoryEnum: string implements HasLabel
     case PROD_PY_04 = 'prod_py_04';
     case PROD_PY_05 = 'prod_py_05';
 
-
     public function getLabel(): string
     {
         return match ($this) {
-            self::PROD_PPU_NAPILENNYA =>  __('ППУ для напилення'),
-            self::PROD_PPU_SHKARLUPI =>  __('ППУ для шкарлупи'),
-            self::PROD_PPU_TRUB =>  __('ППУ для попередньоізольованих труб'),
-            self::PROD_PPU_SENDVICH =>  __('ППУ для заливки "Сендвіч-панелей" та торговельного холодильного обладнання'),
-            self::PROD_PPU_VIROBIV =>  __('ППУ для декору та негабаритних виробів (вуллів тощо)'),
-            self::PROD_PPU_MASIVU =>  __('ППУ для зміцнення вугільного масиву, зміцнення фундаментів'),
-            self::PROD_PPU_PROSTORU =>  __('ППУ для заливання міжстінного простору'),
-            self::PROD_PPU_FILTRIV =>  __('ППУ для повітряних фільтрів'),
-            self::PROD_PU_LIVARNIJ =>  __('Поліуретан ливарний компактний'),
-            self::PROD_PU_PIDLOGI =>  __('Поліуретанові сполучні для наливної підлоги'),
-            self::PROD_PU_ELASTOMIRI =>  __('Поліуретанові еластоміри'),
-            self::PROD_PU_PASTA =>  __('Поліуретанова паста'),
-            self::PROD_PU_PIGMENT =>  __('Пігментні пасти для поліуретанів'),
-            self::PROD_KLEJ_KRIHTI =>  __('Поліуретанові клеї для гумової та EPDM крихти'),
-            self::PROD_KLEJ_DEREVA_D4 =>  __('Поліуретанові клеї однокомпонентні для дерева Д4'),
-            self::PROD_KLEJ_SENDVICH =>  __('Поліуретанові клеї однокомпонентні для сендвіч-панелей та клінкерних термопанелей'),
-            self::PROD_KLEJ_TEKSTILYU =>  __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю'),
-            self::PROD_KLEJ_BUDIVELNIH =>  __('Поліуретановий клей двокомпонентний для будівельних матеріалів'),
-            self::PROD_KLEJ_PARKETU =>  __('Поліуретановий клей двокомпонентний для паркету та загальнобудівельного призначення'),
-            self::PROD_KLEJ_TRAVI =>  __('Поліуретановий клей двокомпонентний для штучної трави'),
-            self::PROD_KLEJ_KARTONU =>  __('Водорозчинні клеї для паперу та картону'),
-            self::PROD_LAK_SIKATIVI =>  __('Сикативи та диспергатори'),
-            self::PROD_LAK_KATALIZ =>  __('Каталізатори'),
-            self::PROD_LAK_ANTIS =>  __('Антисептики'),
-            self::PROD_LAK_SMOLI =>  __('Смоли алкідно-модифіковані та бутоксильовані'),
-            self::PROD_LAK_AKRIL =>  __('Акрилові та акрил-поліуретанові сополімери'),
-            self::PROD_KILIMA =>  __('Сировина для поліуретанового кам`яного килима'),
-            self::PROD_EMK =>  __('Ефект мокрого каменю'),
+            self::PROD_PPU_NAPILENNYA => __('ППУ для напилення'),
+            self::PROD_PPU_SHKARLUPI => __('ППУ для шкарлупи'),
+            self::PROD_PPU_TRUB => __('ППУ для попередньоізольованих труб'),
+            self::PROD_PPU_SENDVICH => __('ППУ для заливки "Сендвіч-панелей" та торговельного холодильного обладнання'),
+            self::PROD_PPU_VIROBIV => __('ППУ для декору та негабаритних виробів (вуллів тощо)'),
+            self::PROD_PPU_MASIVU => __('ППУ для зміцнення вугільного масиву, зміцнення фундаментів'),
+            self::PROD_PPU_PROSTORU => __('ППУ для заливання міжстінного простору'),
+            self::PROD_PPU_FILTRIV => __('ППУ для повітряних фільтрів'),
+            self::PROD_PU_LIVARNIJ => __('Поліуретан ливарний компактний'),
+            self::PROD_PU_PIDLOGI => __('Поліуретанові сполучні для наливної підлоги'),
+            self::PROD_PU_ELASTOMIRI => __('Поліуретанові еластоміри'),
+            self::PROD_PU_PASTA => __('Поліуретанова паста'),
+            self::PROD_PU_PIGMENT => __('Пігментні пасти для поліуретанів'),
+            self::PROD_KLEJ_KRIHTI => __('Поліуретанові клеї для гумової та EPDM крихти'),
+            self::PROD_KLEJ_DEREVA_D4 => __('Поліуретанові клеї однокомпонентні для дерева Д4'),
+            self::PROD_KLEJ_SENDVICH => __('Поліуретанові клеї однокомпонентні для сендвіч-панелей та клінкерних термопанелей'),
+            self::PROD_KLEJ_TEKSTILYU => __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю'),
+            self::PROD_KLEJ_BUDIVELNIH => __('Поліуретановий клей двокомпонентний для будівельних матеріалів'),
+            self::PROD_KLEJ_PARKETU => __('Поліуретановий клей двокомпонентний для паркету та загальнобудівельного призначення'),
+            self::PROD_KLEJ_TRAVI => __('Поліуретановий клей двокомпонентний для штучної трави'),
+            self::PROD_KLEJ_KARTONU => __('Водорозчинні клеї для паперу та картону'),
+            self::PROD_LAK_SIKATIVI => __('Сикативи та диспергатори'),
+            self::PROD_LAK_KATALIZ => __('Каталізатори'),
+            self::PROD_LAK_ANTIS => __('Антисептики'),
+            self::PROD_LAK_SMOLI => __('Смоли алкідно-модифіковані та бутоксильовані'),
+            self::PROD_LAK_AKRIL => __('Акрилові та акрил-поліуретанові сополімери'),
+            self::PROD_KILIMA => __('Сировина для поліуретанового кам`яного килима'),
+            self::PROD_EMK => __('Ефект мокрого каменю'),
             self::PROD_HARYACHO => __('Полимочевина гарячого нанесення'),
             self::PROD_KHOLODNO => __('Полимочевина  холодного нанесення'),
             self::PROD_PY_POKRITTA => __('Захисні поліуретанові покриття'),
@@ -99,10 +99,9 @@ enum CategoryEnum: string implements HasLabel
 
         };
     }
+
     public static function all(): array
     {
         return array_column(self::cases(), 'value');
     }
-
 }
-

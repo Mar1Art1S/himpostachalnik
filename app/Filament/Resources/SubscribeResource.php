@@ -4,19 +4,18 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\SubscribeResource\Pages;
 use App\Models\Subscribe;
+use Filament\Actions;
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Filament\Actions;
 
 class SubscribeResource extends Resource
 {
-    protected static string|null $model = Subscribe::class;
+    protected static ?string $model = Subscribe::class;
 
-    protected static string|null $label = 'Підписники';
+    protected static ?string $label = 'Підписники';
 
-    protected static string|null $pluralLabel = 'Підписники';
+    protected static ?string $pluralLabel = 'Підписники';
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
 

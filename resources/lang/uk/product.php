@@ -1,5 +1,6 @@
 <?php
-//product
+
+// product
 return [
-  "prod_commodity"  => "Замовлення товару", // language
+    'prod_commodity' => 'Замовлення товару', // language
 ];

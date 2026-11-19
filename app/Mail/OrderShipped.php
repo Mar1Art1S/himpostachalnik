@@ -5,10 +5,10 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
 
 class OrderShipped extends Mailable
 {
@@ -30,7 +30,7 @@ class OrderShipped extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: env('APP_NAME') . " - Новий лист",
+            subject: env('APP_NAME').' - Новий лист',
             from: new Address(env('MAIL_FROM_ADDRESS'))
         );
     }
@@ -43,7 +43,7 @@ class OrderShipped extends Mailable
         return new Content(
             view: 'mail.order',
             with: [
-                'title' => "Новий лист",
+                'title' => 'Новий лист',
                 'order' => $this->order,
             ]
         );
@@ -52,7 +52,7 @@ class OrderShipped extends Mailable
     /**
      * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @return array<int, Attachment>
      */
     public function attachments(): array
     {

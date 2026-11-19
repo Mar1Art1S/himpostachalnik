@@ -1,6 +1,6 @@
 @extends('layouts.base')
-@section('title', 'Умови поставки — Хімпостачальник')
-@section('meta_description', 'Умови поставки хімічної сировини: терміни, способи доставки, регіони та умови оплати.')
+@section('title', __('shipping.title'))
+@section('meta_description', __('shipping.meta_description'))
 
 @section('content')
 <div class="max-w-[1200px] w-full mx-auto px-6 xs:px-4 lg:px-8 my-12">
@@ -9,10 +9,10 @@
     <div class="text-center mb-12">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 font-semibold text-sm mb-4">
             <x-lucide-truck class="w-4 h-4" />
-            Підтримка
+            {{ __('shipping.badge') }}
         </div>
         <h1 class="text-4xl md:text-3xl sm:text-2xl text-gray-900 font-bold uppercase tracking-tight">
-            Умови поставки
+            {{ __('shipping.heading') }}
         </h1>
         <div class="w-20 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
     </div>
@@ -25,9 +25,9 @@
                 <span class="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-700 text-white shrink-0">
                     <x-lucide-map-pin class="w-4 h-4" />
                 </span>
-                Регіони доставки
+                {{ __('shipping.regions_title') }}
             </h2>
-            <p class="text-gray-600 leading-relaxed">Ми здійснюємо поставки по всій Україні. Доставка можлива у будь-яке місто чи населений пункт за допомогою перевізників — Нова Пошта, Укрпошта, а також власним або найнятим транспортом для великогабаритних замовлень.</p>
+            <p class="text-gray-600 leading-relaxed">{{ __('shipping.regions_text') }}</p>
         </div>
 
         <div class="border-t border-gray-100 pt-8">
@@ -35,20 +35,20 @@
                 <span class="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-700 text-white shrink-0">
                     <x-lucide-clock class="w-4 h-4" />
                 </span>
-                Терміни доставки
+                {{ __('shipping.terms_title') }}
             </h2>
             <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span><strong class="text-gray-900">Нова Пошта / Укрпошта:</strong> 1–3 робочих дні з моменту відвантаження.</span>
+                    <span>{!! __('shipping.terms_nova_poshta') !!}</span>
                 </li>
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span><strong class="text-gray-900">Власна доставка (Київ та область):</strong> 1 робочий день.</span>
+                    <span>{!! __('shipping.terms_own_delivery') !!}</span>
                 </li>
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span><strong class="text-gray-900">Міжнародна доставка:</strong> обговорюється індивідуально.</span>
+                    <span>{!! __('shipping.terms_international') !!}</span>
                 </li>
             </ul>
         </div>
@@ -58,20 +58,20 @@
                 <span class="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-700 text-white shrink-0">
                     <x-lucide-credit-card class="w-4 h-4" />
                 </span>
-                Умови оплати
+                {{ __('shipping.payment_title') }}
             </h2>
             <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span>Безготівковий розрахунок (рахунок-фактура, ПДВ).</span>
+                    <span>{{ __('shipping.payment_cashless') }}</span>
                 </li>
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span>Передоплата 100% або відстрочка платежу (для постійних партнерів).</span>
+                    <span>{{ __('shipping.payment_prepayment') }}</span>
                 </li>
                 <li class="flex items-start gap-2">
                     <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-400"></span>
-                    <span>Готівковий розрахунок при самовивозі.</span>
+                    <span>{{ __('shipping.payment_pickup') }}</span>
                 </li>
             </ul>
         </div>
@@ -81,9 +81,9 @@
                 <span class="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-700 text-white shrink-0">
                     <x-lucide-package class="w-4 h-4" />
                 </span>
-                Самовивіз
+                {{ __('shipping.pickup_title') }}
             </h2>
-            <p class="text-gray-600 leading-relaxed">Ви можете забрати замовлення самостійно зі складу після погодження наявності товару з менеджером. Адреса складу та час роботи уточнюється при замовленні.</p>
+            <p class="text-gray-600 leading-relaxed">{{ __('shipping.pickup_text') }}</p>
         </div>
 
     </div>
@@ -92,7 +92,7 @@
     <div class="mt-8 text-center">
         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 px-6 py-3 font-semibold text-white bg-blue-700 rounded-2xl hover:bg-blue-800 transition shadow-lg shadow-blue-100">
             <x-lucide-message-circle class="w-5 h-5" />
-            Зв'язатися з нами
+            {{ __('shipping.contact_btn') }}
         </a>
     </div>
 

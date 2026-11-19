@@ -10,15 +10,10 @@ name('prod_lak_kataliz');
 
 @extends('layouts.base')
 
-@section('title', __('Каталізатори для поліуретанової піни – ефективні рішення для виробництва'))
-@section('meta_description', __('Дізнайтеся, як каталізатори впливають на швидкість і якість полімеризації поліуретанової піни. Широкий вибір каталізаторів для різних застосувань у виробництві та будівництві.'))
-@section('meta_keywords', __('каталізатори для поліуретанової піни, каталізатори полімеризації, каталізатори виробництво поліуретан,
-каталізатори для будівництва, ефективні каталізатори поліуретан'))
-
-
-@section('og_title', __('Каталізатори для поліуретанової піни – ефективні рішення для виробництва'))
-@section('og_description', __('Дізнайтеся, як каталізатори впливають на швидкість і якість полімеризації поліуретанової піни. Широкий вибір каталізаторів для різних застосувань у виробництві та будівництві.'))
-
+@section('title', __('mes.product_top_title_py_catalysts') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.product_top_description_py_catalysts'))
+@section('og_title', __('mes.product_top_title_py_catalysts') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.product_top_description_py_catalysts'))
 @section('og_image', asset('img/mat_5/02.png'))
 
 @section('content')

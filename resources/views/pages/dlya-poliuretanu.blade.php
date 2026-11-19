@@ -8,22 +8,10 @@ name('py_serovine');
 
 @extends('layouts.base')
 
-@section('title', __('Сировина для поліуретану'))
-@section('meta_description',
-    __('Широкий вибір сировини для виробництва поліуретану. Надійні компоненти для створення
-    міцних,
-    еластичних і довговічних поліуретанових виробів. Оптимальні рішення для будівництва, промисловості та інших галузей.'))
-@section('meta_keywords',
-    __('сировина для поліуретану, компоненти для поліуретану, поліол та ізоціанат, поліуретанові
-    матеріали,
-    поліуретанова система, виробництво поліуретану, поліуретанові компоненти, хімічні речовини для поліуретану'))
-
-
-@section('og_title', __('Сировина для поліуретану'))
-@section('og_description',
-    __('Широкий вибір сировини для виробництва поліуретану. Надійні компоненти для створення
-    міцних,
-    еластичних і довговічних поліуретанових виробів. Оптимальні рішення для будівництва, промисловості та інших галузей.'))
+@section('title', __('mes.subproduct_top_title_py') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.subproduct_top_description_py'))
+@section('og_title', __('mes.subproduct_top_title_py') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.subproduct_top_description_py'))
 @section('og_image', asset('img/categories/002.png'))
 
 @section('content')

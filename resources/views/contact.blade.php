@@ -77,15 +77,6 @@
                                 {{ __('contact.contact_actual_address') }}</div>
                             <div class="text-lg xs:text-sm">{{ __('contact.contact_actual_address_one') }} </div>
                         </div>
-                        <div class="order-1 mt-2">
-                            <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl xs:text-lg">
-                                {{ __('contact.contact_сomposition') }}</div>
-                            <div class="text-lg xs:text-sm">{{ __('contact.contact_сomposition_one') }}</div>
-                            <div class="flex flex-row justify-start mt-1">
-                                <div class="text-lg font-r500 xs:text-base">{{ __('contact.contact_mobile') }}</div>
-                                <div class="ml-2 text-lg xs:text-base">{{ __('contact.contact_mobile_one') }} </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

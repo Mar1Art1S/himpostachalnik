@@ -6,7 +6,6 @@ use Illuminate\Console\Command;
 
 class InstallCommand extends Command
 {
-
     protected $signature = 'install';
 
     protected $description = 'Встановити программу';

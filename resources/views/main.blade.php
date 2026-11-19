@@ -1,48 +1,38 @@
 @extends('layouts.base')
-@section('title', __('Хімічна сировина'))
-@section('meta_description',
-    __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових
-    матеріалів, клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній
-    промисловості, забезпечуючи стійкість, ізоляцію та довговічність матеріалів'))
-@section('meta_keywords',
-    __('хімічна сировина, поліуретан, пінополіуретан, лакофарбові матеріали, клейові матеріали,
-    гідроізоляція, поліуретанові матеріали, пінополіуретанові продукты, лакофарбові покриття, клеї та герметики, матеріали
-    для гідроізоляції'))
-@section('og_title', __('Хімічна сировина'))
-@section('og_description',
-    __('Хімічна сировина для виробництва поліуретану та пінополіуретану, лакофарбових матеріалів,
-    клеїв і гідроізоляційних покриттів, що застосовується в будівництві, меблевій та автомобільній промисловості,
-    забезпечуючи стійкість, ізоляцію та довговічність матеріалів'))
+@section('title', __('main.meta_title'))
+@section('meta_description', __('main.meta_description'))
+@section('meta_keywords', __('main.meta_keywords'))
+@section('og_title', __('main.meta_title'))
+@section('og_description', __('main.meta_description'))
 @section('og_image', asset('img/3_main/BGr.jpg'))
 @section('content')
     <x-section :fullWidth="true" class="max-w-full my-0 overflow-hidden ">
         <div class="w-full overflow-hidden bg-[#eef2fb]">
             <!-- MAIN GRID -->
-            <div class="grid grid-cols-2 tg:grid-cols-1 items-stretch">
+            <div class="home-hero-grid grid grid-cols-2 tg:grid-cols-1 items-stretch">
                 <!-- LEFT SIDE -->
-                <div class="flex items-center px-24 lf:px-16 tg:px-10 md:px-8 sm:px-6 py-16 tg:py-10">
-                    <div class="w-full max-w-3xl">
+                <div class="home-hero-copy flex items-center px-24 lf:px-16 tg:px-10 md:px-8 sm:px-6 py-16 tg:py-10">
+                    <div class="home-hero-content w-full max-w-3xl">
                         <!-- TITLE -->
                         <h1
-                            class="text-[78px] lf:text-[64px] tg:text-[56px] sm:text-[42px] leading-[0.95]
+                            class="home-hero-title text-[78px] lf:text-[64px] tg:text-[56px] sm:text-[42px] leading-[0.95]
                     font-black uppercase tracking-[-2px] text-[#0b2f7a]">
 
                             {{ __('mes.chemical_raw_materials') }}
                         </h1>
 
                         <!-- SUBTITLE -->
-                        <div class="mt-5 text-2xl tg:text-xl sm:text-lg font-bold uppercase text-[#353535]">
+                        <div class="home-hero-subtitle mt-5 text-2xl tg:text-xl sm:text-lg font-bold uppercase text-[#353535]">
                             {{ __('mes.production_and_supply') }}
                         </div>
 
                         <!-- FEATURES -->
-                        <div class="grid grid-cols-4 tg:grid-cols-2 sm:grid-cols-1 gap-6 mt-14">
+                        <div class="home-benefits-grid grid grid-cols-4 tg:grid-cols-2 sm:grid-cols-1 gap-6 mt-14">
 
                             <!-- CARD -->
-
                             <x-main.card-icon
-                                :title="__('Висока якість')"
-                                :text="__('Сертифікована продукція від перевірених виробників')">
+                                :title="__('main.feat_quality_title')"
+                                :text="__('main.feat_quality_text')">
                                 <x-slot:icon>
                                     <x-lucide-flask-conical class="w-8 h-8 text-white" />
                                 </x-slot:icon>
@@ -50,17 +40,16 @@
 
                             <!-- CARD -->
                             <x-main.card-icon
-                                :title="__('Надійність')"
-                                :text="__('Стабільні поставки
-                                    та виконання зобов\'язань')">
+                                :title="__('main.feat_reliability_title')"
+                                :text="__('main.feat_reliability_text')">
                                 <x-slot:icon>
                                     <x-lucide-shield-check class="w-8 h-8 text-white" />
                                 </x-slot:icon>
                             </x-main.card-icon>
                             <!-- CARD -->
                             <x-main.card-icon
-                                :title="__('Швидка доставка')"
-                                :text="__('Оперативна доставка по всій Україні')">
+                                :title="__('main.feat_delivery_title')"
+                                :text="__('main.feat_delivery_text')">
                                 <x-slot:icon>
                                     <x-lucide-truck class="w-8 h-8 text-white" />
                                 </x-slot:icon>
@@ -68,8 +57,8 @@
 
                             <!-- CARD -->
                             <x-main.card-icon
-                                :title="__('Професійна підтримка')"
-                                :text="__('Консультації та допомога на кожному етапі')">
+                                :title="__('main.feat_support_title')"
+                                :text="__('main.feat_support_text')">
                                 <x-slot:icon>
                                     <x-lucide-headset class="w-8 h-8 text-white" />
                                 </x-slot:icon>
@@ -80,7 +69,7 @@
                         <!-- BUTTON -->
                         <div class="mt-14">
 
-                            <button
+                            <a href="{{ route('about') }}"
                                 class="group inline-flex items-center gap-4
                                     rounded-2xl border-2 border-[#2453df]
                                     px-8 py-4 font-bold uppercase tracking-wide
@@ -89,12 +78,12 @@
                                     hover:bg-[#2453df] hover:text-white">
 
                                 <span>
-                                    Дізнатись більше
+                                    {{ __('main.learn_more') }}
                                 </span>
 
                                 <x-lucide-arrow-right
                                     class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +94,7 @@
                     <!-- TOP PART: IMAGE -->
                     <div class="relative flex-1 min-h-[400px] tg:min-h-[300px] sm:min-h-[250px]">
                         <img src="{{ asset('img/3_main/bd-info.png') }}" alt="Chemical"
-                            class="absolute inset-0 w-full h-full object-cover object-center">
+                            class="home-hero-media absolute inset-0 w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-[#082c7a]/15"></div>
                     </div>
 
@@ -114,15 +103,15 @@
 
                         <div class="max-w-[1600px] mx-auto p-12 tg:p-10 md:p-8 sm:p-6">
 
-                            <div class="flex flex-row tg:flex-col gap-16 tg:gap-8 w-full justify-between">
+                            <div class="home-stats-layout flex flex-row tg:flex-col gap-16 tg:gap-8 w-full justify-between">
 
                                 <!-- LEFT DATA GROUP -->
                                 <div class="flex-1 w-full">
-                                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
+                                    <div class="home-stat-grid grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
                                         <!-- ITEM -->
                                         <x-main.card-item
-                                            :title="__('25+')"
-                                            :text="__('років досвіду')">
+                                            title="25+"
+                                            :text="__('main.stat_exp')">
                                             <x-slot:icon>
                                                 <x-lucide-briefcase-business class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
                                             </x-slot:icon>
@@ -130,8 +119,8 @@
 
                                         <!-- ITEM -->
                                         <x-main.card-item
-                                            :title="__('100+')"
-                                            :text="__('позицій у каталозі')">
+                                            title="100+"
+                                            :text="__('main.stat_catalog')">
                                             <x-slot:icon>
                                                 <x-lucide-package-search class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
                                             </x-slot:icon>
@@ -141,16 +130,16 @@
                                 </div>
 
                                 <!-- DIVIDER -->
-                                <div class="hidden tg:block h-px w-full bg-white/10 my-2"></div>
-                                <div class="tg:hidden w-px bg-white/10 self-stretch"></div>
+                                <div class="home-stats-divider-horizontal hidden tg:block h-px w-full bg-white/10 my-2"></div>
+                                <div class="home-stats-divider-vertical tg:hidden w-px bg-white/10 self-stretch"></div>
 
                                 <!-- RIGHT DATA GROUP -->
                                 <div class="flex-1 w-full">
-                                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
+                                    <div class="home-stat-grid grid grid-cols-2 xs:grid-cols-1 gap-8 sm:gap-6">
                                         <!-- ITEM -->
                                         <x-main.card-item
-                                            :title="__('1000+')"
-                                            :text="__('задоволених клієнтів')">
+                                            title="1000+"
+                                            :text="__('main.stat_clients')">
                                             <x-slot:icon>
                                                 <x-lucide-handshake class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
                                             </x-slot:icon>
@@ -158,8 +147,8 @@
 
                                         <!-- ITEM -->
                                         <x-main.card-item
-                                            :title="__('Якісна')"
-                                            :text="__('продукція')">
+                                            :title="__('main.stat_quality_title')"
+                                            :text="__('main.stat_quality_text')">
                                             <x-slot:icon>
                                                 <x-lucide-badge-check class="w-6 h-6 sm:w-7 sm:h-7 text-[#f0b51d]" />
                                             </x-slot:icon>
@@ -179,9 +168,9 @@
     </x-section>
 
 
-    <x-section :fullWidth="true" class="px-10 sf:px-5">
+    <x-section :fullWidth="true" class="home-section-padding px-10 sf:px-5">
 
-        <x-decor.card>
+        <x-decor.card gridClass="home-category-grid">
             <x-category title=" {{ __('mes.category_title_ppy') }}" description="{{ __('mes.category_description_ppy') }}"
                 image="{{ asset('img/categories/001.png') }}" link="{{ route('ppy_serovine') }}" />
             <x-category title="{{ __('mes.category_title_py') }}" description="{{ __('mes.category_description_py') }}"
@@ -207,13 +196,13 @@
         </x-decor.card>
     </x-section>
 
-    <x-section :fullWidth="true" class="px-10 md:px-6 sm:px-4">
+    <x-section :fullWidth="true" class="home-section-padding px-10 md:px-6 sm:px-4">
         <section class="bg-[#1E3A9A] rounded-[32px] overflow-hidden">
             <div class="grid grid-cols-2 md:grid-cols-1 min-h-[520px] md:min-h-0">
 
                 <!-- Image Block -->
                 <div class="relative h-full md:h-[300px] sm:h-[220px]">
-                    <img src="{{ asset('img/block/Завод__002.png') }}" alt="Про компанію"
+                    <img src="{{ asset('img/block/Завод__002.png') }}" alt="{{ __('main.about_company_badge') }}"
                         class="absolute inset-0 w-full h-full object-cover">
 
                     <!-- Overlay -->
@@ -227,11 +216,10 @@
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-[#1E3A9A]/80 uppercase tracking-wide">
-                                    {{ __('Про компанію') }}
-
+                                    {{ __('main.about_company_badge') }}
                                 </p>
                                 <h3 class="text-2xl xs:text-lg font-bold text-[#111827]">
-                                    {{ __('Надійний виробник') }}
+                                    {{ __('main.about_reliable_producer') }}
                                 </h3>
                             </div>
                         </div>
@@ -239,7 +227,7 @@
                 </div>
 
                 <!-- Content Block -->
-                <div class="relative flex items-center bg-[#1E3A9A] px-16 tg:px-10 md:px-8 sm:px-6 py-12 md:py-10">
+                <div class="home-about-copy relative flex items-center bg-[#1E3A9A] px-16 tg:px-10 md:px-8 sm:px-6 py-12 md:py-10">
 
                     <!-- Decorative Circle -->
                     <div class="absolute top-0 right-0 w-72 h-72 bg-[#FFC800]/10 rounded-full blur-3xl"></div>
@@ -252,25 +240,22 @@
                             <x-lucide-building-2 class="w-5 h-5 text-[#1E3A9A]" />
 
                             <span class="text-[#1E3A9A] font-bold text-sm uppercase tracking-wider">
-                                {{ __('Хімічне виробництво') }}
-
+                                {{ __('main.about_production_badge') }}
                             </span>
 
                         </div>
 
                         <!-- Title -->
                         <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-white leading-tight mb-4">
-                            Сучасні рішення
+                            {{ __('main.about_solutions_title') }}
                             <span class="text-[#FFC800]">
-                                для промисловості
+                                {{ __('main.about_solutions_highlight') }}
                             </span>
                         </h2>
 
                         <!-- Description -->
                         <p class="text-lg leading-8 text-white  mb-6 max-w-xl">
-                            Ми спеціалізуємося на постачанні хімічної сировини, компонентів
-                            для поліуретанів та промислових матеріалів для підприємств по всій Україні.
-                            Забезпечуємо стабільну якість, швидку логістику та технічну підтримку.
+                            {{ __('main.about_desc') }}
                         </p>
 
                         <!-- Features -->
@@ -284,11 +269,11 @@
 
                                 <div>
                                     <h4 class="text-white font-bold text-lg mb-1">
-                                        Контроль якості
+                                        {{ __('main.about_qc_title') }}
                                     </h4>
 
                                     <p class="text-blue-100 text-sm">
-                                        Перевірена сировина та сертифікована продукція.
+                                        {{ __('main.about_qc_text') }}
                                     </p>
                                 </div>
 
@@ -302,11 +287,11 @@
 
                                 <div>
                                     <h4 class="text-white font-bold text-lg mb-1">
-                                        Швидка доставка
+                                        {{ __('main.about_delivery_title') }}
                                     </h4>
 
                                     <p class="text-blue-100 text-sm">
-                                        Оперативне відвантаження по Україні.
+                                        {{ __('main.about_delivery_text') }}
                                     </p>
                                 </div>
 
@@ -318,159 +303,157 @@
         </section>
 
     </x-section>
-    <x-section :fullWidth="true" class="px-10 md:px-6 sm:px-4">
+    <x-section :fullWidth="true" class="home-section-padding px-10 md:px-6 sm:px-4">
 
-        <section class="py-20 bg-[#F4F7FB] overflow-hidden">
-            <div class="container mx-auto px-4">
+        <section class="overflow-hidden rounded-[32px] bg-[#F4F7FB] py-20 tg:py-16 sm:rounded-[24px] sm:py-12">
+            <div class="container mx-auto max-w-[1600px] px-8 tg:px-6 sm:px-4">
 
                 <!-- Header -->
-                <div class="text-center max-w-3xl mx-auto mb-14">
+                <div class="mx-auto mb-14 max-w-3xl text-center sm:mb-10">
 
                     <span
-                        class="inline-flex items-center gap-2 bg-[#1E3A9A]/10 text-[#1E3A9A] font-bold px-5 py-2 rounded-full mb-5">
+                        class="mb-5 inline-flex items-center gap-2 rounded-full bg-[#1E3A9A]/10 px-5 py-2 font-bold text-[#1E3A9A] sm:px-4 sm:text-sm">
 
                      <x-lucide-briefcase-business class="w-5 h-5" />
 
-    Наші напрямки
+                        {{ __('main.directions_badge') }}
 
-</span>
+                    </span>
 
-                    <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-[#1E3A9A] mb-5">
-                        Галузеві проекти
+                    <h2 class="mb-5 text-4xl font-black text-[#1E3A9A] tg:text-3xl sm:text-2xl">
+                        {{ __('main.directions_title') }}
                     </h2>
 
-                    <p class="text-gray-600 text-lg leading-8">
-                        Спеціалізовані retail та галузеві проекти компанії Хімпостачальник
-                        для окремих напрямків продукції та промислових рішень.
+                    <p class="text-lg leading-8 text-gray-600 sm:text-base sm:leading-7">
+                        {{ __('main.directions_lead') }}
                     </p>
                 </div>
 
                 <!-- Cards -->
-                <div class="grid grid-cols-2 md:grid-cols-1 gap-8">
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-1 sm:gap-6">
 
                     <!-- Card 1 -->
-                    <div
-                        class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
+                    <article
+                        class="group relative min-h-[520px] overflow-hidden rounded-[32px] border border-white/40 shadow-xl md:min-h-[500px] sm:min-h-[560px] sm:rounded-[24px] xs:min-h-[600px]">
 
                         <!-- Background Image -->
-                        <img src="{{ asset('img/block/ТехПолімерМакркет.png') }}" alt="TechPolymers"
-                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <img src="{{ asset('img/block/ТехПолімерМакркет.png') }}"
+                            alt="{{ __('main.project_tech_brand') }}"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-700 group-hover:scale-105">
 
                         <!-- Overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/20">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A]/95 via-[#0F172A]/75 to-[#0F172A]/25 sm:bg-gradient-to-b sm:from-[#0F172A]/95 sm:via-[#0F172A]/80 sm:to-[#0F172A]/55">
                         </div>
 
                         <!-- Content -->
-                        <div class="relative z-10 flex flex-col justify-between h-full p-10 sm:p-6">
+                        <div class="relative z-10 flex min-h-[520px] flex-col justify-between p-10 md:min-h-[500px] sm:min-h-[560px] sm:p-6 xs:min-h-[600px] xs:p-5">
 
                             <div>
 
                                 <!-- Logo -->
                                 <div
-                                    class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
+                                    class="mb-6 inline-flex h-16 w-42 items-center justify-center rounded-2xl bg-blue-900 p-1 backdrop-blur sm:h-14 sm:w-36">
 
-                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
+                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="{{ __('main.project_tech_brand') }}"
                                          class="object-contain w-full ">
 
                                 </div>
 
                                 <!-- Title -->
-                                <h3 class="text-3xl sm:text-2.5xl font-black text-white mb-2">
-                                    ТехПолімер Маркет
+                                <h3 class="mb-2 text-3xl font-black text-white sm:text-2xl">
+                                    {{ __('main.project_tech_brand') }}
                                 </h3>
 
-                                <p class="text-[#FFC800] font-bold text-lg mb-6">
-                                    Технічні полімери та промислові матеріали
+                                <p class="mb-6 text-lg font-bold text-[#FFC800] sm:text-base">
+                                    {{ __('main.project_tech_sub') }}
                                 </p>
 
                                 <!-- Description -->
-                                <p class="text-white/90 leading-8 max-w-md">
-                                    Спеціалізований retail та B2B-проект для технічних полімерів,
-                                    компаундів та промислових матеріалів для підприємств і виробництв.
+                                <p class="max-w-md leading-8 text-white/90 sm:text-sm sm:leading-7">
+                                    {{ __('main.project_tech_desc') }}
                                 </p>
                             </div>
 
                             <!-- Bottom -->
-                            <div class="flex flex-wrap items-center gap-4 mt-10">
+                            <div class="mt-10 flex flex-wrap items-center gap-4 sm:flex-col sm:items-stretch sm:gap-3">
 
-                                <a href="https://techpolymersmarket.com/"
-                                   class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
+                                <a href="https://techpolymersmarket.com/" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#FFC800] px-7 py-4 font-bold text-[#1E3A9A] transition hover:bg-yellow-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70 sm:w-full sm:px-5 sm:py-3.5">
 
                                     <x-lucide-arrow-up-right class="w-5 h-5" />
 
-                                    Перейти на сайт
+                                    {{ __('main.visit_site') }}
 
                                 </a>
 
-                                <div class="flex items-center gap-2 text-white/90 font-medium">
-                                    <i data-lucide="globe" class="w-5 h-5 text-[#FFC800]"></i>
-                                    techpolymersmarket.com
+                                <div class="flex min-w-0 items-center gap-2 font-medium text-white/90 sm:justify-center sm:text-sm">
+                                    <x-lucide-globe-2 class="h-5 w-5 shrink-0 text-[#FFC800]" />
+                                    <span class="break-all">techpolymersmarket.com</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Card 2 -->
-                    <div
-                        class="group relative overflow-hidden rounded-[32px] min-h-[420px] shadow-xl border border-white/40">
+                    <article
+                        class="group relative min-h-[520px] overflow-hidden rounded-[32px] border border-white/40 shadow-xl md:min-h-[500px] sm:min-h-[560px] sm:rounded-[24px] xs:min-h-[600px]">
 
                         <!-- Background Image -->
-                        <img src="{{ asset('img/block/Хімекселен__002.png') }}" alt="Хімекселен"
-                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <img src="{{ asset('img/block/Хімекселен__002.png') }}" alt="{{ __('main.project_bee_brand') }}"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-700 group-hover:scale-105">
 
                         <!-- Overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#1E1B16]/90 via-[#1E1B16]/60 to-[#1E1B16]/20">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#1E1B16]/95 via-[#1E1B16]/70 to-[#1E1B16]/25 sm:bg-gradient-to-b sm:from-[#1E1B16]/95 sm:via-[#1E1B16]/78 sm:to-[#1E1B16]/55">
                         </div>
 
                         <!-- Content -->
-                        <div class="relative z-10 flex flex-col justify-between h-full p-10 sm:p-6">
+                        <div class="relative z-10 flex min-h-[520px] flex-col justify-between p-10 md:min-h-[500px] sm:min-h-[560px] sm:p-6 xs:min-h-[600px] xs:p-5">
 
                             <div>
 
                                 <!-- Logo -->
                                 <div
-                                    class="inline-flex items-center justify-center w-42 h-16 p-1 rounded-2xl bg-blue-900 backdrop-blur mb-6">
+                                    class="mb-6 inline-flex h-16 w-42 items-center justify-center rounded-2xl bg-blue-900 p-1 backdrop-blur sm:h-14 sm:w-36">
 
-                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
+                                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="{{ __('main.project_bee_brand') }}"
                                          class="object-contain w-full ">
 
                                 </div>
 
                                 <!-- Title -->
-                                <h3 class="text-3xl sm:text-2.5xl font-black text-white mb-2">
-                                    Хімекселен
+                                <h3 class="mb-2 text-3xl font-black text-white sm:text-2xl">
+                                    {{ __('main.project_bee_brand') }}
                                 </h3>
 
-                                <p class="text-[#FFC800] font-bold text-lg mb-6">
-                                    Вулики з Пінополіуретану
+                                <p class="mb-6 text-lg font-bold text-[#FFC800] sm:text-base">
+                                    {{ __('main.project_bee_sub') }}
                                 </p>
 
                                 <!-- Description -->
-                                <p class="text-white/90 leading-8 max-w-md">
-                                    Спеціалізований retail-проект для пасічників та господарств.
-                                    Продукція для догляду за пасіками, обладнання та супутні товари.
+                                <p class="max-w-md leading-8 text-white/90 sm:text-sm sm:leading-7">
+                                    {{ __('main.project_bee_desc') }}
                                 </p>
                             </div>
 
                             <!-- Bottom -->
-                            <div class="flex flex-wrap items-center gap-4 mt-10">
+                            <div class="mt-10 flex flex-wrap items-center gap-4 sm:flex-col sm:items-stretch sm:gap-3">
 
-                                <a href="https://bee.lg.ua/"
-                                   class="inline-flex items-center gap-3 bg-[#FFC800] hover:bg-yellow-400 transition px-7 py-4 rounded-2xl font-bold text-[#1E3A9A]">
+                                <a href="https://bee.lg.ua/" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#FFC800] px-7 py-4 font-bold text-[#1E3A9A] transition hover:bg-yellow-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70 sm:w-full sm:px-5 sm:py-3.5">
 
                                     <x-lucide-arrow-up-right class="w-5 h-5" />
 
-                                    Перейти на сайт
+                                    {{ __('main.visit_site') }}
 
                                 </a>
 
-                                <div class="flex items-center gap-2 text-white/90 font-medium">
-                                    <i data-lucide="globe" class="w-5 h-5 text-[#FFC800]"></i>
-                                    bee.lg.ua
+                                <div class="flex min-w-0 items-center gap-2 font-medium text-white/90 sm:justify-center sm:text-sm">
+                                    <x-lucide-globe-2 class="h-5 w-5 shrink-0 text-[#FFC800]" />
+                                    <span class="break-all">bee.lg.ua</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
@@ -479,7 +462,7 @@
 
     </x-section>
 
-    <x-section :fullWidth="true" class="px-10 md:px-6 sm:px-4">
+    <x-section :fullWidth="true" class="home-section-padding px-10 md:px-6 sm:px-4">
         <section class="overflow-hidden rounded-[36px] bg-[#FFD400]">
 
             <!-- TOP -->
@@ -503,16 +486,14 @@
                             <!-- Text -->
                             <div>
                                 <h2 class="text-3xl tg:text-2.5xl sm:text-2xl font-black text-[#0B0F1A] leading-tight mb-4">
-                                    Наші проекти —
+                                    {{ __('main.banner_title_1') }}
                                     <span class="text-[#0B3B92]">
-                                        екосистема спеціалізованих рішень
+                                        {{ __('main.banner_title_2') }}
                                     </span>
                                 </h2>
 
                                 <p class="text-[#111827] text-lg leading-8 max-w-3xl">
-                                    Хімпостачальник об’єднує виробництво, оптові поставки
-                                    та спеціалізовані retail-напрямки для різних галузей
-                                    промисловості та професійних ринків.
+                                    {{ __('main.banner_desc') }}
                                 </p>
                             </div>
                         </div>
@@ -520,14 +501,10 @@
                 </div>
             </div>
 
-
-
-
-
         </section>
     </x-section>
 
-    <x-section :fullWidth="true" class="px-10 md:px-6 sm:px-4">
+    <x-section :fullWidth="true" class="home-section-padding px-10 md:px-6 sm:px-4">
 
         <section class="py-20 bg-[#F3F5F9]">
             <div class="container mx-auto px-4">
@@ -539,17 +516,17 @@
                         <span
                             class="inline-flex items-center gap-2 bg-[#0B3B92]/10 text-[#0B3B92] px-5 py-2 rounded-full font-bold mb-4">
                             <i data-lucide="briefcase-business" class="w-5 h-5"></i>
-                            Retail & B2B
+                            {{ __('main.news_badge') }}
                         </span>
 
                         <h2 class="text-4xl tg:text-3xl sm:text-2xl font-black text-[#001B4D]">
-                            Наші новини
+                            {{ __('main.news_heading') }}
                         </h2>
                     </div>
 
-                    <a href="#"
+                    <a href="{{ route('article.index') }}"
                         class="hidden md:inline-flex items-center gap-2 text-[#0B3B92] font-bold hover:gap-4 transition-all">
-                        Всі проекти
+                        {{ __('main.all_projects') }}
                         <i data-lucide="arrow-right" class="w-5 h-5"></i>
                     </a>
                 </div>
@@ -625,7 +602,7 @@
 
                                     <a href="{{ route('article.show', [$article->category->slug, $article->slug]) }}"
                                         class="inline-flex items-center gap-2 text-[#0B3B92] font-black hover:gap-4 transition-all">
-                                        Детальніше
+                                        {{ __('main.read_more') }}
                                         <i data-lucide="arrow-right" class="w-5 h-5"></i>
                                     </a>
 
@@ -641,8 +618,6 @@
                 </div>
             </div>
         </section>
-
-
 
     </x-section>
 @endsection

@@ -1,7 +1,7 @@
 @props([
     'title', 'text'
 ])
-<div class="flex gap-4 sm:gap-5 items-center">
+<div class="home-stat-item flex gap-4 sm:gap-5 items-center">
     <div
         class="flex h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2453df]">
         {{ $icon ?? $slot }}

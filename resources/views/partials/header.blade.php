@@ -83,7 +83,7 @@
 
                 <div class="flex items-center gap-2 md:flex sf:hidden">
                     <x-lucide-clock-3 class="w-4 h-4 text-yellow-400" />
-                    <span>Пн - Пт: 8:00 - 17:00</span>
+                    <span>{{ __('header.header_schedule') }}</span>
                 </div>
 
             </div>
@@ -147,7 +147,7 @@
             <div class="flex flex-col items-center gap-6 lg:flex-row order-1">
                 <a href="{{ route('main') }}"
                     class="shrink-0 inline-flex items-center justify-center p-2 xl:p-3 sf:w-32 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 shadow-md w-full max-w-[140px] md:max-w-[200px] xl:max-w-[280px]">
-                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="Логотип"
+                    <img src="{{ asset('img/2_logo/Logo_new.png') }}" alt="{{ __('header.header_logo_alt') }}"
                         class="object-contain w-full h-[50px] md:h-[80px] xl:h-[130px] ">
                 </a>
                 <div class="hidden w-px bg-gray-200 lg:block h-20"></div>
@@ -182,7 +182,7 @@
                             <!-- Header -->
                             <div class="flex items-center justify-between mb-4">
                                 <h3 class="text-xl font-bold text-gray-900">
-                                    Пошук
+                                    {{ __('header.header_search') }}
                                 </h3>
                                 <button @click="searchOpen = false" class="p-2 transition rounded-xl hover:bg-gray-100">
                                     <x-lucide-x class="w-5 h-5 text-gray-500" />
@@ -202,7 +202,7 @@
                     {{-- Phone --}}
                     <div class="flex items-center gap-4">
                         <div x-data="{ open: {{ session('callback-success') || $errors->callback->any() ? 'true' : 'false' }} }" class="flex items-center gap-4">
-                            <!-- Кнопка -->
+                            <!-- Button -->
                             <button @click="open = true" class="flex items-center gap-4 text-left group">
                                 <div class="flex items-center justify-center w-12 h-12 xl:w-16 xl:h-16 text-white bg-blue-700 shadow-lg rounded-xl xl:rounded-2xl shadow-blue-100 group-hover:scale-105 transition">
                                     <x-lucide-phone class="w-5 h-5 xl:w-7 xl:h-7" />
@@ -212,7 +212,7 @@
                                         +38 (050) 340-35-47
                                     </div>
                                     <div class="font-medium text-blue-700">
-                                        Замовити дзвінок
+                                        {{ __('header.callback_button') }}
                                     </div>
                                 </div>
                             </button>
@@ -223,54 +223,54 @@
                                     <!-- Header -->
                                     <div class="flex items-center justify-between mb-6">
                                         <div>
-                                            <h3 class="text-2xl font-bold text-gray-900">Замовити дзвінок</h3>
-                                            <p class="mt-1 text-sm text-gray-500">Ми передзвонимо вам найближчим часом</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">{{ __('header.callback_modal_title') }}</h3>
+                                            <p class="mt-1 text-sm text-gray-500">{{ __('header.callback_modal_subtitle') }}</p>
                                         </div>
                                         <button @click="open = false" class="p-2 transition rounded-xl hover:bg-gray-100">
                                             <x-lucide-x class="w-5 h-5 text-gray-500" />
                                         </button>
                                     </div>
                                     <!-- Form / Success State -->
-                                    @session('callback-success')
+                                    @if(session('callback-success'))
                                         <div class="text-center py-6">
                                             <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-green-100 text-green-600 rounded-full">
                                                 <x-lucide-check class="w-8 h-8" />
                                             </div>
-                                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Дякуємо!</h3>
+                                            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ __('header.callback_thanks_title') }}</h3>
                                             <p class="text-gray-600">{{ session('callback-success') }}</p>
                                             <button @click="open = false" type="button" class="mt-6 w-full py-3 font-semibold text-white bg-blue-700 rounded-2xl hover:bg-blue-800 transition shadow-lg shadow-blue-100">
-                                                Закрити
+                                                {{ __('header.callback_close') }}
                                             </button>
                                         </div>
                                     @else
                                         <form action="/callback-request" method="POST" class="space-y-4">
                                             @csrf
                                             <div>
-                                                <label class="block mb-2 text-sm font-medium text-gray-700">Ваше ім’я</label>
-                                                <input type="text" name="name" value="{{ old('name') }}" placeholder="Іван" class="w-full px-4 py-3 border @error('name', 'callback') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                                <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.callback_name_label') }}</label>
+                                                <input type="text" name="name" value="{{ old('name') }}" placeholder="{{ __('header.callback_name_placeholder') }}" class="w-full px-4 py-3 border {{ $errors->callback->has('name') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                                                 @error('name', 'callback')
                                                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <div>
-                                                <label class="block mb-2 text-sm font-medium text-gray-700">Телефон</label>
-                                                <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+38 (0__) ___-__-__" class="w-full px-4 py-3 border @error('phone', 'callback') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                                <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.callback_phone_label') }}</label>
+                                                <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+38 (0__) ___-__-__" class="w-full px-4 py-3 border {{ $errors->callback->has('phone') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                                                 @error('phone', 'callback')
                                                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <div>
-                                                <label class="block mb-2 text-sm font-medium text-gray-700">Коментар</label>
-                                                <textarea name="message" rows="4" placeholder="Коротко опишіть питання" class="w-full px-4 py-3 border @error('message', 'callback') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">{{ old('message') }}</textarea>
+                                                <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.callback_comment_label') }}</label>
+                                                <textarea name="message" rows="4" placeholder="{{ __('header.callback_comment_placeholder') }}" class="w-full px-4 py-3 border {{ $errors->callback->has('message') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">{{ old('message') }}</textarea>
                                                 @error('message', 'callback')
                                                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <button type="submit" class="w-full py-3 font-semibold text-white transition bg-blue-700 shadow-lg rounded-2xl hover:bg-blue-800">
-                                                Відправити заявку
+                                                {{ __('header.callback_submit') }}
                                             </button>
                                         </form>
-                                    @endsession
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -289,7 +289,7 @@
                                         director@himpost.com
                                     </div>
                                     <div class="font-medium text-blue-700">
-                                        Написати нам
+                                        {{ __('header.contact_modal_button') }}
                                     </div>
                                 </div>
                             </button>
@@ -300,23 +300,23 @@
                                     <!-- Header -->
                                     <div class="flex items-start justify-between mb-6">
                                         <div>
-                                            <h3 class="text-2xl font-bold text-gray-900">Написати нам</h3>
-                                            <p class="mt-1 text-sm text-gray-500">Відправте повідомлення і ми зв’яжемося з вами</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">{{ __('header.contact_modal_title') }}</h3>
+                                            <p class="mt-1 text-sm text-gray-500">{{ __('header.contact_modal_subtitle') }}</p>
                                         </div>
                                         <button @click="open = false" class="p-2 transition rounded-xl hover:bg-gray-100">
                                             <x-lucide-x class="w-5 h-5 text-gray-500" />
                                         </button>
                                     </div>
                                     <!-- Form / Success State -->
-                                    @session('contact-success')
+                                    @if(session('contact-success'))
                                         <div class="text-center py-6">
                                             <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-green-100 text-green-600 rounded-full">
                                                 <x-lucide-check class="w-8 h-8" />
                                             </div>
-                                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Дякуємо!</h3>
+                                            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ __('header.contact_thanks_title') }}</h3>
                                             <p class="text-gray-600">{{ session('contact-success') }}</p>
                                             <button @click="open = false" type="button" class="mt-6 w-full py-3 font-semibold text-white bg-blue-700 rounded-2xl hover:bg-blue-800 transition shadow-lg shadow-blue-100">
-                                                Закрити
+                                                {{ __('header.contact_close') }}
                                             </button>
                                         </div>
                                     @else
@@ -324,39 +324,39 @@
                                             @csrf
                                             <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                                                 <div>
-                                                    <label class="block mb-2 text-sm font-medium text-gray-700">Ваше ім’я</label>
-                                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="Іван" class="w-full px-4 py-3 border @error('name', 'contact') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                                    <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.contact_name_label') }}</label>
+                                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="{{ __('header.contact_name_placeholder') }}" class="w-full px-4 py-3 border {{ $errors->contact->has('name') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                                                     @error('name', 'contact')
                                                         <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                     @enderror
                                                 </div>
                                                 <div>
-                                                    <label class="block mb-2 text-sm font-medium text-gray-700">Телефон</label>
-                                                    <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+38 (0__) ___-__-__" class="w-full px-4 py-3 border @error('phone', 'contact') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                                    <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.contact_phone_label') }}</label>
+                                                    <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+38 (0__) ___-__-__" class="w-full px-4 py-3 border {{ $errors->contact->has('phone') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                                                     @error('phone', 'contact')
                                                         <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                     @enderror
                                                 </div>
                                             </div>
                                             <div>
-                                                <label class="block mb-2 text-sm font-medium text-gray-700">Email</label>
-                                                <input type="email" name="email" value="{{ old('email') }}" placeholder="example@gmail.com" class="w-full px-4 py-3 border @error('email', 'contact') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                                <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.contact_email_label') }}</label>
+                                                <input type="email" name="email" value="{{ old('email') }}" placeholder="example@gmail.com" class="w-full px-4 py-3 border {{ $errors->contact->has('email') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                                                 @error('email', 'contact')
                                                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <div>
-                                                <label class="block mb-2 text-sm font-medium text-gray-700">Повідомлення</label>
-                                                <textarea name="message" rows="5" placeholder="Напишіть ваше повідомлення..." class="w-full px-4 py-3 border @error('message', 'contact') border-red-500 @else border-gray-200 @enderror rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">{{ old('message') }}</textarea>
+                                                <label class="block mb-2 text-sm font-medium text-gray-700">{{ __('header.contact_message_label') }}</label>
+                                                <textarea name="message" rows="5" placeholder="{{ __('header.contact_message_placeholder') }}" class="w-full px-4 py-3 border {{ $errors->contact->has('message') ? 'border-red-500' : 'border-gray-200' }} rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">{{ old('message') }}</textarea>
                                                 @error('message', 'contact')
                                                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <button type="submit" class="w-full py-3 font-semibold text-white transition bg-blue-700 shadow-lg rounded-2xl hover:bg-blue-800">
-                                                Відправити повідомлення
+                                                {{ __('header.contact_submit') }}
                                             </button>
                                         </form>
-                                    @endsession
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -393,18 +393,18 @@
                     <button @click="catalogOpen = !catalogOpen"
                         class="items-center h-16 gap-4 px-8 text-xl font-bold text-gray-900 transition-all bg-yellow-400 flex hover:bg-yellow-300 rounded-2xl">
                         <x-lucide-menu class="w-6 h-6" />
-                        <span>Каталог продукції</span>
+                        <span>{{ __('header.header_catalog') }}</span>
                         <x-lucide-chevron-down class="w-5 h-5 transition-transform duration-300"
                             x-bind:class="catalogOpen ? 'rotate-180' : ''" />
                     </button>
 
                     {{-- Desktop Menu --}}
                     <div class="items-center gap-10 text-lg font-semibold text-white flex">
-                        <a href="{{ route('main') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('main') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Головна</a>
-                        <a href="{{ route('about') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('about') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Про компанію</a>
-                        <a href="{{ route('projects') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('projects') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Наші проекти</a>
-                        <a href="{{ route('contact') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('contact') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Контакти</a>
-                        <a href="{{ route('article.index') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('article.index') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">Новини</a>
+                        <a href="{{ route('main') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('main') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">{{ __('header.header_home') }}</a>
+                        <a href="{{ route('about') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('about') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">{{ __('header.header_about') }}</a>
+                        <a href="{{ route('projects') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('projects') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">{{ __('header.header_projects') }}</a>
+                        <a href="{{ route('contact') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('contact') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">{{ __('header.header_contact') }}</a>
+                        <a href="{{ route('article.index') }}" class="relative transition-colors duration-300 hover:text-yellow-400 {{ Route::is('article.index') ? 'text-yellow-400 after:absolute after:left-0 after:-bottom-3 after:w-full after:h-1 after:bg-yellow-400 after:rounded-full' : '' }}">{{ __('header.header_news') }}</a>
 
                         {{-- Support Dropdown --}}
                         <div x-data="{ supportOpen: false }" class="relative">
@@ -413,7 +413,7 @@
                                 @click.outside="supportOpen = false"
                                 class="relative flex items-center gap-1.5 transition-colors duration-300 hover:text-yellow-400 {{ Route::is('shipping') || Route::is('faq') || Route::is('privacy') || Route::is('terms') ? 'text-yellow-400' : '' }}"
                             >
-                                Підтримка
+                                {{ __('header.header_support') }}
                                 <x-lucide-chevron-down
                                     class="w-4 h-4 transition-transform duration-300"
                                     x-bind:class="supportOpen ? 'rotate-180' : ''"
@@ -436,7 +436,7 @@
                             >
                                 <a href="{{ route('shipping') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('shipping') ? 'bg-blue-50 text-blue-700' : '' }}">
                                     <x-lucide-truck class="w-4 h-4 text-blue-600 shrink-0" />
-                                    Умови поставки
+                                    {{ __('header.header_shipping') }}
                                 </a>
                                 <a href="{{ route('faq') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('faq') ? 'bg-blue-50 text-blue-700' : '' }}">
                                     <x-lucide-circle-help class="w-4 h-4 text-blue-600 shrink-0" />
@@ -444,11 +444,11 @@
                                 </a>
                                 <a href="{{ route('privacy') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('privacy') ? 'bg-blue-50 text-blue-700' : '' }}">
                                     <x-lucide-shield class="w-4 h-4 text-blue-600 shrink-0" />
-                                    Конфіденційність
+                                    {{ __('header.header_privacy') }}
                                 </a>
                                 <a href="{{ route('terms') }}" class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('terms') ? 'bg-blue-50 text-blue-700' : '' }}">
                                     <x-lucide-file-text class="w-4 h-4 text-blue-600 shrink-0" />
-                                    Умови
+                                    {{ __('header.header_terms') }}
                                 </a>
                             </div>
                         </div>
@@ -459,7 +459,7 @@
                 {{-- Right Desktop --}}
                 <div class="hidden xl:flex items-center gap-4">
                     {{-- Ask --}}
-                    <x-modal title="{{ __('other.other_question') }}">
+                    <x-modal :title="__('other.other_question')">
                         <x-slot:button>
                             <button @click="modalOpen=true"
                                 class="items-center h-16 gap-3 px-8 font-semibold text-white transition-all duration-300 border flex border-white/30 hover:bg-white hover:text-blue-900 rounded-2xl active:scale-95">
@@ -484,16 +484,16 @@
                     class="mb-4 md:mb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4 md:pb-5">
                     <div class="w-full text-center sm:text-left">
                         <div class="text-base md:text-lg  font-bold uppercase tracking-wide text-[#2453df]">
-                            Каталог продукції
+                            {{ __('header.header_catalog') }}
                         </div>
                         <div class="mt-1 text-xl md:text-3xl font-black text-[#0b2f7a]">
-                            Категорії та підкатегорії
+                            {{ __('header.header_categories_subcategories') }}
                         </div>
                     </div>
                 </div>
 
                 <div
-                    class="grid gap-3 md:gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[60vh] lg:max-h-none overflow-y-auto lg:overflow-visible pr-1 lg:pr-0">
+                    class="catalog-mega-grid grid gap-3 md:gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[60vh] lg:max-h-none overflow-y-auto lg:overflow-visible pr-1 lg:pr-0">
                     @foreach ($catalogSections as $section)
                         <div
                             class="group rounded-[16px] md:rounded-[24px] border border-slate-100 bg-slate-50/70 p-3 md:p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#2453df]/30 hover:bg-white hover:shadow-xl">
@@ -509,7 +509,7 @@
                                     </span>
                                     <span
                                         class="mt-1 inline-flex items-center gap-1 text-xs md:text-sm font-bold text-[#2453df]">
-                                        Перейти
+                                        {{ __('header.header_go_to') }}
                                         <x-lucide-arrow-up-right class="h-3 w-3 md:h-3.5 md:w-3.5" />
                                     </span>
                                 </span>
@@ -541,7 +541,7 @@
 
                 <a href="{{ route('main') }}"
                     class="block text-lg xs:text-sm font-semibold transition-colors duration-200 {{ Route::is('main') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Головна
+                    {{ __('header.header_home') }}
                 </a>
 
                 <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 xs:p-1">
@@ -552,7 +552,7 @@
                                 class="flex h-10 w-10 items-center justify-center rounded-xl xs:hidden bg-yellow-400 text-blue-900">
                                 <x-lucide-menu class="h-5 w-5" />
                             </span>
-                            Каталог продукції
+                            {{ __('header.header_catalog') }}
                         </span>
                         <x-lucide-chevron-down class="h-5 w-5 transition-transform duration-300"
                             x-bind:class="mobileCatalogOpen ? 'rotate-180' : ''" />
@@ -584,22 +584,22 @@
 
                 <a href="{{ route('about') }}"
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('about') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Про нас
+                    {{ __('header.header_about') }}
                 </a>
 
                 <a href="{{ route('projects') }}"
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('projects') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Наші проекти
+                    {{ __('header.header_projects') }}
                 </a>
 
                 <a href="{{ route('contact') }}"
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('contact') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Контакти
+                    {{ __('header.header_contact') }}
                 </a>
 
                 <a href="{{ route('article.index') }}"
                     class="block text-lg font-semibold transition-colors xs:text-sm duration-200 {{ Route::is('article.index') ? 'text-yellow-500' : 'text-blue-900 hover:text-yellow-500' }}">
-                    Блог
+                    {{ __('header.header_blog') }}
                 </a>
 
                 {{-- Mobile Support Dropdown --}}
@@ -610,7 +610,7 @@
                             <span class="flex h-10 w-10 items-center justify-center rounded-xl xs:hidden bg-blue-700 text-white">
                                 <x-lucide-life-buoy class="h-5 w-5" />
                             </span>
-                            Підтримка
+                            {{ __('header.header_support') }}
                         </span>
                         <x-lucide-chevron-down class="h-5 w-5 transition-transform duration-300"
                             x-bind:class="mobileSupportOpen ? 'rotate-180' : ''" />
@@ -620,7 +620,7 @@
                         <a href="{{ route('shipping') }}"
                             class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('shipping') ? 'bg-blue-50 text-blue-700' : '' }}">
                             <x-lucide-truck class="w-4 h-4 text-blue-600 shrink-0" />
-                            Умови поставки
+                            {{ __('header.header_shipping') }}
                         </a>
                         <a href="{{ route('faq') }}"
                             class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('faq') ? 'bg-blue-50 text-blue-700' : '' }}">
@@ -630,12 +630,12 @@
                         <a href="{{ route('privacy') }}"
                             class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('privacy') ? 'bg-blue-50 text-blue-700' : '' }}">
                             <x-lucide-shield class="w-4 h-4 text-blue-600 shrink-0" />
-                            Конфіденційність
+                            {{ __('header.header_privacy') }}
                         </a>
                         <a href="{{ route('terms') }}"
                             class="flex items-center gap-3 xs:text-xs xs:px-1 xs:py-1 rounded-xl px-3 py-2.5 text-base font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors {{ Route::is('terms') ? 'bg-blue-50 text-blue-700' : '' }}">
                             <x-lucide-file-text class="w-4 h-4 text-blue-600 shrink-0" />
-                            Умови
+                            {{ __('header.header_terms') }}
                         </a>
                     </div>
                 </div>

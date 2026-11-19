@@ -23,13 +23,13 @@
             {{ $product->getTranslation('name', app()->getLocale()) }}
         </h4>
         <div class="flex flex-col items-center justify-center mt-5 space-y-3">
-            <x-modal title="{{__('product.prod_commodity')}}" :product="$product">
+            <x-modal :title="__('product.prod_commodity')" :product="$product">
                 <x-slot name="button">
 
                     <x-button @click="modalOpen=true"
                               class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('other.other_buy') }}</x-button>
                 </x-slot>
-                <livewire:order product="{{ $product['name'] }}"/>
+                <livewire:order :product="$product->getTranslation('name', app()->getLocale())"/>
 
             </x-modal>
             @if($product->tds_content[app()->getLocale()] ?? '')
@@ -168,13 +168,13 @@
 
 
         <div class="hidden xs:flex xs:flex-col xs:items-center xs:justify-center xs:mt-5 xs:space-y-3 xs:bg-[#0b2f7a] xs:py-5">
-            <x-modal title="{{__('product.prod_commodity')}}" :product="$product">
+            <x-modal :title="__('product.prod_commodity')" :product="$product">
                 <x-slot name="button">
 
                     <x-button @click="modalOpen=true"
                               class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('other.other_buy') }}</x-button>
                 </x-slot>
-                <livewire:order product="{{ $product['name'] }}"/>
+                <livewire:order :product="$product->getTranslation('name', app()->getLocale())"/>
             </x-modal>
 
 

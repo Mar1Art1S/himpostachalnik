@@ -24,3 +24,5 @@ yarn-error.log
 !/storage/framework/sessions/.gitkeep
 /storage/framework/testing/*
 !/storage/framework/testing/.gitkeep
+*.zip
+

@@ -2,9 +2,9 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
 use App\Models\Product;
 use Illuminate\Support\Facades\App;
+use Livewire\Component;
 
 class HeaderSearch extends Component
 {

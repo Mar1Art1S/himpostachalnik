@@ -10,16 +10,10 @@ name('prod_lak_antis');
 
 @extends('layouts.base')
 
-@section('title', __('Антисептики для тканин, шпагатів та органічних матеріалів – захист від мікроорганізмів'))
-@section('meta_description', __('Забезпечте надійний захист тканин, шпагатів та органічних матеріалів від цвілі,
-грибків та бактерій з ефективними антисептиками. Продукти для збереження якості та довговічності ваших матеріалів.'))
-@section('meta_keywords', __('Антисептики для тканин, антисептики для шпагатів, антисептики для органічних матеріалів,
-захист тканин від мікроорганізмів, антисептичні засоби для органіки, захист шпагатів від цвілі, антисептики проти грибка для тканин'))
-
-
-@section('og_title', __('Антисептики для тканин, шпагатів та органічних матеріалів – захист від мікроорганізмів'))
-@section('og_description', __('Антисептики для тканин, антисептики для шпагатів, антисептики для органічних матеріалів'))
-
+@section('title', __('mes.product_top_title_ppy_antiseptics') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.product_top_description_ppy_antiseptics'))
+@section('og_title', __('mes.product_top_title_ppy_antiseptics') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.product_top_description_ppy_antiseptics'))
 @section('og_image', asset('img/mat_5/03.png'))
 
 @section('content')

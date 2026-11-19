@@ -5,19 +5,18 @@ namespace App\Filament\Resources;
 use App\Enums\OrderStatus;
 use App\Filament\Resources\OrderResource\Pages;
 use App\Models\Order;
+use Filament\Actions;
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Filament\Actions;
 
 class OrderResource extends Resource
 {
-    protected static string|null $model = Order::class;
+    protected static ?string $model = Order::class;
 
-    protected static string|null $label = 'Замовлення';
+    protected static ?string $label = 'Замовлення';
 
-    protected static string|null $pluralLabel = 'Замовлення';
+    protected static ?string $pluralLabel = 'Замовлення';
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
 

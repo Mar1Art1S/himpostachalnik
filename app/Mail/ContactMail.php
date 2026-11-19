@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -16,11 +17,9 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
-    public function __construct(public array $data)
-    {
-    }
+    public function __construct(public array $data) {}
 
     /**
      * Get the message envelope.
@@ -28,7 +27,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: env('APP_NAME', 'Himpost') . " - Нове повідомлення з сайту",
+            subject: env('APP_NAME', 'Himpost').' - Нове повідомлення з сайту',
             from: new Address(env('MAIL_FROM_ADDRESS'))
         );
     }
@@ -41,7 +40,7 @@ class ContactMail extends Mailable
         return new Content(
             view: 'mail.contact',
             with: [
-                'title' => "Нове повідомлення з сайту",
+                'title' => 'Нове повідомлення з сайту',
                 'data' => $this->data,
             ]
         );
@@ -50,7 +49,7 @@ class ContactMail extends Mailable
     /**
      * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @return array<int, Attachment>
      */
     public function attachments(): array
     {

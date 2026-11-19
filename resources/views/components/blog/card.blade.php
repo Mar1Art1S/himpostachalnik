@@ -16,8 +16,8 @@
             future
             and create a life that you are truly happy with.</p>
         <p class="pt-4 mt-auto text-xs font-medium text-gray-500"><a href="#_"
-                class="mr-1 text-[#0b2f7a] underline">Mary Jane</a> В· <span class="mx-1">April 17,
-                2021</span> В· <span class="mx-1 text-gray-600">3 min. read</span>
+                class="mr-1 text-[#0b2f7a] underline">Mary Jane</a> &middot; <span class="mx-1">April 17,
+                2021</span> &middot; <span class="mx-1 text-gray-600">3 min. read</span>
         </p>
     </div>
 </div>

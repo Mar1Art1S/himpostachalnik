@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title', __('header.projects') . ' | HIMPOST')
+@section('title', __('projects.title'))
 
 @section('content')
     <div class="bg-[#F8FAFC] min-h-screen font-sans selection:bg-blue-100">
@@ -16,15 +16,15 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
                         <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                        <span class="text-xs font-bold uppercase tracking-widest text-blue-700">Екосистема напрямків</span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-blue-700">{{ __('projects.badge') }}</span>
                     </div>
 
                     <h1 class="text-[52px] md:text-[72px] sm:text-4xl xs:text-3xl font-black leading-[1.1] text-[#0b2f7a] uppercase tracking-tighter mb-8">
-                        Наші проєкти
+                        {{ __('projects.heading') }}
                     </h1>
 
                     <p class="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">
-                        Спеціалізовані retail та галузеві напрямки компанії <span class="text-[#0b2f7a] font-bold">Хімпостачальник</span>, що забезпечують інноваційні рішення для різних сфер промисловості.
+                        {!! __('projects.lead', ['company' => '<span class="text-[#0b2f7a] font-bold">' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник') . '</span>']) !!}
                     </p>
                 </div>
             </div>
@@ -51,23 +51,23 @@
                                     </div>
 
                                     <div class="mb-2">
-                                        <span class="text-[13px] font-black uppercase tracking-[0.3em] text-[#2453df]">ТехПолімер</span>
-                                        <span class="text-[13px] font-bold uppercase tracking-[0.3em] text-slate-400">Маркет</span>
+                                        <span class="text-[13px] font-black uppercase tracking-[0.3em] text-[#2453df]">{{ __('projects.tech_brand_1') }}</span>
+                                        <span class="text-[13px] font-bold uppercase tracking-[0.3em] text-slate-400">{{ __('projects.tech_brand_2') }}</span>
                                     </div>
 
                                     <h3 class="text-3xl font-black text-[#0b2f7a] leading-tight mb-4">
-                                        Технічні полімери та промислові матеріали
+                                        {{ __('projects.tech_title') }}
                                     </h3>
 
                                     <p class="text-slate-500 leading-relaxed mb-8">
-                                        Спеціалізований retail та B2B-проєкт для технічних полімерів, компаундів та промислових матеріалів.
+                                        {{ __('projects.tech_desc') }}
                                     </p>
                                 </div>
 
                                 <div class="mt-auto">
                                     <a href="https://techpolymersmarket.com/" target="_blank"
                                         class="inline-flex items-center gap-4 bg-[#2453df] text-white px-8 py-4 sm:px-6 sm:py-3 xs:px-4 xs:py-2.5 xs:text-xs rounded-2xl font-bold uppercase tracking-wide transition-all duration-300 hover:bg-[#0b2f7a] hover:shadow-xl active:scale-95 group/btn">
-                                        <span>Перейти на сайт</span>
+                                        <span>{{ __('projects.tech_btn') }}</span>
                                         <x-lucide-arrow-up-right class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                                     </a>
                                     <div class="mt-6 text-sm font-bold text-slate-400">techpolymersmarket.com</div>
@@ -78,7 +78,7 @@
                             <div class="md:w-[42%] relative min-h-[300px] md:min-h-full bg-slate-50">
                                 <img
                                     src="{{ asset('img/block/ТехПолімерМакркет.png') }}"
-                                    alt="TechPolymers Granules"
+                                    alt="TechPolymers"
                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 <div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-white/10"></div>
@@ -103,22 +103,22 @@
                                     </div>
 
                                     <div class="mb-2">
-                                        <span class="text-[13px] font-black uppercase tracking-[0.3em] text-[#f0b51d]">Хімекселен</span>
+                                        <span class="text-[13px] font-black uppercase tracking-[0.3em] text-[#f0b51d]">{{ __('projects.bee_brand') }}</span>
                                     </div>
 
                                     <h3 class="text-3xl font-black text-[#0b2f7a] leading-tight mb-4">
-                                        Вулики з Пінополіуретану
+                                        {{ __('projects.bee_title') }}
                                     </h3>
 
                                     <p class="text-slate-500 leading-relaxed mb-8">
-                                        Спеціалізований retail-проєкт для пасічних господарств та бджільництва.
+                                        {{ __('projects.bee_desc') }}
                                     </p>
                                 </div>
 
                                 <div class="mt-auto">
                                     <a href="https://bee.lg.ua/" target="_blank"
                                         class="inline-flex items-center gap-4 bg-[#f0b51d] text-white px-8 py-4 sm:px-6 sm:py-3 xs:px-4 xs:py-2.5 xs:text-xs rounded-2xl font-bold uppercase tracking-wide transition-all duration-300 hover:bg-[#d9a31a] hover:shadow-xl active:scale-95 group/btn">
-                                        <span>Перейти на сайт</span>
+                                        <span>{{ __('projects.bee_btn') }}</span>
                                         <x-lucide-arrow-up-right class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                                     </a>
                                     <div class="mt-6 text-sm font-bold text-slate-400">bee.lg.ua</div>
@@ -141,9 +141,6 @@
                 </div>
             </div>
         </section>
-
-
-
 
     </div>
 @endsection

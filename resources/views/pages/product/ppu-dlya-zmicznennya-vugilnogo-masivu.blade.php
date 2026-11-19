@@ -10,17 +10,10 @@ name('prod_ppu_masivu');
 
 @extends('layouts.base')
 
-@section('title', __('ППУ для зміцнення вугільного масиву та фундаментів'))
-@section('meta_description', __('ППУ ефективно використовується для заповнення порожнин, підняття та підсилення фундаментів,
-стабілізації шахт та тунелів.'))
-@section('meta_keywords', __('ППУ для зміцнення вугільного масиву, зміцнення фундаментів пінополіуретаном, пінополіуретан для шахт, стабілізація підземних конструкцій ППУ,
-зміцнення підземних стін ППУ, ППУ для будівельних фундаментів, підсилення старих фундаментів ППУ, заповнення порожнин пінополіуретаном'))
-
-
-@section('og_title', __('ППУ для зміцнення вугільного масиву та фундаментів'))
-@section('og_description', __('ППУ ефективно використовується для заповнення порожнин, підняття та підсилення фундаментів,
-стабілізації шахт та тунелів.'))
-
+@section('title', __('mes.product_top_title_ppy_coal') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.product_top_description_ppy_coal'))
+@section('og_title', __('mes.product_top_title_ppy_coal') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.product_top_description_ppy_coal'))
 @section('og_image', asset('img/6_PPU_grup/006.png'))
 
 @section('content')

@@ -5,8 +5,8 @@
 <x-section class="container mx-auto">
     <div class="flex items-center justify-center mt-12">
         <x-slot:caption>
-            {{ __('Р‘Р»РѕРі') }}
-            </x-slot>
+            {{ __('header.header_blog') }}
+        </x-slot>
     </div>
 
     <section class="bg-white w-full mt-[40px]">
@@ -29,7 +29,7 @@
                     </h2>
                     <p class="mt-3 text-sm leading-6 text-gray-500">{{ $article->preview_text }}</p>
                     <p class="pt-4 mt-auto text-xs font-medium text-gray-500">
-                        <span class="mx-1">{{ $article->formatted_published_at }}</span> В·
+                        <span class="mx-1">{{ $article->formatted_published_at }}</span> &middot;
                         <span class="mx-1 text-gray-600">{{ $article->category->title }}</span>
                     </p>
                 </div>

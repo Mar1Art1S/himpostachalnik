@@ -12,17 +12,19 @@ class ArticleCategory extends Model
     protected $fillable = [
         'title',
         'slug',
-        'active'
+        'active',
     ];
+
     protected $casts = [
-        'active' => 'boolean'
+        'active' => 'boolean',
     ];
+
     public function rules(): array
-{
-    return [
-        'title' => 'required|string|max:255',
-        'slug' => 'required|string|max:255',
-        'active' => 'required|boolean',
-    ];
-}
+    {
+        return [
+            'title' => 'required|string|max:255',
+            'slug' => 'required|string|max:255',
+            'active' => 'required|boolean',
+        ];
+    }
 }

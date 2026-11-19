@@ -1,26 +1,11 @@
 <?php
 
 return [
-    "title_about"  => "About us", //Про нас
-    "paragraph_text_one"  => "Over the past 27 years, Himpostavshchik has been successfully developing and strengthening its leading position in the chemical 
-    chemical industry in Ukraine. Since its humble beginnings in 1997, the company has focused its efforts on the production and sale of a range of additives 
-    and special resins for paints and varnishes for construction and industrial applications. Thanks to strategic planning and investments in production technologies, 
-    we quickly became a well-known company in the industry and found our place in the market. Subsequently, in 2004, the company expanded its product range to include 
-    additives for PVC processing, saturated and unsaturated polyesters, urea and melamine formaldehyde resins, which significantly expanded its target 
-    segment and increased production volumes. Over the following years, with each new area of production and sales, the company strengthened 
-    its leadership and reputation in the market.", //Himpostavshchik
-    "paragraph_text_two"  => "In 2014, responding to market needs and technological challenges, Himpostavshchik launched the production of finished products 
-    polyurethane and adhesives, which opened up new opportunities in the construction and industrial sectors. This step was an important strategic decision in diversifying the company's 
-    the company's product portfolio and expanding its market influence. Over the following years, Himpostavshchik continued to grow and develop, 
-    setting new standards of quality and innovation in the industry. Investments in the development of the research and production facilities, as well as the recruitment of 
-    highly qualified personnel, supported the company in its search for new technologies and product solutions. At the present stage, in 2024, 
-    Himpostavshchik remains a leading player in the industry, offering a wide range of products for different market segments. Expansion of the 
-    product range and continuous improvement of production technologies allow the company to maintain its competitive advantage and meet the 
-    the needs of the modern chemicals market.", //Himpostavshchik
-    "paragraph_text_three"  => "After the outbreak of the war in Ukraine in 2022, Himpostavshchik faced significant challenges related to 
-    with the destruction of the production base and interruption in the supply of raw materials. The company was forced to relocate to a new site and start restoring production from scratch 
-    production from scratch, investing not only financial but also new human resources and energy. The process of restoring production includes 
-    not only rebuilding physical assets, but also revising the company's strategy and modernising production processes. The company is actively 
-    introducing new technologies and improving quality control to restore and maintain high standards of market presence. Despite 
-    the difficulties, Himpostavshchik has managed to regain its leading position in the market and become an example of the country's industrial potential recovery.",
+    'title_about' => 'About Us',
+    'meta_title' => 'About Company — Himpost',
+    'meta_description' => 'History, manufacturing infrastructure, and principles of Himpost — a leading supplier of polymer systems and chemical raw materials in Ukraine.',
+    'meta_keywords' => 'chemical raw materials, about company, Himpost, polyurethane manufacturing, chemical supply history',
+    'paragraph_text_one' => 'Over the past 27 years, Himpost has been successfully developing and strengthening its leading position in the chemical industry in Ukraine. Since its beginnings in 1997, the company has focused its efforts on the production and distribution of a range of additives and special resins for paints and varnishes for construction and industrial applications. Thanks to strategic planning and continuous investment in production technologies, we quickly established a recognized industry standing. In 2004, the company broadened its portfolio to include additives for PVC processing, saturated and unsaturated polyesters, and melamine-formaldehyde resins, expanding production volumes and target markets.',
+    'paragraph_text_two' => 'In 2014, responding to evolving market demands, Himpost initiated the manufacturing of finished polyurethane goods and specialized adhesive compounds, opening new opportunities in civil engineering and high-durability manufacturing. Over the following years, Himpost continued expanding its engineering capabilities, establishing elevated quality standards and rigorous technical testing. In 2024, Himpost remains a cornerstone partner for Ukrainian industrial enterprises, offering a broad spectrum of polymers, fast technical consulting, and dependable contract logistics.',
+    'paragraph_text_three' => 'Following the outbreak of the war in Ukraine in 2022, Himpost encountered significant logistical challenges and the disruption of earlier manufacturing sites. The company successfully completed emergency relocation to new operating premises, rebuilding facilities and modernizing production workflows from the ground up. By incorporating modern automated equipment and rigorous quality control protocols, Himpost has restored full manufacturing capacities, standing as a resilient example of Ukrainian industrial recovery.',
 ];

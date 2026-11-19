@@ -1,6 +1,6 @@
 @extends('layouts.base')
-@section('title', 'Політика конфіденційності — Хімпостачальник')
-@section('meta_description', 'Політика конфіденційності та захист персональних даних користувачів сайту Хімпостачальник.')
+@section('title', __('privacy.title'))
+@section('meta_description', __('privacy.meta_description'))
 
 @section('content')
 <div class="max-w-[900px] w-full mx-auto px-6 xs:px-4 lg:px-8 my-12">
@@ -9,72 +9,72 @@
     <div class="text-center mb-12">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 font-semibold text-sm mb-4">
             <x-lucide-shield class="w-4 h-4" />
-            Підтримка
+            {{ __('privacy.badge') }}
         </div>
         <h1 class="text-4xl md:text-3xl sm:text-2xl text-gray-900 font-bold uppercase tracking-tight">
-            Політика конфіденційності
+            {{ __('privacy.heading') }}
         </h1>
         <div class="w-20 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
-        <p class="mt-4 text-gray-400 text-sm">Останнє оновлення: {{ date('d.m.Y') }}</p>
+        <p class="mt-4 text-gray-400 text-sm">{{ __('privacy.last_updated', ['date' => date('d.m.Y')]) }}</p>
     </div>
 
     {{-- Content --}}
     <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-6 xs:p-4 prose prose-lg prose-blue max-w-none">
 
-        <h2>1. Загальні положення</h2>
-        <p>Ця Політика конфіденційності описує, яким чином ми збираємо, використовуємо та захищаємо персональні дані користувачів нашого веб-сайту. Використовуючи наш сайт, ви погоджуєтесь з умовами цієї Політики.</p>
+        <h2>{{ __('privacy.s1_title') }}</h2>
+        <p>{{ __('privacy.s1_text') }}</p>
 
-        <h2>2. Збір персональних даних</h2>
-        <p>Ми можемо збирати такі дані:</p>
+        <h2>{{ __('privacy.s2_title') }}</h2>
+        <p>{{ __('privacy.s2_intro') }}</p>
         <ul>
-            <li>Ім'я та прізвище</li>
-            <li>Контактний номер телефону</li>
-            <li>Адреса електронної пошти</li>
-            <li>Адреса доставки</li>
-            <li>Дані про взаємодію з сайтом (файли cookie, IP-адреса, браузер)</li>
+            <li>{{ __('privacy.s2_item1') }}</li>
+            <li>{{ __('privacy.s2_item2') }}</li>
+            <li>{{ __('privacy.s2_item3') }}</li>
+            <li>{{ __('privacy.s2_item4') }}</li>
+            <li>{{ __('privacy.s2_item5') }}</li>
         </ul>
 
-        <h2>3. Мета використання даних</h2>
-        <p>Зібрані дані використовуються для:</p>
+        <h2>{{ __('privacy.s3_title') }}</h2>
+        <p>{{ __('privacy.s3_intro') }}</p>
         <ul>
-            <li>Обробки та виконання замовлень</li>
-            <li>Зв'язку з клієнтом щодо запитів та замовлень</li>
-            <li>Поліпшення якості обслуговування</li>
-            <li>Надсилання важливих повідомлень щодо замовлень (за згодою)</li>
-            <li>Аналізу використання сайту для його покращення</li>
+            <li>{{ __('privacy.s3_item1') }}</li>
+            <li>{{ __('privacy.s3_item2') }}</li>
+            <li>{{ __('privacy.s3_item3') }}</li>
+            <li>{{ __('privacy.s3_item4') }}</li>
+            <li>{{ __('privacy.s3_item5') }}</li>
         </ul>
 
-        <h2>4. Передача даних третім особам</h2>
-        <p>Ми не продаємо, не передаємо та не розкриваємо ваші персональні дані третім особам, за винятком:</p>
+        <h2>{{ __('privacy.s4_title') }}</h2>
+        <p>{{ __('privacy.s4_intro') }}</p>
         <ul>
-            <li>Служб доставки (для виконання замовлення)</li>
-            <li>Випадків, передбачених законодавством України</li>
+            <li>{{ __('privacy.s4_item1') }}</li>
+            <li>{{ __('privacy.s4_item2') }}</li>
         </ul>
 
-        <h2>5. Файли cookie</h2>
-        <p>Наш сайт використовує файли cookie для забезпечення коректної роботи та покращення користувацького досвіду. Ви можете відключити cookie у налаштуваннях браузера, однак це може вплинути на функціональність сайту.</p>
+        <h2>{{ __('privacy.s5_title') }}</h2>
+        <p>{{ __('privacy.s5_text') }}</p>
 
-        <h2>6. Захист даних</h2>
-        <p>Ми вживаємо відповідних технічних та організаційних заходів для захисту ваших персональних даних від несанкціонованого доступу, зміни, розголошення або знищення.</p>
+        <h2>{{ __('privacy.s6_title') }}</h2>
+        <p>{{ __('privacy.s6_text') }}</p>
 
-        <h2>7. Ваші права</h2>
-        <p>Відповідно до чинного законодавства, ви маєте право:</p>
+        <h2>{{ __('privacy.s7_title') }}</h2>
+        <p>{{ __('privacy.s7_intro') }}</p>
         <ul>
-            <li>Отримати доступ до ваших персональних даних</li>
-            <li>Вимагати виправлення неточних даних</li>
-            <li>Вимагати видалення ваших даних</li>
-            <li>Відкликати згоду на обробку даних</li>
+            <li>{{ __('privacy.s7_item1') }}</li>
+            <li>{{ __('privacy.s7_item2') }}</li>
+            <li>{{ __('privacy.s7_item3') }}</li>
+            <li>{{ __('privacy.s7_item4') }}</li>
         </ul>
 
-        <h2>8. Контактна інформація</h2>
-        <p>З питань конфіденційності звертайтесь до нас:</p>
+        <h2>{{ __('privacy.s8_title') }}</h2>
+        <p>{{ __('privacy.s8_intro') }}</p>
         <ul>
-            <li>Email: <a href="mailto:director@himpost.com">director@himpost.com</a></li>
-            <li>Телефон: +38 (050) 340-35-47</li>
+            <li>{!! __('privacy.s8_email') !!}</li>
+            <li>{{ __('privacy.s8_phone') }}</li>
         </ul>
 
-        <h2>9. Зміни до Політики</h2>
-        <p>Ми залишаємо за собою право вносити зміни до цієї Політики конфіденційності. Актуальна версія завжди доступна на цій сторінці.</p>
+        <h2>{{ __('privacy.s9_title') }}</h2>
+        <p>{{ __('privacy.s9_text') }}</p>
 
     </div>
 

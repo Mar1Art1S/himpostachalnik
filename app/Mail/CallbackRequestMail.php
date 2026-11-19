@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -16,11 +17,9 @@ class CallbackRequestMail extends Mailable
     /**
      * Create a new message instance.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
-    public function __construct(public array $data)
-    {
-    }
+    public function __construct(public array $data) {}
 
     /**
      * Get the message envelope.
@@ -28,7 +27,7 @@ class CallbackRequestMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: env('APP_NAME', 'Himpost') . " - Нова заявка на зворотній дзвінок",
+            subject: env('APP_NAME', 'Himpost').' - Нова заявка на зворотній дзвінок',
             from: new Address(env('MAIL_FROM_ADDRESS'))
         );
     }
@@ -41,7 +40,7 @@ class CallbackRequestMail extends Mailable
         return new Content(
             view: 'mail.callback',
             with: [
-                'title' => "Нова заявка на зворотній дзвінок",
+                'title' => 'Нова заявка на зворотній дзвінок',
                 'data' => $this->data,
             ]
         );
@@ -50,7 +49,7 @@ class CallbackRequestMail extends Mailable
     /**
      * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @return array<int, Attachment>
      */
     public function attachments(): array
     {

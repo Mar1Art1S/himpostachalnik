@@ -3,9 +3,9 @@
 namespace App\Livewire;
 
 use App\Livewire\Forms\SubscribeForm;
-use Livewire\Component;
-use DanHarrin\LivewireRateLimiting\WithRateLimiting;
 use DanHarrin\LivewireRateLimiting\Exceptions\TooManyRequestsException;
+use DanHarrin\LivewireRateLimiting\WithRateLimiting;
+use Livewire\Component;
 
 class Subscribe extends Component
 {
@@ -19,6 +19,7 @@ class Subscribe extends Component
             $this->rateLimit(3); // 3 запити на хвилину
         } catch (TooManyRequestsException $exception) {
             $this->addError('form.email', __('Занадто багато спроб. Спробуйте пізніше.'));
+
             return;
         }
 

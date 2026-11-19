@@ -13,20 +13,20 @@ return new class extends Migration
     public function up(): void
     {
 
-      Schema::create('products', function (Blueprint $table) {
-        $table->id();
-        $table->string('name');
-        $table->enum('category', array_map(fn($case) => $case->value, CategoryEnum::cases()));
-        $table->json('options');
-        $table->string('tds_file')->nullable();
-        $table->string('tex_doc_file')->nullable();
-        $table->string('tds_title')->nullable();
-        $table->longText('tds_content')->nullable();
-        $table->longText('tehcarta_content')->nullable();
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->enum('category', array_map(fn ($case) => $case->value, CategoryEnum::cases()));
+            $table->json('options');
+            $table->string('tds_file')->nullable();
+            $table->string('tex_doc_file')->nullable();
+            $table->string('tds_title')->nullable();
+            $table->longText('tds_content')->nullable();
+            $table->longText('tehcarta_content')->nullable();
 
-        $table->timestamps();
+            $table->timestamps();
 
-      });
+        });
     }
 
     /**
@@ -38,7 +38,7 @@ return new class extends Migration
     }
 };
 
-//Schema::create('products', function (Blueprint $table) {
+// Schema::create('products', function (Blueprint $table) {
 //  $table->id();
 //  $table->timestamps();
 //  $table->json('name')->nullable();
@@ -48,4 +48,4 @@ return new class extends Migration
 //  $table->json('tehcarta_content')->nullable();
 //
 //
-//});
+// });

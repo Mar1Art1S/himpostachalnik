@@ -6,21 +6,10 @@ use App\Models\Product;
 name('py_lak_prom');
 ?>
 @extends('layouts.base')
-@section('title', __('Сировина для лакофарбової промисловості – якість і надійність для виробництва'))
-@section('meta_description',
-    __('Високоякісна сировина для лакофарбової промисловості: пігменти, смоли,
-    розчинники та інші матеріали. Гарантоване покриття, стійкість та довговічність продукції для різних галузей.'))
-@section('meta_keywords',
-    __('сировина для лакофарбової промисловості, пігменти для лаків і фарб, смоли для лакофарбової продукції,
-    розчинники для фарб, матеріали для лакофарбового виробництва, компоненти для лакофарбової продукції, якісна сировина для
-    фарб'))
-
-
-@section('og_title', __('Сировина для лакофарбової промисловості – якість і надійність для виробництва'))
-@section('og_description',
-    __('Високоякісна сировина для лакофарбової промисловості: пігменти, смоли,
-    розчинники та інші матеріали. Гарантоване покриття, стійкість та довговічність продукції для різних галузей.'))
-
+@section('title', __('mes.subproduct_top_title_paint') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.subproduct_top_description_paint'))
+@section('og_title', __('mes.subproduct_top_title_paint') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.subproduct_top_description_paint'))
 @section('og_image', asset('img/categories/007.png'))
 
 @section('content')

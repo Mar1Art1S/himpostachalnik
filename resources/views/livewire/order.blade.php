@@ -1,5 +1,5 @@
 <div>
-    @session('order-success')
+    @if (session()->has('order-success'))
     <div class="text-center py-8 px-4 max-w-md mx-auto">
         <div class="inline-flex items-center justify-center w-16 h-16 mb-5 bg-green-100 text-green-600 rounded-full shadow-inner">
             <x-lucide-check class="w-8 h-8" />
@@ -23,7 +23,7 @@
                         placeholder="{{ __('order.order_name') }}" 
                         wire:model.blur='order.fio' 
                         required 
-                        class="w-full px-4 py-3 border @error('order.fio') border-red-500 focus:ring-red-200 focus:border-red-500 @else border-slate-200 focus:ring-blue-100 focus:border-blue-500 @enderror rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
+                        class="w-full px-4 py-3 border {{ $errors->has('order.fio') ? 'border-red-500 focus:ring-red-200 focus:border-red-500' : 'border-slate-200 focus:ring-blue-100 focus:border-blue-500' }} rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
                     @error('order.fio')
                         <p class="mt-1.5 text-xs text-red-500 flex items-center gap-1.5 font-medium">
                             <x-lucide-alert-circle class="w-4 h-4 text-red-500" />
@@ -39,7 +39,7 @@
                         placeholder="{{ __('order.order_phone') }}" 
                         wire:model='order.contact' 
                         required 
-                        class="w-full px-4 py-3 border @error('order.contact') border-red-500 focus:ring-red-200 focus:border-red-500 @else border-slate-200 focus:ring-blue-100 focus:border-blue-500 @enderror rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
+                        class="w-full px-4 py-3 border {{ $errors->has('order.contact') ? 'border-red-500 focus:ring-red-200 focus:border-red-500' : 'border-slate-200 focus:ring-blue-100 focus:border-blue-500' }} rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
                     @error('order.contact')
                         <p class="mt-1.5 text-xs text-red-500 flex items-center gap-1.5 font-medium">
                             <x-lucide-alert-circle class="w-4 h-4 text-red-500" />
@@ -54,7 +54,7 @@
                     <input type="text" 
                         placeholder="{{ __('order.order_сity') }}" 
                         wire:model='order.city' 
-                        class="w-full px-4 py-3 border @error('order.city') border-red-500 focus:ring-red-200 focus:border-red-500 @else border-slate-200 focus:ring-blue-100 focus:border-blue-500 @enderror rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
+                        class="w-full px-4 py-3 border {{ $errors->has('order.city') ? 'border-red-500 focus:ring-red-200 focus:border-red-500' : 'border-slate-200 focus:ring-blue-100 focus:border-blue-500' }} rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white transition duration-200" />
                     @error('order.city')
                         <p class="mt-1.5 text-xs text-red-500 flex items-center gap-1.5 font-medium">
                             <x-lucide-alert-circle class="w-4 h-4 text-red-500" />
@@ -71,7 +71,7 @@
                     <textarea 
                         placeholder="{{ __('order.order_description') }}" 
                         wire:model='order.description' 
-                        class="w-full flex-1 px-4 py-3 border @error('order.description') border-red-500 focus:ring-red-200 focus:border-red-500 @else border-slate-200 focus:ring-blue-100 focus:border-blue-500 @enderror rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white resize-none transition duration-200 min-h-[160px] lg:min-h-0"></textarea>
+                        class="w-full flex-1 px-4 py-3 border {{ $errors->has('order.description') ? 'border-red-500 focus:ring-red-200 focus:border-red-500' : 'border-slate-200 focus:ring-blue-100 focus:border-blue-500' }} rounded-2xl focus:ring-4 outline-none text-slate-900 placeholder-slate-400 bg-white resize-none transition duration-200 min-h-[160px] lg:min-h-0"></textarea>
                 </div>
                 @error('order.description')
                     <p class="mt-1.5 text-xs text-red-500 flex items-center gap-1.5 font-medium">
@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <input type="hidden" wire:model='order.product' value="{{ $product }}" />
+        <input type="hidden" wire:model='order.product' value="{{ is_array($product) ? ($product[app()->getLocale()] ?? reset($product)) : $product }}" />
 
         {{-- Buttons --}}
         <div class="flex flex-col-reverse sm:flex-row sm:justify-end gap-3 pt-5 border-t border-slate-100">
@@ -98,5 +98,5 @@
             </button>
         </div>
     </form>
-    @endsession
+    @endif
 </div>

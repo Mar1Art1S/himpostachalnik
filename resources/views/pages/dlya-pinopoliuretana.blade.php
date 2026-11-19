@@ -7,19 +7,10 @@ name('ppy_serovine');
 ?>
 
 @extends('layouts.base')
-@section('title', __('Сировина для пінополіуретану – основа якісного виробництва та ізоляції'))
-@section('meta_description',
-    __('Високоякісна сировина для виробництва пінополіуретану. Ізоляційні матеріали з відмінними
-    характеристиками для будівництва, меблів та інших галузей. Надійність та ефективність в кожному продукті.'))
-@section('meta_keywords',
-    __('сировина для пінополіуретану, хімічні компоненти, компоненти для пінополіуретану, сировина
-    для виробництва ППУ, поліол для пінополіуретану'))
-
-
-@section('og_title', __('Сировина для пінополіуретану – основа якісного виробництва та ізоляції'))
-@section('og_description',
-    __('Високоякісна сировина для виробництва пінополіуретану. Ізоляційні матеріали з відмінними
-    характеристиками для будівництва, меблів та інших галузей. Надійність та ефективність в кожному продукті.'))
+@section('title', __('mes.subproduct_top_title_ppy') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.subproduct_top_description_ppy'))
+@section('og_title', __('mes.subproduct_top_title_ppy') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.subproduct_top_description_ppy'))
 @section('og_image', asset('img/categories/001.png'))
 
 @section('content')

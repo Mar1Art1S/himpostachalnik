@@ -2,12 +2,12 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
 use App\Livewire\Forms\OrderForm;
 use App\Mail\OrderShipped;
-use Illuminate\Support\Facades\Mail;
-use DanHarrin\LivewireRateLimiting\WithRateLimiting;
 use DanHarrin\LivewireRateLimiting\Exceptions\TooManyRequestsException;
+use DanHarrin\LivewireRateLimiting\WithRateLimiting;
+use Illuminate\Support\Facades\Mail;
+use Livewire\Component;
 
 class Order extends Component
 {
@@ -17,6 +17,14 @@ class Order extends Component
 
     public OrderForm $order;
 
+    public function mount($product = null): void
+    {
+        if (is_array($product)) {
+            $this->product = $product[app()->getLocale()] ?? reset($product) ?: '';
+        } else {
+            $this->product = (string) ($product ?? '');
+        }
+    }
 
     public function save()
     {
@@ -24,6 +32,7 @@ class Order extends Component
             $this->rateLimit(3); // 3 запити на хвилину
         } catch (TooManyRequestsException $exception) {
             $this->addError('order.fio', __('Занадто багато спроб. Спробуйте пізніше.'));
+
             return;
         }
 
@@ -44,5 +53,3 @@ class Order extends Component
 
     }
 }
-
-

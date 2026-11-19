@@ -10,14 +10,10 @@ name('poli_moch_haryacho');
 
 @extends('layouts.base')
 
-@section('title', __(''))
-@section('meta_description', __(''))
-@section('meta_keywords', __(''))
-
-
-@section('og_title', __(''))
-@section('og_description', __(''))
-
+@section('title', __('mes.product_top_title_py_hot_application') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.product_top_description_py_hot_application'))
+@section('og_title', __('mes.product_top_title_py_hot_application') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.product_top_description_py_hot_application'))
 @section('og_image', asset('img/mat_4/01.png'))
 
 @section('content')

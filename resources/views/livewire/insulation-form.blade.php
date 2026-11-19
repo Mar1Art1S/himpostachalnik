@@ -8,7 +8,9 @@
                     <label class="block font-bold mb-2">{{__('calc.calc_region')}}</label>
                     <select wire:model="selectedRegion" class="w-full border rounded p-2">
                         @foreach ($regions as $region)
-                            <option value="{{ $region['id'] }}">{{ $region['name'] }}</option>
+                            @if (is_array($region))
+                                <option value="{{ $region['id'] }}">{{ $region['name'] }}</option>
+                            @endif
                         @endforeach
                     </select>
                 </div>
@@ -28,7 +30,9 @@
                     <label class="block font-bold mb-2">{{__('calc.calc_weinsulate')}}</label>
                     <select class="w-full border rounded p-2">
                         @foreach ($objectOptions as $option)
-                            <option value="{{ $option['name'] }}">{{ $option['name'] }}</option>
+                            @if (is_array($option))
+                                <option value="{{ $option['name'] }}">{{ $option['name'] }}</option>
+                            @endif
                         @endforeach
                     </select>
                 </div>

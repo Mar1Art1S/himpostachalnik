@@ -7,16 +7,10 @@ name('py_gidro');
 ?>
 
 @extends('layouts.base')
-@section('title', __('Сировина для гідроізоляції'))
-@section('meta_description', __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і
-    споруд, мостів, резервуарів, очисних споруд, плавальних басейнів'))
-@section('meta_keywords', __('сировина для гідроізоляції, хімічні компоненти, компоненти для гідроізоляції, сировина для
-    виробництва гідроізоляції'))
-
-
-@section('og_title', __('Сировина для гідроізоляції'))
-@section('og_description', __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і
-    споруд, мостів, резервуарів, очисних споруд, плавальних басейнів'))
+@section('title', __('mes.subproduct_top_title_py_waterproofing') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.subproduct_top_description_py_waterproofing'))
+@section('og_title', __('mes.subproduct_top_title_py_waterproofing') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.subproduct_top_description_py_waterproofing'))
 @section('og_image', asset('img/mat_7/Полимочевина_гарячого_нанесення.png'))
 
 @section('content')

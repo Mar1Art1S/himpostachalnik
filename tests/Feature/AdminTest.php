@@ -21,13 +21,25 @@ class AdminTest extends TestCase
     }
 
     /**
-     * Test that authenticated users can load the article categories page.
+     * Test that authenticated users can visit the article categories page.
      */
     public function test_authenticated_users_can_visit_article_categories_page(): void
     {
         $user = User::factory()->create();
 
         $response = $this->actingAs($user)->get('/admin/article-categories');
+
+        $response->assertStatus(200);
+    }
+
+    /**
+     * Test that authenticated users can visit the admin dashboard.
+     */
+    public function test_authenticated_users_can_visit_admin_dashboard(): void
+    {
+        $user = User::factory()->create();
+
+        $response = $this->actingAs($user)->get('/admin');
 
         $response->assertStatus(200);
     }

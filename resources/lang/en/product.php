@@ -1,5 +1,6 @@
 <?php
-//product
+
+// product
 return [
-  "prod_commodity"  => "Ordering goods", // language
+    'prod_commodity' => 'Ordering goods', // language
 ];

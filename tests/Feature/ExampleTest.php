@@ -18,4 +18,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_dlya_pinopoliuretana_returns_successful_response(): void
+    {
+        $response = $this->get('/dlya-pinopoliuretana');
+
+        $response->assertStatus(200);
+    }
 }

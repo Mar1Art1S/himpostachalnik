@@ -10,16 +10,10 @@ name('py_kilima');
 
 @extends('layouts.base')
 
-@section('title', __('Сировина для поліуретанового кам`яного килима – основа міцності та довговічності покриття'))
-@section('meta_description', __('Надійна сировина для створення поліуретанового кам`яного килима. Високоякісні полімери та
-наповнювачі для довговічних і стійких покриттів. Ідеальне рішення для внутрішніх і зовнішніх робіт.'))
-@section('meta_keywords', __('сировина для поліуретанового кам`яного килима, полімери для кам`яного килима, поліуретановий кам`яний килим,
-наповнювачі для кам`яного покриття, компоненти для поліуретанового килима, довговічні полімери для покриттів, поліуретанове покриття для підлоги'))
-
-
-@section('og_title', __('Сировина для поліуретанового кам`яного килима – основа міцності та довговічності покриття'))
-@section('og_description', __('Надійна сировина для створення поліуретанового кам`яного килима. Високоякісні полімери та
-наповнювачі для довговічних і стійких покриттів. Ідеальне рішення для внутрішніх і зовнішніх робіт.'))
+@section('title', __('mes.subproduct_top_title_py_stone_carpet') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('meta_description', __('mes.subproduct_top_description_py_stone_carpet'))
+@section('og_title', __('mes.subproduct_top_title_py_stone_carpet') . ' — ' . (app()->getLocale() === 'en' ? 'Himpost' : 'Хімпостачальник'))
+@section('og_description', __('mes.subproduct_top_description_py_stone_carpet'))
 @section('og_image', asset('img/categories/003.png'))
 @section('content')
     <x-category-header>

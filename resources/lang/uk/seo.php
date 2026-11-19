@@ -1,5 +1,6 @@
 <?php
-//seo.
+
+// seo.
 return [
-  "seo_"  => "",
+    'seo_' => '',
 ];

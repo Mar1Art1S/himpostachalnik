@@ -12,6 +12,4 @@ class Order extends Model
     use SoftDeletes;
 
     protected $fillable = ['fio', 'contact', 'city', 'description', 'status', 'product'];
-
-
 }
