@@ -1,20 +1,25 @@
 <?php
 header('Content-Type: text/plain');
+ini_set('display_errors', '1');
+error_reporting(E_ALL);
+
 require __DIR__ . '/../vendor/autoload.php';
 $app = require __DIR__ . '/../bootstrap/app.php';
 $k = $app->make(Illuminate\Contracts\Console\Kernel::class);
 $k->bootstrap();
 
 $compiler = app('blade.compiler');
+$r = new ReflectionClass($compiler);
 
 $testInput = "@props(['field'])\n<x-section />";
 
 // Let's run compileComponentTags manually:
-$step1 = $compiler->compileComponentTags($testInput);
+$mCompTags = $r->getMethod('compileComponentTags');
+$mCompTags->setAccessible(true);
+$step1 = $mCompTags->invoke($compiler, $testInput);
 echo "AFTER compileComponentTags:\n$step1\n\n";
 
 // Let's run precompilers:
-$r = new ReflectionClass($compiler);
 $pPrecompilers = $r->getProperty('precompilers');
 $pPrecompilers->setAccessible(true);
 $precompilers = $pPrecompilers->getValue($compiler);
