@@ -1,36 +1,13 @@
-<?php
-
-use App\Models\Product;
-use Illuminate\Support\Facades\App;
-use Livewire\Component;
-
-new class extends Component
-{
-    public string $search = '';
-
-    public function getProductsProperty()
-    {
-        if (strlen($this->search) < 2) {
-            return [];
-        }
-
-        $locale = App::getLocale();
-
-        return Product::query()
-            ->where("name->{$locale}", 'like', '%'.$this->search.'%')
-            ->take(5)
-            ->get();
-    }
-};
-?>
-
 <div class="relative w-full" x-data="{ open: true }" @click.outside="open = false">
     <div class="relative">
         <input type="text" wire:model.live.debounce.300ms="search" @focus="open = true" placeholder="{{ __('search.search_products_placeholder') }}"
             class="w-full h-16 px-6 pr-16 text-lg transition-all border border-gray-200 outline-none rounded-2xl bg-gray-50 focus:border-blue-600 focus:ring-2 focus:ring-blue-100">
 
         <div class="absolute text-gray-500 transition-all -translate-y-1/2 right-5 top-1/2">
-            <x-lucide-search class="w-7 h-7" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
         </div>
     </div>
 
