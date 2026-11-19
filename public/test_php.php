@@ -1,16 +1,15 @@
 <?php
 header('Content-Type: text/plain');
 
-$logFile = __DIR__ . '/../storage/logs/laravel.log';
-if (file_exists($logFile)) {
-    $content = file_get_contents($logFile);
-    preg_match_all('/\[\d{4}-\d{2}-\d{2} [^\]]+\] local\.ERROR: [^\n]+/', $content, $matches);
-    if (!empty($matches[0])) {
-        $lastErrors = array_slice($matches[0], -5);
-        foreach ($lastErrors as $err) {
-            echo $err . "\n";
-        }
-    } else {
-        echo "No errors found in log.";
+$viewFile = __DIR__ . '/../storage/framework/views/6f9669da280078f7843b88c518a892d0.php';
+if (file_exists($viewFile)) {
+    $lines = file($viewFile);
+    echo "Total lines: " . count($lines) . "\n";
+    for ($i = max(0, 310); $i < min(count($lines), 340); $i++) {
+        echo ($i + 1) . ": " . $lines[$i];
     }
+} else {
+    echo "File not found: " . $viewFile . "\n";
+    $files = glob(__DIR__ . '/../storage/framework/views/*.php');
+    echo "Found " . count($files) . " compiled view files.\n";
 }
