@@ -1,15 +1,21 @@
 <?php
+
 header('Content-Type: text/plain');
 
-$viewFile = __DIR__ . '/../storage/framework/views/6f9669da280078f7843b88c518a892d0.php';
-if (file_exists($viewFile)) {
-    $lines = file($viewFile);
-    echo "Total lines: " . count($lines) . "\n";
-    for ($i = max(0, 310); $i < min(count($lines), 340); $i++) {
-        echo ($i + 1) . ": " . $lines[$i];
+$htmlId = token_get_all('a')[0][0] ?? null;
+echo 'T_INLINE_HTML: '.(defined('T_INLINE_HTML') ? T_INLINE_HTML : 'undefined')."\n";
+echo 'Dynamic HTML Token: '.$htmlId."\n";
+
+$logFile = __DIR__.'/../storage/logs/laravel.log';
+if (file_exists($logFile)) {
+    $content = file_get_contents($logFile);
+    preg_match_all('/\[\d{4}-\d{2}-\d{2} [^\]]+\] local\.ERROR: [^\n]+/', $content, $matches);
+    if (! empty($matches[0])) {
+        echo "\nLAST 3 ERRORS:\n";
+        foreach (array_slice($matches[0], -3) as $err) {
+            echo $err."\n";
+        }
+    } else {
+        echo "\nNo errors in log.\n";
     }
-} else {
-    echo "File not found: " . $viewFile . "\n";
-    $files = glob(__DIR__ . '/../storage/framework/views/*.php');
-    echo "Found " . count($files) . " compiled view files.\n";
 }

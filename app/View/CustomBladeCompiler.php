@@ -26,7 +26,7 @@ class CustomBladeCompiler extends BladeCompiler
             $this->inlineHtmlTokenId = is_array($first) ? $first[0] : (defined('T_INLINE_HTML') ? T_INLINE_HTML : 267);
         }
 
-        if ($id == T_INLINE_HTML || $id == $this->inlineHtmlTokenId || $id === 267 || $id === 313) {
+        if ($id == T_INLINE_HTML || $id == $this->inlineHtmlTokenId) {
             foreach ($this->compilers as $type) {
                 $content = $this->{"compile{$type}"}($content);
             }
